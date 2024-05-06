@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  6 MAY 2024 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  6 MAY 2024 16:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/Trinity_College_Dublin/Dissertation_Summer2024/99_dissertation/00_main/Chenxi_dissertation
-(/Users/Trinity_College_Dublin/Dissertation_Summer2024/99_dissertation/00_main/Chenxi_dissertation.tex
+**/Users/Trinity_College_Dublin/Dissertation_Summer2024/99_dissertation/Chenxi_dissertation
+(/Users/Trinity_College_Dublin/Dissertation_Summer2024/99_dissertation/Chenxi_dissertation.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-02-22> (/usr/local/texlive/2023/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
@@ -699,7 +699,7 @@ Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: tex)
 
 Enter file name: 
-/Users/Trinity_College_Dublin/Dissertation_Summer2024/99_dissertation/00_main/Chenxi_dissertation.tex:110: Emergency stop.
+/Users/Trinity_College_Dublin/Dissertation_Summer2024/99_dissertation/Chenxi_dissertation.tex:110: Emergency stop.
 <read *> 
          
 l.110 \input{01_title/title.tex}
@@ -709,10 +709,10 @@ l.110 \input{01_title/title.tex}
  
 Here is how much of TeX's memory you used:
  25469 strings out of 476025
- 475424 string characters out of 5790018
+ 475400 string characters out of 5790018
  1850388 words of memory out of 5000000
  45513 multiletter control sequences out of 15000+600000
  514280 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,1n,117p,1282b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
-/Users/Trinity_College_Dublin/Dissertation_Summer2024/99_dissertation/00_main/Chenxi_dissertation.tex:110:  ==> Fatal error occurred, no output PDF file produced!
+ 99i,1n,117p,1274b,446s stack positions out of 10000i,1000n,20000p,200000b,200000s
+/Users/Trinity_College_Dublin/Dissertation_Summer2024/99_dissertation/Chenxi_dissertation.tex:110:  ==> Fatal error occurred, no output PDF file produced!
