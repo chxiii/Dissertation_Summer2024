@@ -21,15 +21,15 @@
 %   It will be used for the title page and for the embedded PDF information
 %----------------------------------------------------------------------------------------
 
-\newcommand{\thesistitle}{Entitlement Methods\\ \textendash\ An Example of the Great Famine in Ireland, 1845 \textendash\ 1851} % Your thesis title, this is used in the title and abstract
+\newcommand{\thesistitle}{Entitlement Methods \textendash\ \\An Example of the Great Famine in Ireland, 1845 \textendash\ 1851} % Your thesis title, this is used in the title and abstract
 \newcommand{\degree}{M.Sc. Applied Social Data Sciences} % Your degree name, this is used in the title page and abstract
 \newcommand{\typeofthesis}{Dissertation} % dissertation, Final Year Project, report, etc.
 \newcommand{\authorname}{Chenxi Li} % Your name, this is used in the title page and PDF stuff
 %% Do not put your Student ID in the document, as TCD will not publish
 %% documents that contain both your name and your Student ID.
-
+\newcommand{\authorid}{23330541}
 \newcommand{\keywords}{this, that, more} % Keywords for your thesis
-\newcommand{\school}{\href{https://chemistry.tcd.ie/}{School of Political}} % Your school's name and URL, this is used in the title page
+\newcommand{\school}{\href{https://www.tcd.ie/Political_Science/}{School of Political}} % Your school's name and URL, this is used in the title page
 
 %% Comment out the next line if you don't want a department to appear
 %\newcommand{\department}{\href{http://researchgroup.university.com}{Prof. Peter Dunne}} % Your research group's name and URL, this is used in the title page
@@ -53,7 +53,7 @@
 
 %% Document size
 % include showframe as an option if you want to see the boxes
-\usepackage[a4paper,top=2.56cm,bottom=2.56cm,left=2.56cm,right=2.56cm, head = 16pt]{geometry}
+\usepackage[a4paper, top=2.56cm,bottom=2.56cm,left=2.56cm,right=2.56cm, head = 16pt]{geometry}
 \setlength{\marginparwidth}{2cm}
 %% Useful packages
 \usepackage{amsmath}
@@ -111,23 +111,26 @@
 \pagenumbering{roman}
 \doublespacing
 
+\newpage
+
 \section*{Declaration}
 I hereby declare that this \typeofthesis\ is entirely my own work and that it has not been submitted as an exercise for a degree at this or any other university.
 
 I have read and I understand the plagiarism provisions in the General Regulations of the University Calendar for the current year, found at \url{http://www.tcd.ie/calendar}.
 
-I have also completed the Online Tutorial on avoiding plagiarism `Ready Steady Write', located at \url{http://tcd-ie.libguides.com/plagiarism/ready-steady-write}.
-\vspace{1cm}
+I have also completed the Online Tutorial on avoiding plagiarism 'Ready Steady Write', located at \url{http://tcd-ie.libguides.com/plagiarism/ready-steady-write}.
 
-Signed:~\rule{5cm}{0.3pt}\hfill Date:~\rule{5cm}{0.3pt}
+\vspace{.3cm}
+\rule{10cm}{.3pt}
 
-
-\section*{COVID Impact Statement}
-\lipsum[1] 
-
-Signed:~\rule{5cm}{0.3pt}\hfill Date:~\rule{5cm}{0.3pt}
-
-Signed:~\rule{5cm}{0.3pt}\hfill Date:~\rule{5cm}{0.3pt}
+\begin{flushleft}
+	\begin{minipage}{0.5\linewidth}
+		\textbf{Signature:} 
+		\raisebox{-0.3\height}{\includegraphics[width=0.6\linewidth]{signature.png}}
+	\end{minipage}
+\end{flushleft}
+\textbf{Date: } \today
+\vspace{.3cm}
 
 \newpage
 \chapter{Abstract}
