@@ -1,2 +1,3 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Abstract}{ii}{chapter*.1}%
+\contentsline {chapter}{Declaration}{i}{chapter*.1}%
+\contentsline {chapter}{Abstract}{iii}{chapter*.2}%
