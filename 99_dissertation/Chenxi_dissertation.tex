@@ -48,7 +48,7 @@
 \usepackage{ragged2e} %allows for text alignment preferences
 
 %% Bibliographical stuff
-\usepackage[round,sort,comma,numbers]{natbib}
+\usepackage[round,sort,comma]{natbib}
 
 %% Document size
 % include showframe as an option if you want to see the boxes
@@ -98,8 +98,9 @@
 %% Format Chapter headings appropriately
 \usepackage{titlesec}
 \definecolor{tcdblue}{cmyk}{0.94, 0.38, 0, 0.27}
-\newcommand{\hsp}{\hspace{20pt}}
-\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{tcdblue}{|}\hsp}{0pt}{\Huge\bfseries}
+\newcommand{\hsp}{\hspace{5pt}}
+\titleformat{\chapter}[hang]{\LARGE\bfseries}{\thechapter\hsp\textcolor{tcdblue}{|}\hsp}{0pt}{\LARGE\bfseries}
+\titlespacing{\chapter}{0pt}{10pt}{0pt}
 
 \title{\thesistitle}
 \author{\authorname}
