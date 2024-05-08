@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  8 MAY 2024 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  8 MAY 2024 23:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -601,8 +601,7 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
 \l__pdf_internal_box=\box65
-)
-No file Chenxi_dissertation.aux.
+) (./Chenxi_dissertation.aux)
 \openout1 = `Chenxi_dissertation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
@@ -623,6 +622,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
 LaTeX Font Info:    ... okay on input line 108.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 108.
 LaTeX Font Info:    ... okay on input line 108.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -677,6 +677,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package hyperref Info: Link coloring ON on input line 108.
+ (./Chenxi_dissertation.out) (./Chenxi_dissertation.out)
 \@outlinefile=\write4
 \openout4 = `Chenxi_dissertation.out'.
 
@@ -688,7 +689,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 108.
 
 (./title/title.tex
-<title/Trinity_RGB_transparent_main.png, id=7, 412.6617pt x 142.3719pt>
+<title/Trinity_RGB_transparent_main.png, id=15, 412.6617pt x 142.3719pt>
 File: title/Trinity_RGB_transparent_main.png Graphic file (type png)
 <use title/Trinity_RGB_transparent_main.png>
 Package pdftex.def Info: title/Trinity_RGB_transparent_main.png  used on input line 13.
@@ -731,7 +732,7 @@ Overfull \hbox (2.64035pt too wide) in paragraph at lines 120--121
 []\T1/ppl/m/n/12 I have also com-pleted the On-line Tu-to-rial on avoid-ing pla-gia-rism 'Ready Steady Write',
  []
 
-<signature.png, id=20, 302.12875pt x 84.315pt>
+<signature.png, id=28, 302.12875pt x 84.315pt>
 File: signature.png Graphic file (type png)
 <use signature.png>
 Package pdftex.def Info: signature.png  used on input line 128.
@@ -743,84 +744,49 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has b
 l.134 \newpage
                [1{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./signature.png>] [2] [3
 
-]
-No file Chenxi_dissertation.toc.
+] (./Chenxi_dissertation.toc)
 \tf@toc=\write5
 \openout5 = `Chenxi_dissertation.toc'.
 
-[4
+ [4
 
-]
-No file Chenxi_dissertation.lof.
+] (./Chenxi_dissertation.lof)
 \tf@lof=\write6
 \openout6 = `Chenxi_dissertation.lof'.
 
-[5
+ [5
 
-]
-No file Chenxi_dissertation.lot.
+] (./Chenxi_dissertation.lot)
 \tf@lot=\write7
 \openout7 = `Chenxi_dissertation.lot'.
 
-[6
+ [6
 
 ] (./introduction/introduction.tex
-
-./introduction/introduction.tex:1: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1 \documentclass
-                  [a4paper,oneside,12pt]{book}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./introduction/introduction.tex:3: LaTeX Error: Can be used only in preamble.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \begin{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+Chapter 1.
+)
+No file Chenxi_dissertation.bbl.
 [1
 
+
 ] (./Chenxi_dissertation.aux)
-
-Package rerunfilecheck Warning: File `Chenxi_dissertation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Chenxi_dissertation.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  1041C8247EF50C9598DCA10493A9DEAD;84.
- ) )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 3 (\begingroup)
-### bottom level
+Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
+(rerunfilecheck)             Checksum: 93AE669E5521904198EF20336C1148C4;187.
+ )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 25219 strings out of 476025
- 467998 string characters out of 5790018
+ 25241 strings out of 476025
+ 468410 string characters out of 5790018
  1854388 words of memory out of 5000000
- 45211 multiletter control sequences out of 15000+600000
- 538850 words of font info for 71 fonts, out of 8000000 for 9000
+ 45217 multiletter control sequences out of 15000+600000
+ 540403 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,117p,1274b,605s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on Chenxi_dissertation.pdf (8 pages, 143380 bytes).
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on Chenxi_dissertation.pdf (8 pages, 158600 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 92 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
+ 13 named destinations out of 1000 (max. 500000)
+ 39 words of extra memory for PDF output out of 10000 (max. 10000000)
 
