@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  9 MAY 2024 11:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  9 MAY 2024 14:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -700,7 +700,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 110.
 
 (./title/title.tex
-<title/Trinity_RGB_transparent_main.png, id=15, 412.6617pt x 142.3719pt>
+<title/Trinity_RGB_transparent_main.png, id=19, 412.6617pt x 142.3719pt>
 File: title/Trinity_RGB_transparent_main.png Graphic file (type png)
 <use title/Trinity_RGB_transparent_main.png>
 Package pdftex.def Info: title/Trinity_RGB_transparent_main.png  used on input line 13.
@@ -743,7 +743,7 @@ Overfull \hbox (2.64035pt too wide) in paragraph at lines 122--123
 []\T1/ppl/m/n/12 I have also com-pleted the On-line Tu-to-rial on avoid-ing pla-gia-rism 'Ready Steady Write',
  []
 
-<signature.png, id=28, 302.12875pt x 84.315pt>
+<signature.png, id=32, 302.12875pt x 84.315pt>
 File: signature.png Graphic file (type png)
 <use signature.png>
 Package pdftex.def Info: signature.png  used on input line 130.
@@ -775,21 +775,25 @@ l.136 \newpage
 
 ] (./introduction/introduction.tex
 Chapter 1.
-) (./Chenxi_dissertation.bbl [1
+) (./literature/literature.tex [1
 
 
-]) [2
+]
+Chapter 2.
+) (./Chenxi_dissertation.bbl [2
+
+]) [3
 
 ] (./Chenxi_dissertation.aux)
 Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 93AE669E5521904198EF20336C1148C4;187.
+(rerunfilecheck)             Checksum: AD4902F881641E46B74DEAC119C77B44;318.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 25418 strings out of 476025
- 471629 string characters out of 5790018
+ 25427 strings out of 476025
+ 471790 string characters out of 5790018
  1854388 words of memory out of 5000000
- 45378 multiletter control sequences out of 15000+600000
+ 45381 multiletter control sequences out of 15000+600000
  551500 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,11n,117p,1274b,605s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -800,10 +804,10 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist,
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist, replaced by a fixed one
 
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (9 pages, 163179 bytes).
+Output written on Chenxi_dissertation.pdf (10 pages, 164188 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 19 named destinations out of 1000 (max. 500000)
- 39 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
+ 47 words of extra memory for PDF output out of 10000 (max. 10000000)
 
