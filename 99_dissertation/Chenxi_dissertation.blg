@@ -3,44 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Chenxi_dissertation.aux
 The style file: agsm.bst
 Database file #1: reference.bib
-You've used 1 entry,
+You've used 2 entries,
             2909 wiz_defined-function locations,
-            644 strings with 4874 characters,
-and the built_in function-call counts, 3428 in all, are:
-= -- 549
-> -- 47
+            651 strings with 5007 characters,
+and the built_in function-call counts, 5458 in all, are:
+= -- 852
+> -- 71
 < -- 0
-+ -- 258
-- -- 14
-* -- 284
-:= -- 716
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 13
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 16
-empty$ -- 30
-format.name$ -- 20
-if$ -- 611
++ -- 380
+- -- 21
+* -- 430
+:= -- 1147
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 27
+chr.to.int$ -- 2
+cite$ -- 2
+duplicate$ -- 41
+empty$ -- 76
+format.name$ -- 29
+if$ -- 984
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 2
-newline$ -- 6
-num.names$ -- 10
-pop$ -- 9
+missing$ -- 3
+newline$ -- 9
+num.names$ -- 20
+pop$ -- 16
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 30
 quote$ -- 0
-skip$ -- 10
+skip$ -- 33
 stack$ -- 0
-substring$ -- 756
-swap$ -- 1
-text.length$ -- 14
+substring$ -- 1158
+swap$ -- 10
+text.length$ -- 28
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2
+type$ -- 6
 warning$ -- 0
-while$ -- 21
+while$ -- 45
 width$ -- 0
-write$ -- 14
+write$ -- 28
