@@ -103,7 +103,12 @@
 \usepackage{titlesec}
 \definecolor{tcdblue}{cmyk}{0.94, 0.38, 0, 0.27}
 \newcommand{\hsp}{\hspace{5pt}}
-\titleformat{\chapter}[hang]{\LARGE\bfseries}{\thechapter\hsp\textcolor{tcdblue}{|}\hsp}{0pt}{\LARGE\bfseries}
+
+\titleformat{\chapter}[hang]
+	{\LARGE\bfseries\itshape}
+	{Chapter \thechapter\hsp\textcolor{tcdblue}{|}\hsp}
+	{0pt}{\LARGE\bfseries\itshape}
+
 \titlespacing{\chapter}{0pt}{0pt}{10pt}
 
 
