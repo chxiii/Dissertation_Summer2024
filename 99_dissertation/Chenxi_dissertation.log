@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  18 MAY 2024 21:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  19 MAY 2024 09:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -474,6 +474,9 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count315
 \@lastruleclass=\count316
 \@thisrulewidth=\dimen291
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box64
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2022/11/09 v4.1 Extensive control of page headers and footers
 \f@nch@headwidth=\skip72
@@ -592,7 +595,7 @@ Package: mathpazo 2020/03/25 PSNFSS-v9.3 Palatino w/ Pazo Math (D.Puga, WaS)
 \symupright=\mathgroup4
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2021/07/05 v2.14 Sectioning titles
-\ttl@box=\box64
+\ttl@box=\box65
 \beforetitleunit=\skip82
 \aftertitleunit=\skip83
 \ttl@plus=\dimen296
@@ -604,34 +607,34 @@ Package: titlesec 2021/07/05 v2.14 Sectioning titles
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 119.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 120.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count328
-\l__pdf_internal_box=\box65
+\l__pdf_internal_box=\box66
 ) (./Chenxi_dissertation.aux)
 \openout1 = `Chenxi_dissertation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 119.
-LaTeX Font Info:    ... okay on input line 119.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
+LaTeX Font Info:    ... okay on input line 120.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -671,7 +674,7 @@ LaTeX Font Info:    ... okay on input line 119.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count329
 \scratchdimen=\dimen301
-\scratchbox=\box66
+\scratchbox=\box67
 \nofMPsegments=\count330
 \nofMParguments=\count331
 \everyMPshowfont=\toks43
@@ -688,8 +691,9 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
+Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 119.
+Package hyperref Info: Link coloring ON on input line 120.
  (./Chenxi_dissertation.out) (./Chenxi_dissertation.out)
 \@outlinefile=\write4
 \openout4 = `Chenxi_dissertation.out'.
@@ -697,7 +701,7 @@ Package hyperref Info: Link coloring ON on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\\' on input line 119.
+(hyperref)                removing `\\' on input line 120.
 
 (./title/title.tex
 <title/Trinity_RGB_transparent_main.png, id=35, 412.6617pt x 142.3719pt>
@@ -710,40 +714,40 @@ Package pdftex.def Info: title/Trinity_RGB_transparent_main.png  used on input l
 
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./title/Trinity_RGB_transparent_main.png>])
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 130.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 131.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2022/07/10 v2.5l Standard LaTeX font definitions
 )
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 130.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 131.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 130.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 131.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 130.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 131.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 130.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 131.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 130.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 131.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 <signature.png, id=48, 302.12875pt x 84.315pt>
 File: signature.png Graphic file (type png)
 <use signature.png>
-Package pdftex.def Info: signature.png  used on input line 141.
+Package pdftex.def Info: signature.png  used on input line 142.
 (pdftex.def)             Requested size: 135.55035pt x 37.82817pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.147 \newpage
+l.148 \newpage
                [1{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <./signature.png>] [2] [3
 
 ] (./Chenxi_dissertation.toc)
@@ -781,26 +785,26 @@ Chapter 3.
 Chapter 4.
 ) (./Chenxi_dissertation.bbl [6
 
-]) [7
+] [7
 
-] (./Chenxi_dissertation.aux)
+]) [8] (./Chenxi_dissertation.aux)
 Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: A1F2F58A63FBF9C0928956308E2F310D;796.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 25506 strings out of 476025
- 473167 string characters out of 5790018
+ 25579 strings out of 476025
+ 474705 string characters out of 5790018
  1861388 words of memory out of 5000000
- 45426 multiletter control sequences out of 15000+600000
+ 45493 multiletter control sequences out of 15000+600000
  552487 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,11n,117p,1274b,605s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,117p,1274b,644s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (14 pages, 195402 bytes).
+Output written on Chenxi_dissertation.pdf (15 pages, 196595 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 187 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
+ 228 PDF objects out of 1000 (max. 8388607)
+ 195 compressed objects within 2 object streams
+ 49 named destinations out of 1000 (max. 500000)
  79 words of extra memory for PDF output out of 10000 (max. 10000000)
 
