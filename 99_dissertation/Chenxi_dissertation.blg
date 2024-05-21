@@ -4,45 +4,46 @@ The top-level auxiliary file: Chenxi_dissertation.aux
 The style file: agsm.bst
 Database file #1: reference.bib
 Warning--there's a number but no volume in madden2016aids
-You've used 16 entries,
+Warning--there's a number but no volume in o1983malthus
+You've used 25 entries,
             2909 wiz_defined-function locations,
-            745 strings with 6933 characters,
-and the built_in function-call counts, 34346 in all, are:
-= -- 5261
-> -- 407
+            799 strings with 7977 characters,
+and the built_in function-call counts, 53037 in all, are:
+= -- 8112
+> -- 623
 < -- 0
-+ -- 2259
-- -- 119
-* -- 2687
-:= -- 7433
-add.period$ -- 16
-call.type$ -- 16
-change.case$ -- 221
-chr.to.int$ -- 16
-cite$ -- 17
-duplicate$ -- 278
-empty$ -- 551
-format.name$ -- 155
-if$ -- 6080
++ -- 3469
+- -- 182
+* -- 4127
+:= -- 11487
+add.period$ -- 25
+call.type$ -- 25
+change.case$ -- 346
+chr.to.int$ -- 25
+cite$ -- 27
+duplicate$ -- 443
+empty$ -- 870
+format.name$ -- 236
+if$ -- 9401
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 19
-newline$ -- 51
-num.names$ -- 160
-pop$ -- 80
+missing$ -- 29
+newline$ -- 78
+num.names$ -- 250
+pop$ -- 129
 preamble$ -- 1
-purify$ -- 240
+purify$ -- 375
 quote$ -- 0
-skip$ -- 226
+skip$ -- 360
 stack$ -- 0
-substring$ -- 7149
-swap$ -- 58
-text.length$ -- 224
+substring$ -- 10999
+swap$ -- 95
+text.length$ -- 350
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 58
-warning$ -- 1
-while$ -- 362
+type$ -- 92
+warning$ -- 2
+while$ -- 566
 width$ -- 0
-write$ -- 196
-(There was 1 warning)
+write$ -- 308
+(There were 2 warnings)
