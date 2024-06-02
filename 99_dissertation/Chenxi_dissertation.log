@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  2 JUN 2024 15:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  2 JUN 2024 15:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -704,7 +704,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 120.
 
 (./title/title.tex
-<title/Trinity_RGB_transparent_main.png, id=27, 412.6617pt x 142.3719pt>
+<title/Trinity_RGB_transparent_main.png, id=43, 412.6617pt x 142.3719pt>
 File: title/Trinity_RGB_transparent_main.png Graphic file (type png)
 <use title/Trinity_RGB_transparent_main.png>
 Package pdftex.def Info: title/Trinity_RGB_transparent_main.png  used on input line 13.
@@ -738,7 +738,7 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 1
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-<signature.png, id=40, 302.12875pt x 84.315pt>
+<signature.png, id=56, 302.12875pt x 84.315pt>
 File: signature.png Graphic file (type png)
 <use signature.png>
 Package pdftex.def Info: signature.png  used on input line 142.
@@ -788,29 +788,23 @@ Chapter 4.
 ] [9
 
 ] [10]) [11] (./Chenxi_dissertation.aux)
-
-Package rerunfilecheck Warning: File `Chenxi_dissertation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Chenxi_dissertation.out':
-(rerunfilecheck)             Before: 177E26AF2416EEF777389C1B83699968;459
-(rerunfilecheck)             After:  01184A16A38211F81F04C1B924DABF4A;925.
+Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
+(rerunfilecheck)             Checksum: 227EEABB73A47B12A8CE22B7055EB992;1052.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 25643 strings out of 476025
- 476134 string characters out of 5790018
+ 25648 strings out of 476025
+ 476202 string characters out of 5790018
  1866388 words of memory out of 5000000
- 45538 multiletter control sequences out of 15000+600000
+ 45542 multiletter control sequences out of 15000+600000
  554867 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,117p,1274b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (18 pages, 204155 bytes).
+Output written on Chenxi_dissertation.pdf (18 pages, 205060 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 247 compressed objects within 3 object streams
- 67 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 95 words of extra memory for PDF output out of 10000 (max. 10000000)
 
