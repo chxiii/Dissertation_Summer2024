@@ -27,7 +27,7 @@ pkgTest <- function(pkg) {
 # ex: stringr
 # lapply(c("stringr"), pkgTest)
 
-lapply(c("sf", "ggplot2", "rnaturalearth", "rnaturalearthdata"), pkgTest)
+lapply(c("sf", "ggplot2", "rnaturalearth", "rnaturalearthdata", "dplyr"), pkgTest)
 
 # set wd for current folder
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
@@ -35,19 +35,21 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 # 获取世界地图数据
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
-# 提取西欧国家的名称列表
-west_europe_countries <- c("United Kingdom", "Germany", "France",
-                           "Belgium", "Ireland")
+# 提取爱尔兰的地理数据
+ireland <- world %>% filter(name == "Ireland")
 
-# 过滤出西欧国家的数据
-west_europe <- world[world$name %in% west_europe_countries, ]
+# 示例人口数据（你需要用真实数据替换）
+population_data <- data.frame(
+  county = c("Dublin", "Wicklow", "Killdare"), # 替换为真实的郡名
+  population = c(100000, 200000, 150000)      # 替换为真实的人口数据
+)
 
-# 提取比利时的几何数据
-belgium <- world[world$name == "Belgium", ]
+# 合并地理数据和人口数据
+ireland_data <- left_join(ireland, population_data, by = c("name" = "county"))
 
-# 使用ggplot2绘制西欧地图，并手动填充比利时
-ggplot(data = west_europe) +
-  geom_sf(fill = "white", color = "black") + # 绘制西欧地图
-  geom_sf(data = belgium, fill = NA, color = "black") + # 绘制比利时边界
+# 绘制地图并根据人口上色
+ggplot(data = ireland_data) +
+  geom_sf(aes(fill = population)) + # 根据人口填充颜色
+  scale_fill_viridis_c(option = "viridis", na.value = "white") + # 使用Viridis色标
   theme_minimal() +
-  labs(title = "Map of Western Europe with Belgium Filled with Stripes")
+  labs(title = "Population by County in Ireland", fill = "Population")
