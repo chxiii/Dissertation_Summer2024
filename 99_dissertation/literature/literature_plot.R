@@ -28,4 +28,3 @@ pkgTest <- function(pkg) {
 # lapply(c("stringr"), pkgTest)
 
 lapply(c("ggplot2", "dplyr"), pkgTest)
-
