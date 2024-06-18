@@ -35,34 +35,35 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 df <- read_excel("../01_data/Irish_19th_century_data.xlsx", sheet = 1)
 
 food_struct <- data.frame(
-  Year = df$Year,
+  Year = df$year,
   wheat_yield = df$wheat_yield,
-  oat_yield = df$oats_yield,
-  barley_yield = df$barley_yield
-  potato_yield = 
+  oat_yield = df$oat_yield,
+  barley_yield = df$barley_yield,
+  potato_yield = df$potato_yield
 )
 
 year_filter<- df %>%
-  filter((Year >= 1821 & Year <= 1825) |
-           (Year >= 1845 & Year <= 1849) |
-           (Year >= 1896 & Year <= 1900))
+  filter((year >= 1821 & year <= 1825) |
+           (year >= 1845 & year <= 1849) |
+           (year >= 1896 & year <= 1900))
 
-year_filter$Year <- as.character(year_filter$Year)
+year_filter$year <- as.character(year_filter$year)
 
 placeholder_years <- data.frame(
-  Year = c("1825-1844", "1849-1895"),
+  year = c("1825-1844", "1849-1895"),
   wheat_yield = c(NA, NA),
-  oats_yield = c(NA, NA),
-  barley_yield = c(NA, NA)
+  oat_yield = c(NA, NA),
+  barley_yield = c(NA, NA),
+  potato_yield = c(NA, NA)
 )
 
 # 合并数据和空档
 combined_df <- bind_rows(year_filter, placeholder_years) %>%
-  arrange(Year)
+  arrange(year)
 
 # 转换数据格式
 long_df <- combined_df %>%
-  pivot_longer(cols = c(wheat_yield, oats_yield, barley_yield),
+  pivot_longer(cols = c(wheat_yield, oat_yield, barley_yield, potato_yield),
                names_to = "Crop",
                values_to = "Yield")
 
