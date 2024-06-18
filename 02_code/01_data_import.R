@@ -27,47 +27,56 @@ pkgTest <- function(pkg) {
 # ex: stringr
 # lapply(c("stringr"), pkgTest)
 
-lapply(c("readxl", "ggplot2", "dplyr", "tidyr", "magrittr"), pkgTest)
+lapply(c("readxl", "ggplot2", "dplyr", "tidyr", "ggbreak"), pkgTest)
 
 # set dictionary
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 df <- read_excel("../01_data/Irish_19th_century_data.xlsx", sheet = 1)
 
-
-
-set.seed(123)  # for reproducibility
-df <- data.frame(
-  Year = 1821:1900,
-  Variable1 = runif(80, 1, 10),
-  Variable2 = runif(80, 1, 10),
-  Variable3 = runif(80, 1, 10)
+food_struct <- data.frame(
+  Year = df$Year,
+  wheat_yield = df$wheat_yield,
+  oat_yield = df$oats_yield,
+  barley_yield = df$barley_yield
+  potato_yield = 
 )
 
-# 过滤数据
-filtered_df <- df %>%
+year_filter<- df %>%
   filter((Year >= 1821 & Year <= 1825) |
            (Year >= 1845 & Year <= 1849) |
            (Year >= 1896 & Year <= 1900))
 
-# 检查过滤后的数据
-print(filtered_df)
+year_filter$Year <- as.character(year_filter$Year)
+
+placeholder_years <- data.frame(
+  Year = c("1825-1844", "1849-1895"),
+  wheat_yield = c(NA, NA),
+  oats_yield = c(NA, NA),
+  barley_yield = c(NA, NA)
+)
+
+# 合并数据和空档
+combined_df <- bind_rows(year_filter, placeholder_years) %>%
+  arrange(Year)
 
 # 转换数据格式
-long_df <- filtered_df %>%
-  pivot_longer(cols = starts_with("Variable"),
-               names_to = "Variable",
-               values_to = "Value")
+long_df <- combined_df %>%
+  pivot_longer(cols = c(wheat_yield, oats_yield, barley_yield),
+               names_to = "Crop",
+               values_to = "Yield")
 
-# 检查转换后的数据
-print(long_df)
-
-# 绘制堆积柱状图
-ggplot(long_df, aes(x = factor(Year), y = Value, fill = Variable)) +
-  geom_bar(stat = "identity", position = "stack") +
+# 绘制百分比堆积图
+ggplot(long_df, aes(x = factor(Year), y = Yield, fill = Crop)) +
+  geom_bar(stat = "identity", position = "fill", na.rm = TRUE) +
+  scale_y_continuous(labels = scales::percent) +
   labs(
-    title = "Stacked Bar Chart for Selected Years",
+    title = "Percentage Stacked Bar Chart with Year Gaps",
     x = "Year",
-    y = "Value"
+    y = "Percentage"
   ) +
-  theme_minimal()
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+
