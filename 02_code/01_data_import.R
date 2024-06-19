@@ -120,7 +120,7 @@ food_structure <- food_structure +
 # 显示图形
 print(food_structure)
 
-ggsave("food_structure.pdf", plot = food_structure, dpi = 300, width=7, height=5)
+ggsave("../03_outputs/food_structure.pdf", plot = food_structure, dpi = 300, width=7, height=5)
   #scale_fill_manual(values = c("wheat_yield" = "#D8DEE0", "oat_yield" = "#7E9AC9", 
   #                             "barley_yield" = "#B68F15", "potato_yield" = "#293D36"))
 
