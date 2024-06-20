@@ -42,6 +42,9 @@ palette <- c("#EACE22", "#D9A615", "#8E6124", "#343660")
 # Cloudy Wheat Field - Van Gogh
 palette <- c("#CDDCDA", "#B2CCB3", "#769692", "#4C6AA8")
 
+# The Starry Night - Van Gogh
+palette <- c("#FBF1D8", "#FCE468", "#5F93DE", "#323A7E")
+
 
 
 
@@ -109,7 +112,9 @@ food_structure <- ggplot() +
   scale_fill_manual(values = c("wheat_yield" = "#CDDCDA", "oat_yield" = "#B2CCB3", 
                                "barley_yield" = "#769692", "potato_yield" = "#4C6AA8")) +
   scale_fill_manual(values = c("wheat_yield" = "#D1BDC1", "oat_yield" = "#DAAE8D", 
-                             "barley_yield" = "#CE7C56", "potato_yield" = "#15564E"))
+                             "barley_yield" = "#CE7C56", "potato_yield" = "#15564E")) +
+  scale_fill_manual(values = c("wheat_yield" = "#FBF1D8", "oat_yield" = "#FCE468", 
+                               "barley_yield" = "#5F93DE", "potato_yield" = "#323A7E"))
 # 添加折线图
 food_structure <- food_structure +
   geom_line(data = combined_df, aes(x = factor(year), y = total_yield / max(total_yield, na.rm = TRUE), group=1), 
