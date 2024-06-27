@@ -2,16 +2,16 @@ source("main.R")
 
 price_line <- ggplot() +
   
-  geom_line(data = df, aes(x = year, y = oat_price, color = "Oat")) +
-  geom_line(data = df, aes(x = year, y = potato_price, color = "Potato")) +
-  geom_line(data = df, aes(x = year, y = wheat_price, color = "Wheat")) +
-  geom_line(data = df, aes(x = year, y = barley_price, color = "Barley")) +
+  geom_line(data = df, aes(x = year, y = oat_price, color = "Oat"), size = .7) +
+  geom_line(data = df, aes(x = year, y = potato_price, color = "Potato"), size = .7) +
+  geom_line(data = df, aes(x = year, y = wheat_price, color = "Wheat"), size = .7) +
+  geom_line(data = df, aes(x = year, y = barley_price, color = "Barley"), size = .7) +
   
   labs(title = "Price Trends Over Time", x = "Year", y = "Price") +
   
   scale_color_manual(
     name = "Crops",
-    values = c("#EBD1B7", "#A19DB3", "#535786", "#7A4A42")
+    values = c("#EEDAE5", "#FBDD82", "#C94E2F", "#6D90ED")
   ) +
   
   theme_bw() +
