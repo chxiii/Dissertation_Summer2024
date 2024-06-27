@@ -63,7 +63,7 @@ food_struct <- data.frame(
 
 year_filter<- df %>%
   filter((year >= 1821 & year <= 1825) |
-           (year >= 1845 & year <= 1849) |
+           (year >= 1845 & year <= 1851) |
            (year >= 1896 & year <= 1900))
 
 year_filter <- year_filter %>%
@@ -72,7 +72,7 @@ year_filter <- year_filter %>%
 year_filter$year <- as.character(year_filter$year)
 
 placeholder_years <- data.frame(
-  year = c("1826-1844", "1850-1895"),
+  year = c("1826-1844", "1852-1895"),
   wheat_yield = c(NA, NA),
   oat_yield = c(NA, NA),
   barley_yield = c(NA, NA),
