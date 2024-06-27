@@ -10,6 +10,6 @@ ggplot() +
     name = "Variable",
     #values = c("Oat Price" = "#C4B3C0", "Potato Price" = "#86391E", 
     #           "Wheat Price" = "#798A35", "Barley Price" = "#516259") +
-    values = palette
+    values = c("#C4B3C0", "#86391E", "#798A35", "#516259")
   ) +
   theme_bw()
