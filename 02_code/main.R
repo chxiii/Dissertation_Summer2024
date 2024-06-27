@@ -57,6 +57,9 @@ palette <- c("#F3EDCA", "#C8D3F9", "#A8AE5E", "#0A371C")
 # Low Tide at Pourville, near Dieppe- Monet
 palette <- c("#F4DF97", "#B49971", "#6C9BAC", "#196397")
 
+# 
+palette <- c("#EBD1B7", "#A19DB3", "#535786", "#7A4A42")
+
 # set dictionary
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
