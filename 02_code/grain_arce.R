@@ -53,7 +53,8 @@ food_structure <- ggplot() +
     y = "Percentage"
   ) +
   
-  theme_bw() +
+  theme_bw()
+  
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
@@ -64,7 +65,10 @@ food_structure <- ggplot() +
   scale_fill_manual(values = c("wheat_acre" = "#D1BDC1", 
                                "oat_acre" = "#DAAE8D", 
                                "barley_acre" = "#CE7C56", 
-                               "potato_acre" = "#15564E"))
+                               "potato_acre" = "#15564E")) +
+  
+  theme_bw()
+
 # add a line plot
 food_structure <- food_structure +
   

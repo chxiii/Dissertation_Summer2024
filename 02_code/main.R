@@ -51,6 +51,12 @@ palette <- c("#EFE5BF", "#8DACC1", "#A5AF3F", "#284020")
 # - Monet
 palette <- c("#C4B3C0", "#86391E", "#798A35", "#516259")
 
+# Apple tree - Monet
+palette <- c("#F3EDCA", "#C8D3F9", "#A8AE5E", "#0A371C")
+
+# Low Tide at Pourville, near Dieppe- Monet
+palette <- c("#F4DF97", "#B49971", "#6C9BAC", "#196397")
+
 # set dictionary
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
