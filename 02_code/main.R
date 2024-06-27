@@ -45,6 +45,9 @@ palette <- c("#CDDCDA", "#B2CCB3", "#769692", "#4C6AA8")
 # The Starry Night - Van Gogh
 palette <- c("#FBF1D8", "#FCE468", "#5F93DE", "#323A7E")
 
+# Woman with a Parasol - Monet
+palette = c("#EFE5BF", "#8DACC1", "#A5AF3F", "#284020")
+
 # set dictionary
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
