@@ -27,7 +27,11 @@ pkgTest <- function(pkg) {
 # ex: stringr
 # lapply(c("stringr"), pkgTest)
 
-lapply(c("readxl", "ggplot2", "dplyr", "tidyr", "ggbreak"), pkgTest)
+lapply(c("readxl", 
+         "ggplot2", "ggforce", "ggthemes", "patchwork",
+         "dplyr", 
+         "tidyr", 
+         "ggbreak"), pkgTest)
 
 #####################
 # Here is all the palette
