@@ -2,16 +2,21 @@ source("main.R")
 
 price_line <- ggplot() +
   
-  geom_line(data = df, aes(x = year, y = oat_price, color = "Oat"), size = .5) +
-  geom_line(data = df, aes(x = year, y = potato_price, color = "Potato"), size = .5) +
-  geom_line(data = df, aes(x = year, y = wheat_price, color = "Wheat"), size = .5) +
-  geom_line(data = df, aes(x = year, y = barley_price, color = "Barley"), size = .5) +
+  geom_line(data = df, aes(x = year, y = oat_price, color = "Oat", linetype = "Oat"), size = .5) +
+  geom_line(data = df, aes(x = year, y = potato_price, color = "Potato", linetype = "Potato"), size = .55) +
+  geom_line(data = df, aes(x = year, y = wheat_price, color = "Wheat", linetype = "Wheat"), size = .5) +
+  geom_line(data = df, aes(x = year, y = barley_price, color = "Barley", linetype = "Barley"), size = .5) +
   
   labs(title = "Price Trends Over Time", x = "Year", y = "Price") +
   
   scale_color_manual(
     name = "Crops",
-    values = c("#C4B3C0", "#86391E", "#798A35", "#516259")
+    values = c("#443D6A", "#6C8EB8", "#9E7585", "#DCC39C")
+  ) +
+  
+  scale_linetype_manual(
+    name = "Crops",
+    values = c("twodash", "dotdash", "longdash", "solid")
   ) +
   
   scale_x_continuous(breaks = seq(1820, 1900, by = 5)) +

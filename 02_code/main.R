@@ -55,6 +55,9 @@ palette <- c("#EFE5BF", "#8DACC1", "#A5AF3F", "#284020")
 # - Monet
 palette <- c("#C4B3C0", "#86391E", "#798A35", "#516259")
 
+# Lottes - Monet
+palette <- c("#443D6A", "#6C8EB8", "#9E7585", "#DCC39C")
+
 # Apple tree - Monet
 palette <- c("#F3EDCA", "#C8D3F9", "#A8AE5E", "#0A371C")
 
