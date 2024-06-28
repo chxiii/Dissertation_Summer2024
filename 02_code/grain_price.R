@@ -28,15 +28,15 @@ price_line <- ggplot() +
         panel.grid.minor = element_blank(),
         legend.position = "bottom")
 
-price_line <- price_line + facet_zoom(xlim = c(1845, 1851), 
-                                      y = TRUE, zoom.size = 0.25, 
+price_line <- price_line + facet_zoom(xlim = c(1840, 1851), 
+                                      ylim = c(5, 22), zoom.size = 0.25, 
                                       split = FALSE, horizontal = TRUE) +
   
-  theme(zoom.y = element_rect(fill = NA, color = NA))
+  theme(zoom.y = element_rect(fill = NA, color = "grey", linewidth = 0.3),
+        zoom.x = element_rect(fill = "grey", color = "grey", linewidth = 0.3))
 
 print(price_line)
 
 ggsave("../03_outputs/grain_price.pdf", 
        plot = price_line, dpi = 300, width=7, height=5)
   
- # geom_boxplot(df, aes(x = ))
