@@ -19,7 +19,7 @@ year_filter <- year_filter %>%
 year_filter$year <- as.character(year_filter$year)
 
 placeholder_years <- data.frame(
-  year = c("1826-1844", "1852-1895"),
+  year = c("1826-1844", "1853-1895"),
   wheat_acre = c(NA, NA),
   oat_acre = c(NA, NA),
   barley_acre = c(NA, NA),
@@ -52,6 +52,8 @@ food_structure <- ggplot() +
     x = NULL,
     y = "Percentage"
   ) +
+  
+  annotate("text", x = "1848", y = -0.05, label = "|-------- Great Famine --------|", fontface = "italic", size = 3) +
   
   theme_classic() +
   
