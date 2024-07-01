@@ -53,7 +53,7 @@ food_structure <- ggplot() +
     y = "Percentage"
   ) +
   
-  annotate("text", x = "1848", y = -0.05, label = "|-------- Great Famine --------|", fontface = "italic", size = 3) +
+  annotate("text", x = "1848", y = -0.05, label = "|-------- Great Famine --------|", size = 3) +
   
   theme_classic() +
   
