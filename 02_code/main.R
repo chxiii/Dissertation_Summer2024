@@ -28,12 +28,14 @@ pkgTest <- function(pkg) {
 # lapply(c("stringr"), pkgTest)
 
 lapply(c("readxl", 
-         "ggplot2", "ggforce", "ggthemes", "patchwork",
+         "ggplot2", "ggforce", "ggthemes", "patchwork", "ggpubr",
          "dplyr", 
          "tidyr", 
          "ggbreak",
-         "sf" # for shp
+         "sf", "digest", "osmdata" # for shp
          ), pkgTest)
+
+options(scipen = 200)
 
 #####################
 # Here is all the palette
