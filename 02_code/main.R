@@ -31,7 +31,9 @@ lapply(c("readxl",
          "ggplot2", "ggforce", "ggthemes", "patchwork",
          "dplyr", 
          "tidyr", 
-         "ggbreak"), pkgTest)
+         "ggbreak",
+         "sf" # for shp
+         ), pkgTest)
 
 #####################
 # Here is all the palette

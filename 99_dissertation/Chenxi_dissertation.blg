@@ -7,15 +7,15 @@ Warning--there's a number but no volume in madden2016aids
 Warning--there's a number but no volume in o1983malthus
 You've used 30 entries,
             2909 wiz_defined-function locations,
-            823 strings with 8694 characters,
-and the built_in function-call counts, 65474 in all, are:
-= -- 10091
+            823 strings with 8687 characters,
+and the built_in function-call counts, 64396 in all, are:
+= -- 9895
 > -- 743
 < -- 0
-+ -- 4365
++ -- 4267
 - -- 217
-* -- 5108
-:= -- 14139
+* -- 5010
+:= -- 13943
 add.period$ -- 30
 call.type$ -- 30
 change.case$ -- 415
@@ -24,7 +24,7 @@ cite$ -- 32
 duplicate$ -- 512
 empty$ -- 1011
 format.name$ -- 281
-if$ -- 11595
+if$ -- 11399
 int.to.chr$ -- 5
 int.to.str$ -- 0
 missing$ -- 33
@@ -36,7 +36,7 @@ purify$ -- 450
 quote$ -- 0
 skip$ -- 417
 stack$ -- 0
-substring$ -- 13738
+substring$ -- 13444
 swap$ -- 103
 text.length$ -- 420
 text.prefix$ -- 0
