@@ -29,6 +29,7 @@ pkgTest <- function(pkg) {
 
 lapply(c("readxl", 
          "ggplot2", "ggforce", "ggthemes", "patchwork", "ggpubr",
+         "rnaturalearth", "rnaturalearthdata",
          "dplyr", 
          "tidyr", 
          "ggbreak",
