@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  6 JUL 2024 11:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  6 JUL 2024 14:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -777,61 +777,58 @@ Chapter 1.
 Chapter 2.
 [5
 
-]
-<../03_outputs/map1841_1851.pdf, id=249, 505.89pt x 361.35pt>
+] [6]
+<../03_outputs/map1841_1851.pdf, id=260, 505.89pt x 361.35pt>
 File: ../03_outputs/map1841_1851.pdf Graphic file (type pdf)
 <use ../03_outputs/map1841_1851.pdf>
-Package pdftex.def Info: ../03_outputs/map1841_1851.pdf  used on input line 27.
+Package pdftex.def Info: ../03_outputs/map1841_1851.pdf  used on input line 29.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../03_outputs/food_structure.pdf, id=250, 505.89pt x 361.35pt>
+<../03_outputs/food_structure.pdf, id=261, 505.89pt x 361.35pt>
 File: ../03_outputs/food_structure.pdf Graphic file (type pdf)
 <use ../03_outputs/food_structure.pdf>
-Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 38.
+Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 40.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
-[6]
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../03_outputs/grain_price.pdf, id=260, 505.89pt x 361.35pt>
+<../03_outputs/grain_price.pdf, id=262, 505.89pt x 361.35pt>
 File: ../03_outputs/grain_price.pdf Graphic file (type pdf)
 <use ../03_outputs/grain_price.pdf>
-Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 50.
+Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 52.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
+[7 <../03_outputs/map1841_1851.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <../03_outputs/map1841_1851.pdf>] [8 <../03_outputs/food_structure.pdf>]) (./data/data.tex [9 <../03_outputs/grain_price.pdf>]
+[8 <../03_outputs/food_structure.pdf>] [9 <../03_outputs/grain_price.pdf>]) (./data/data.tex [10]
 Chapter 3.
-) (./methods/methods.tex [10
+) (./methods/methods.tex [11
 
 ]
 Chapter 4.
-) (./Chenxi_dissertation.bbl [11
+) (./Chenxi_dissertation.bbl [12
 
-] [12
+] [13
 
-] [13]) [14] (./Chenxi_dissertation.aux)
+] [14]) [15] (./Chenxi_dissertation.aux)
 Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: D7F95983C7C85EAF2B8F960599042E35;1098.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 25706 strings out of 476025
- 477730 string characters out of 5790018
+ 25711 strings out of 476025
+ 477830 string characters out of 5790018
  1866388 words of memory out of 5000000
- 45583 multiletter control sequences out of 15000+600000
+ 45586 multiletter control sequences out of 15000+600000
  554867 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,117p,1363b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,117p,1335b,670s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (21 pages, 1262882 bytes).
+Output written on Chenxi_dissertation.pdf (22 pages, 1263950 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 323 compressed objects within 4 object streams
- 81 named destinations out of 1000 (max. 500000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 329 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
