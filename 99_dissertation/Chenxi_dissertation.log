@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  6 JUL 2024 16:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  6 JUL 2024 16:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -704,7 +704,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 120.
 
 (./title/title.tex
-<title/Trinity_RGB_transparent_main.png, id=43, 412.6617pt x 142.3719pt>
+<title/Trinity_RGB_transparent_main.png, id=47, 412.6617pt x 142.3719pt>
 File: title/Trinity_RGB_transparent_main.png Graphic file (type png)
 <use title/Trinity_RGB_transparent_main.png>
 Package pdftex.def Info: title/Trinity_RGB_transparent_main.png  used on input line 13.
@@ -738,7 +738,7 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 1
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-<signature.png, id=56, 302.12875pt x 84.315pt>
+<signature.png, id=60, 302.12875pt x 84.315pt>
 File: signature.png Graphic file (type png)
 <use signature.png>
 Package pdftex.def Info: signature.png  used on input line 142.
@@ -778,21 +778,21 @@ Chapter 2.
 [5
 
 ] [6]
-<../03_outputs/map1841_1851.pdf, id=262, 505.89pt x 361.35pt>
+<../03_outputs/map1841_1851.pdf, id=267, 505.89pt x 361.35pt>
 File: ../03_outputs/map1841_1851.pdf Graphic file (type pdf)
 <use ../03_outputs/map1841_1851.pdf>
 Package pdftex.def Info: ../03_outputs/map1841_1851.pdf  used on input line 28.
 (pdftex.def)             Requested size: 451.82993pt x 322.74184pt.
-<../03_outputs/food_structure.pdf, id=263, 505.89pt x 361.35pt>
+<../03_outputs/food_structure.pdf, id=268, 505.89pt x 361.35pt>
 File: ../03_outputs/food_structure.pdf Graphic file (type pdf)
 <use ../03_outputs/food_structure.pdf>
-Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 39.
+Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 38.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
  [7 <../03_outputs/map1841_1851.pdf>]
-<../03_outputs/grain_price.pdf, id=276, 505.89pt x 361.35pt>
+<../03_outputs/grain_price.pdf, id=281, 505.89pt x 361.35pt>
 File: ../03_outputs/grain_price.pdf Graphic file (type pdf)
 <use ../03_outputs/grain_price.pdf>
-Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 51.
+Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 50.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
 
 
@@ -809,23 +809,35 @@ Chapter 4.
 ] [13
 
 ] [14]) [15] (./Chenxi_dissertation.aux)
-Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: D7F95983C7C85EAF2B8F960599042E35;1098.
+
+Package rerunfilecheck Warning: File `Chenxi_dissertation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Chenxi_dissertation.out':
+(rerunfilecheck)             Before: E53AF2C33E6413C596B1A00E203631D7;1231
+(rerunfilecheck)             After:  52B67C54391F794E9260B3523375ED2D;1050.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 25715 strings out of 476025
- 477919 string characters out of 5790018
+ 25718 strings out of 476025
+ 477959 string characters out of 5790018
  1866388 words of memory out of 5000000
- 45589 multiletter control sequences out of 15000+600000
+ 45590 multiletter control sequences out of 15000+600000
  554867 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,117p,1752b,668s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{section.2.4} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.2.3.1} has been referenced but does not exist, replaced by a fixed one
+
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (22 pages, 1264687 bytes).
+Output written on Chenxi_dissertation.pdf (22 pages, 1265144 bytes).
 PDF statistics:
- 380 PDF objects out of 1000 (max. 8388607)
- 332 compressed objects within 4 object streams
- 84 named destinations out of 1000 (max. 500000)
- 110 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 339 compressed objects within 4 object streams
+ 86 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
