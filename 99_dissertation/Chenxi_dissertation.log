@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  8 JUL 2024 16:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  8 JUL 2024 17:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -828,27 +828,27 @@ Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 50.
  [8 <../03_outputs/food_structure.pdf>] [9 <../03_outputs/grain_price.pdf>]) (./data/data.tex [10]
 Chapter 3.
 
-Overfull \hbox (30.18288pt too wide) in alignment at lines 23--28
+Overfull \hbox (37.67097pt too wide) in alignment at lines 14--19
  [] [] [] [] 
  []
 
 
-Overfull \hbox (30.18288pt too wide) in alignment at lines 28--34
+Overfull \hbox (37.67097pt too wide) in alignment at lines 19--25
  [] [] [] [] 
  []
 
 
-Overfull \hbox (30.18288pt too wide) in alignment at lines 34--39
+Overfull \hbox (37.67097pt too wide) in alignment at lines 25--30
  [] [] [] [] 
  []
 
 
-Overfull \hbox (30.18288pt too wide) in alignment at lines 39--43
+Overfull \hbox (37.67097pt too wide) in alignment at lines 30--34
  [] [] [] [] 
  []
 
 
-Overfull \hbox (30.18288pt too wide) in alignment at lines 43--53
+Overfull \hbox (37.67097pt too wide) in alignment at lines 34--46
  [] [] [] [] 
  []
 
@@ -860,24 +860,24 @@ Chapter 4.
 
 ] [13
 
-] [14]) [15] (./Chenxi_dissertation.aux)
+] [14] [15]) [16] (./Chenxi_dissertation.aux)
 Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 174A9430D24E3A407ABBCF9A7DEEC207;1045.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 25982 strings out of 476025
- 483555 string characters out of 5790018
+ 25995 strings out of 476025
+ 483817 string characters out of 5790018
  1866388 words of memory out of 5000000
- 45838 multiletter control sequences out of 15000+600000
+ 45847 multiletter control sequences out of 15000+600000
  554867 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,117p,1752b,668s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,117p,1752b,694s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (22 pages, 1265336 bytes).
+Output written on Chenxi_dissertation.pdf (23 pages, 1266446 bytes).
 PDF statistics:
- 384 PDF objects out of 1000 (max. 8388607)
- 336 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 348 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
  110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

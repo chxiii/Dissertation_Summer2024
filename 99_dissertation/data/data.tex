@@ -2,22 +2,13 @@
 
 \vspace{0pt}
 
-
-
-
-
-% 使用 longtable 和 booktabs 创建三线表
-% \begin{ThreePartTable}
-%     \begin{TableNotes}
-%         \item[a] a
-%         \item[b] b
-%     \end{TableNotes}
+\begin{spacing}{1}
 \begin{ThreePartTable}
     \begin{TableNotes}
-        \begin{spacing}{1} % 设置单倍行距
+        \begin{spacing}{1}
         \item[a] \textit{Irish census through history can be found in \href{https://www.cso.ie/en/census/censusthroughhistory/}{CSO}. In 1851 census, there is a chapter discussing the differences between 1841 and 1851 to show the influence of famine.}
         \vspace{7pt}
-        \item[b] \textit{}
+        \item[b] \textit{Base on Documenting Ireland: Parliament, People and Migration, }
         \end{spacing}
     \end{TableNotes}
 \begin{longtable}{cccc}
@@ -44,16 +35,18 @@
 
     Population & Population & 1821 \textendash\ 1891, per 10 years & Ireland census \tnote{a}\\
      & Population & Remain years & Estimated population \tnote{b}\\
+    & & \\
     Wage & Craft man wage & 1821 \textendash\ 1891 & \citep{kennedy1997prices}\\
-     & General wage & 1821 \textendash\ 1891 & \\
-    Grain Price & Oat & 1821 \textendash\ 1828 & \\
+     & General wage & 1821 \textendash\ 1891 & \citep{d1989wages} \& \citep{bishop1915history}\\
+    & & \\
+    Grain Price & Oat & 1821 \textendash\ 1828 & \citep{daniel2021irish} \\
      & & 1829 \textendash\ 1859 & \\
      & & 1860 \textendash\ 1900 & \\ 
 
 \end{longtable}
 
 \end{ThreePartTable}
-
+\end{spacing}
 % \begin{table}[h]
 %     \centering
 % 	\begin{threeparttable}
