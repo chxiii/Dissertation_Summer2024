@@ -2,33 +2,34 @@
 
 \vspace{0pt}
 
-\begin{longtable}{|c|c|c|}
-    \caption{A long table spanning multiple pages} \\
-    \hline
-    \textbf{Header 1} & \textbf{Header 2} & \textbf{Header 3} \\
-    \hline
+% 使用 longtable 和 booktabs 创建三线表
+\begin{longtable}{ccc}
+    \caption{Data and Sources} \\
+    \toprule % 表格顶部线
+    \textbf{Data} & \textbf{Time} & \textbf{Sources} \\
+    \midrule % 表格标题下方线
     \endfirsthead
 
-    \hline
-    \textbf{Header 1} & \textbf{Header 2} & \textbf{Header 3} \\
-    \hline
+    \caption[]{(Continued)} \\
+    \toprule
+    \textbf{Data} & \textbf{Time} & \textbf{Sources} \\
+    \midrule
     \endhead
 
-    \hline
+    \midrule
     \multicolumn{3}{r}{\textit{Continued on next page}} \\
-    \hline
+    \midrule
     \endfoot
 
-    \hline
+    \bottomrule % 表格底部线
     \endlastfoot
 
-    % 表格数据
     Row 1 Col 1 & Row 1 Col 2 & Row 1 Col 3 \\
     Row 2 Col 1 & Row 2 Col 2 & Row 2 Col 3 \\
     Row 3 Col 1 & Row 3 Col 2 & Row 3 Col 3 \\
     Row 4 Col 1 & Row 4 Col 2 & Row 4 Col 3 \\
     Row 5 Col 1 & Row 5 Col 2 & Row 5 Col 3 \\
-    % 添加更多的行以确保表格跨多页
+    % 添加更多行以确保表格跨多页
     Row 6 Col 1 & Row 6 Col 2 & Row 6 Col 3 \\
     Row 7 Col 1 & Row 7 Col 2 & Row 7 Col 3 \\
     Row 8 Col 1 & Row 8 Col 2 & Row 8 Col 3 \\
