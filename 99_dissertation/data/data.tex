@@ -1,44 +1,116 @@
 \chapter{Data}
-Wage\citep{bishop1915history}
 
 \vspace{0pt}
-\begin{table}[h]
-    \centering
-	\begin{threeparttable}
-    \caption{Data and Sources}
-		\begin{tabular}{lp{5cm}p{5cm}}
-			\toprule
-			Data & Time & Sources \\
-			\midrule
-			Population & 1821 \textendash\ 1900 & Ireland Census \\
-			& & \\
-			1852 \textendash\ 1920: neglected  & \textemdash\ \tnote{b} & \citep{kinealy2017great}\\
-			& & \\
-			1920 \textendash\ 1960: nationalist & Key grouping, like landlord class or the UK government & \citep{smith2005reckoning} \\
-			& & \\
-			1960 \textendash\ 1980: revisionism & Focus on history and event itself, ignore outside force & \citep{daly2006revisionism} \\
-			& & \\
-			1980s: post-revisionist & Emotional description also blame UK government & \citep{hamera2011outline} \\
-			& & \\
-			1980s: diverse & Malthus population theory & \citep{o2009food} \& \citep{mcgregor1989demographic} \& \citep{weir1991malthus} \\
-			& &  \\
-			& Anti-Malthus theory & \citep{o1983malthus} \& \citep{mokyr1980malthusian} \& \citep{guinnane1994great}\\
-			& & \\
-			& Blight biological analysis & \citep{donnelly2011irish}\\
-			& & \\
-			& Foucault's bio-politics and colonial perspective & \citep{nally2008coming} \& \citep{kennedy2020beckett} \& \citep{madden2016aids} \\
-			\bottomrule
-		\end{tabular}
-		\begin{tablenotes}
-			\item[a] The original newspaper mentioned: \textit{Free importation of corn into this union is essentially necessary \textendash\ [\ldots] any attempt to re-impose a duty on the importation of food can only [\ldots]  tend to the starving of the people. Poor law [\ldots] relieves the struggling farmer of a heavy burden he had hitherto.} \citep{1850_01_05_news}
+
+\begin{longtable}{|c|c|c|}
+    \caption{A long table spanning multiple pages} \\
+    \hline
+    \textbf{Header 1} & \textbf{Header 2} & \textbf{Header 3} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Header 1} & \textbf{Header 2} & \textbf{Header 3} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{3}{r}{\textit{Continued on next page}} \\
+    \hline
+    \endfoot
+
+    \hline
+    \endlastfoot
+
+    % 表格数据
+    Row 1 Col 1 & Row 1 Col 2 & Row 1 Col 3 \\
+    Row 2 Col 1 & Row 2 Col 2 & Row 2 Col 3 \\
+    Row 3 Col 1 & Row 3 Col 2 & Row 3 Col 3 \\
+    Row 4 Col 1 & Row 4 Col 2 & Row 4 Col 3 \\
+    Row 5 Col 1 & Row 5 Col 2 & Row 5 Col 3 \\
+    % 添加更多的行以确保表格跨多页
+    Row 6 Col 1 & Row 6 Col 2 & Row 6 Col 3 \\
+    Row 7 Col 1 & Row 7 Col 2 & Row 7 Col 3 \\
+    Row 8 Col 1 & Row 8 Col 2 & Row 8 Col 3 \\
+    Row 9 Col 1 & Row 9 Col 2 & Row 9 Col 3 \\
+    Row 10 Col 1 & Row 10 Col 2 & Row 10 Col 3 \\
+    Row 11 Col 1 & Row 11 Col 2 & Row 11 Col 3 \\
+    Row 12 Col 1 & Row 12 Col 2 & Row 12 Col 3 \\
+    Row 13 Col 1 & Row 13 Col 2 & Row 13 Col 3 \\
+    Row 14 Col 1 & Row 14 Col 2 & Row 14 Col 3 \\
+    Row 15 Col 1 & Row 15 Col 2 & Row 15 Col 3 \\
+    Row 16 Col 1 & Row 16 Col 2 & Row 16 Col 3 \\
+    Row 17 Col 1 & Row 17 Col 2 & Row 17 Col 3 \\
+    Row 18 Col 1 & Row 18 Col 2 & Row 18 Col 3 \\
+    Row 19 Col 1 & Row 19 Col 2 & Row 19 Col 3 \\
+    Row 20 Col 1 & Row 20 Col 2 & Row 20 Col 3 \\
+    Row 21 Col 1 & Row 21 Col 2 & Row 21 Col 3 \\
+    Row 22 Col 1 & Row 22 Col 2 & Row 22 Col 3 \\
+    Row 23 Col 1 & Row 23 Col 2 & Row 23 Col 3 \\
+    Row 24 Col 1 & Row 24 Col 2 & Row 24 Col 3 \\
+    Row 25 Col 1 & Row 25 Col 2 & Row 25 Col 3 \\
+    Row 26 Col 1 & Row 26 Col 2 & Row 26 Col 3 \\
+    Row 27 Col 1 & Row 27 Col 2 & Row 27 Col 3 \\
+    Row 28 Col 1 & Row 28 Col 2 & Row 28 Col 3 \\
+    Row 29 Col 1 & Row 29 Col 2 & Row 29 Col 3 \\
+    Row 30 Col 1 & Row 30 Col 2 & Row 30 Col 3 \\
+\end{longtable}
+
+% \begin{table}[h]
+%     \centering
+% 	\begin{threeparttable}
+%     \caption{Data and Sources}
+% 		\begin{tabular}{lp{5cm}p{5cm}}
+% 			\toprule
+% 			Data & Time & Sources \\
+% 			\midrule
+% 			Population & 1821 \textendash\ 1900 & Ireland census\tnote{a} and the estimated population\tnote{b}\\
+% 			& & \\
+% 			Wage & 1821 \textendash\ 1900 & \citep{d1989wages} \& \citep{bishop1915history}\\
+% 			& & \\
+% 			Ground Rent & Key grouping, like landlord class or the UK government & \citep{smith2005reckoning} \\
+% 			& & \\
+% 			Grain Price & Oat Price &  \\
+%             & Barley Price & \\
+%             & Potato Price & \\
+%             & Wheat Price & \\
+% 			& & \\
+%             Grain Plant Acre & Oat Acre & \\
+%             & Barley Acre & \\
+%             & Potato Acre & \\
+%             & Wheat Acre & \\
+%             & & \\
+%             Grain Import & Oat Import & \\
+%             & Barley Import & \\
+%             & Potato Import & \\
+%             & Wheat Import & \\
+%             & & \\
+%             Grain Export & Oat Export & \\
+%             & Barley Export & \\
+%             & Potato Export & \\
+%             & Wheat Export & \\
+%             & & \\
+% 			1980s: post-revisionist & Emotional description also blame UK government & \citep{hamera2011outline} \\
+% 			& & \\
+% 			1980s: diverse & Malthus population theory & \citep{o2009food} \& \citep{mcgregor1989demographic} \& \citep{weir1991malthus} \\
+% 			& &  \\
+% 			& Anti-Malthus theory & \citep{o1983malthus} \& \citep{mokyr1980malthusian} \& \citep{guinnane1994great}\\
+% 			& & \\
+% 			& Blight biological analysis & \citep{donnelly2011irish}\\
+% 			& & \\
+% 			& Foucault's bio-politics and colonial perspective & \citep{nally2008coming} \& \citep{kennedy2020beckett} \& \citep{madden2016aids} \\
+% 			\bottomrule
+% 		\end{tabular}
+% 		\begin{tablenotes}
+% 			\item[a] The original newspaper mentioned: \textit{Free importation of corn into this union is essentially necessary \textendash\ [\ldots] any attempt to re-impose a duty on the importation of food can only [\ldots]  tend to the starving of the people. Poor law [\ldots] relieves the struggling farmer of a heavy burden he had hitherto.} \citep{1850_01_05_news}
 			
-			\vspace{7pt}
+% 			\vspace{7pt}
 
-			\item[b] The famine literature few. The quantity and quality of work on the famine sparse: \textit{The two standard books of the Great Famine, [\ldots] the chapters were uneven in quality and lacked coherence (some lacked footnotes, some were lost).} \citep{kinealy2017great}
+% 			\item[b] The famine literature few. The quantity and quality of work on the famine sparse: \textit{The two standard books of the Great Famine, [\ldots] the chapters were uneven in quality and lacked coherence (some lacked footnotes, some were lost).} \citep{kinealy2017great}
 
-		\end{tablenotes}
-	\end{threeparttable}
-\end{table}
+% 		\end{tablenotes}
+% 	\end{threeparttable}
+% \end{table}
 
 \vspace{.3cm}
 
