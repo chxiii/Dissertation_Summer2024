@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Chenxi_dissertation.aux
+The style file: agsm.bst
+Database file #1: reference.bib
+Warning--there's a number but no volume in madden2016aids
+Warning--there's a number but no volume in o1983malthus
+Warning--there's a number but no volume in solar1990irish
+You've used 45 entries,
+            2909 wiz_defined-function locations,
+            913 strings with 10779 characters,
+and the built_in function-call counts, 113289 in all, are:
+= -- 17724
+> -- 1371
+< -- 0
++ -- 7904
+- -- 406
+* -- 9154
+:= -- 23996
+add.period$ -- 45
+call.type$ -- 45
+change.case$ -- 622
+chr.to.int$ -- 45
+cite$ -- 48
+duplicate$ -- 746
+empty$ -- 1498
+format.name$ -- 518
+if$ -- 20105
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 49
+newline$ -- 138
+num.names$ -- 452
+pop$ -- 224
+preamble$ -- 1
+purify$ -- 675
+quote$ -- 0
+skip$ -- 602
+stack$ -- 0
+substring$ -- 24417
+swap$ -- 139
+text.length$ -- 630
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 166
+warning$ -- 3
+while$ -- 1010
+width$ -- 0
+write$ -- 551
+(There were 3 warnings)
