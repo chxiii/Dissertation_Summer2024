@@ -75,7 +75,7 @@ food_structure <- food_structure +
   geom_line(data = combined_df, aes(x = factor(year), 
                                     y = total_acre / max(total_acre, na.rm = TRUE), 
                                     group=1), 
-            color = "#4C6AA8", size = 1, na.rm = TRUE) +
+            color = "#4C6AA8", linewidth = 1, na.rm = TRUE) +
   
   geom_point(data = combined_df, aes(x = factor(year), 
                                      y = total_acre / max(total_acre, na.rm = TRUE), 
