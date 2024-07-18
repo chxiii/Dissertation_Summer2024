@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  16 JUL 2024 23:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  18 JUL 2024 16:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -814,18 +814,18 @@ File: ../03_outputs/map1841_1851.pdf Graphic file (type pdf)
 <use ../03_outputs/map1841_1851.pdf>
 Package pdftex.def Info: ../03_outputs/map1841_1851.pdf  used on input line 28.
 (pdftex.def)             Requested size: 451.82993pt x 322.74184pt.
- [7 <../03_outputs/map1841_1851.pdf>]
-<../03_outputs/food_structure.pdf, id=282, 505.89pt x 361.35pt>
+ [7 <../03_outputs/map1841_1851.pdf>] [8]
+<../03_outputs/food_structure.pdf, id=303, 505.89pt x 361.35pt>
 File: ../03_outputs/food_structure.pdf Graphic file (type pdf)
 <use ../03_outputs/food_structure.pdf>
-Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 52.
+Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 63.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
-<../03_outputs/grain_price.pdf, id=283, 505.89pt x 361.35pt>
+<../03_outputs/grain_price.pdf, id=304, 505.89pt x 361.35pt>
 File: ../03_outputs/grain_price.pdf Graphic file (type pdf)
 <use ../03_outputs/grain_price.pdf>
-Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 62.
+Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 73.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
- [8] [9 <../03_outputs/food_structure.pdf> <../03_outputs/grain_price.pdf>]) (./data/data.tex [10]
+ [9 <../03_outputs/food_structure.pdf>] [10 <../03_outputs/grain_price.pdf>]) (./data/data.tex [11]
 Chapter 3.
 
 Overfull \hbox (0.9387pt too wide) in alignment at lines 18--23
@@ -852,32 +852,32 @@ Overfull \hbox (0.9387pt too wide) in alignment at lines 38--73
  [] [] [] [] 
  []
 
-[11
+[12
 
-]) (./methods/methods.tex [12]
+]) (./methods/methods.tex [13]
 Chapter 4.
-) (./Chenxi_dissertation.bbl [13
+) (./Chenxi_dissertation.bbl [14
 
-] [14
+] [15
 
-] [15] [16] [17]) [18] (./Chenxi_dissertation.aux)
+] [16] [17] [18]) [19] (./Chenxi_dissertation.aux)
 Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: D0DC2AD35D0A7CE928C34B2C34709151;1084.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 26045 strings out of 476025
- 484974 string characters out of 5790018
+ 26070 strings out of 476025
+ 485547 string characters out of 5790018
  1870388 words of memory out of 5000000
- 45883 multiletter control sequences out of 15000+600000
+ 45901 multiletter control sequences out of 15000+600000
  552487 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,117p,1752b,718s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,117p,1752b,716s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (25 pages, 1274065 bytes).
+Output written on Chenxi_dissertation.pdf (26 pages, 1276371 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 405 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
+ 481 PDF objects out of 1000 (max. 8388607)
+ 428 compressed objects within 5 object streams
+ 111 named destinations out of 1000 (max. 500000)
  102 words of extra memory for PDF output out of 10000 (max. 10000000)
 
