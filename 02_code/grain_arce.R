@@ -55,7 +55,7 @@ food_structure <- ggplot() +
   
   annotate("text", x = "1848", y = -0.05, label = "|-------- Great Famine --------|", size = 3) +
   
-  theme_classic() +
+  theme_bw() +
   
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         panel.grid.major = element_blank(),
@@ -74,12 +74,12 @@ food_structure <- food_structure +
   
   geom_line(data = combined_df, aes(x = factor(year), 
                                     y = total_acre / max(total_acre, na.rm = TRUE), 
-                                    group=1), 
+                                    group = 1), 
             color = "#4C6AA8", linewidth = 1, na.rm = TRUE) +
   
   geom_point(data = combined_df, aes(x = factor(year), 
                                      y = total_acre / max(total_acre, na.rm = TRUE), 
-                                     group=1), 
+                                     group = 1), 
              color = "#4C6AA8", size = 1.5, na.rm = TRUE)
 
 # print plot

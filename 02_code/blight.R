@@ -19,7 +19,7 @@ xlim <- c(-15, 5)  # Longitude range
 ylim <- c(48, 60)   # Latitude range
 
 # Plotting
-ggplot(data = europe) +
+blight_pathway <- ggplot(data = europe) +
   geom_sf(fill = "#E0D7C1") +
   geom_sf(data = data_sf, aes(geometry = geometry), color = "#86391E", size = 2) +
   
@@ -32,7 +32,7 @@ ggplot(data = europe) +
   # Belgium to United Kingdom
   annotate("curve", x = 3, y = 51, xend = -0.5, yend = 52,
            arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = "#6C8EB8", curvature = 0.3) +
-  # Uniter Kingdom south to north
+  # United Kingdom south to north
   annotate("curve", x = -1, y = 52.3, xend = -2.6, yend = 54.8,
            arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = "#6C8EB8", curvature = 0.3) +
   # United Kingdom south to Ireland
@@ -42,9 +42,11 @@ ggplot(data = europe) +
   annotate("curve", x = -3, y = 54.8, xend = -7.7, yend = 53.5,
            arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = "#6C8EB8", curvature = -0.3) +
   
+  # add text to point
   geom_text(data = data, aes(x = lon, y = lat, label = date), color = "black", hjust = 1.2, size = 3) +
   
-  annotate("text", x = -10, y = 49, label = "1843 - 1845, North America", size = 3) +
+  # add text to the arrow
+  annotate("text", x = -9.8, y = 49, label = "1843 - 1845, North America", size = 3) +
   
   coord_sf(xlim = xlim, ylim = ylim, expand = FALSE) +
   labs(title = "Potato Blight Pathway",
@@ -53,4 +55,10 @@ ggplot(data = europe) +
   theme_bw() +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())
+
+print(blight_pathway)
+
+# save the plot
+ggsave("../03_outputs/blight_pathway.pdf", 
+       plot = blight_pathway, dpi = 300, width=7, height=5)
 
