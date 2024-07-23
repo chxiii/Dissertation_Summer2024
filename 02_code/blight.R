@@ -43,12 +43,13 @@ ggplot(data = europe) +
            arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = "#6C8EB8", curvature = -0.3) +
   
   geom_text(data = data, aes(x = lon, y = lat, label = date), color = "black", hjust = 1.2, size = 3) +
-  geom_text() +
+  
+  annotate("text", x = -10, y = 49, label = "1843 - 1845, North America", size = 3) +
   
   coord_sf(xlim = xlim, ylim = ylim, expand = FALSE) +
-  labs(title = "Potato blight",
-       x = "Longitude",
-       y = "Latitude") +
+  labs(title = "Potato Blight Pathway",
+       x = " ",
+       y = " ") +
   theme_bw() +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())
