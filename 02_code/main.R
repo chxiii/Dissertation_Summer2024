@@ -28,12 +28,12 @@ pkgTest <- function(pkg) {
 # lapply(c("stringr"), pkgTest)
 
 lapply(c("readxl", 
-         "ggplot2", "ggforce", "ggthemes", "patchwork", "ggpubr",
+         "ggplot2", "ggforce", "ggthemes", "patchwork", "ggpubr", "gg.gap",
          "rnaturalearth", "rnaturalearthdata",
          "dplyr", 
          "tidyr", 
          "ggbreak",
-         "sf", "digest", "osmdata" # for shp
+         "sf", "digest", "osmdata", "ggrepel", "cowplot" # for shp
          ), pkgTest)
 
 options(scipen = 200)
