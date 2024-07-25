@@ -66,21 +66,32 @@ blight_pathway <- ggplot(data = europe) +
 death_rate_plot <- ggplot(death_rate_df, aes(x = reorder(country, death_rate), y = death_rate)) +
   geom_point(size = 3) +
   
+  geom_hline(yintercept = 0.005, linetype = "solid", color = "black") +
+  geom_hline(yintercept = 0.1, linetype = "solid", color = "black") +
+  
   labs(title = "Famine Death Rates",
        x = "",
        y = "") +
-
   
   theme_bw() +
   
-  theme(axis.text.y = element_text(hjust = 1),
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.text.y = element_text(),
         panel.grid.minor = element_blank(),
-        panel.grid.major.y = element_blank())
+        panel.grid.major.y = element_blank(),
+        panel.grid.major = element_line(color = "grey", linetype = "dashed"))
 
-death_rate_plot <- gg.gap(plot = death_rate_plot, 
-                          segments = c(0.005, 0.1), tick_width = c(0.001, 0.05), ylim = c(0, 0.15))
+death_rate_plot <- gg.gap(
+  plot = death_rate_plot, 
+  segments = c(0.005, 0.1), 
+  tick_width = c(0.001, 0.05), 
+  ylim = c(0, 0.15)
+) + 
   
-blight_path_death <- plot_grid(blight_pathway, death_rate_plot, ncol = 2, rel_widths = c(1, 1))
+  theme_bw()
+
+# Combine the plots
+blight_path_death <- ggarrange(blight_pathway, death_rate_plot, ncol = 2, widths = c(2,1))
 
 print(blight_path_death)
 
