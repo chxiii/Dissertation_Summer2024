@@ -6,45 +6,45 @@ Database file #1: reference.bib
 Warning--there's a number but no volume in madden2016aids
 Warning--there's a number but no volume in o1983malthus
 Warning--there's a number but no volume in solar1990irish
-You've used 66 entries,
+You've used 70 entries,
             2909 wiz_defined-function locations,
-            1025 strings with 14073 characters,
-and the built_in function-call counts, 178188 in all, are:
-= -- 28040
-> -- 2225
+            1044 strings with 14732 characters,
+and the built_in function-call counts, 186117 in all, are:
+= -- 29251
+> -- 2321
 < -- 0
-+ -- 12679
-- -- 665
-* -- 14577
-:= -- 37430
-add.period$ -- 68
-call.type$ -- 66
-change.case$ -- 913
-chr.to.int$ -- 66
-cite$ -- 69
-duplicate$ -- 1085
-empty$ -- 2183
-format.name$ -- 831
-if$ -- 31660
++ -- 13204
+- -- 693
+* -- 15188
+:= -- 39182
+add.period$ -- 72
+call.type$ -- 70
+change.case$ -- 967
+chr.to.int$ -- 70
+cite$ -- 73
+duplicate$ -- 1144
+empty$ -- 2302
+format.name$ -- 867
+if$ -- 33046
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 71
-newline$ -- 203
-num.names$ -- 664
-pop$ -- 327
+missing$ -- 75
+newline$ -- 215
+num.names$ -- 704
+pop$ -- 346
 preamble$ -- 1
-purify$ -- 990
+purify$ -- 1050
 quote$ -- 0
-skip$ -- 878
+skip$ -- 924
 stack$ -- 0
-substring$ -- 38830
-swap$ -- 201
-text.length$ -- 924
+substring$ -- 40471
+swap$ -- 208
+text.length$ -- 980
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 244
+type$ -- 258
 warning$ -- 3
-while$ -- 1478
+while$ -- 1566
 width$ -- 0
-write$ -- 812
+write$ -- 861
 (There were 3 warnings)
