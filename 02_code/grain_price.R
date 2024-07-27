@@ -16,6 +16,11 @@ price_line <- ggplot() +
     values = c("#A8AE5E", "#6C8EB8", "#9E7585", "#DCC39C")
   ) +
   
+  scale_color_manual(
+    name = "Crops",
+    values = met.brewer("Monet")[c(1, 6, 7, 9)]
+  ) +
+  
   scale_linetype_manual(
     name = "Crops",
     values = c("twodash", "dotdash", "longdash", "solid")
