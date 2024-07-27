@@ -3,49 +3,48 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Chenxi_dissertation.aux
 The style file: agsm.bst
 Database file #1: reference.bib
-Warning--I didn't find a database entry for ""
 Warning--there's a number but no volume in madden2016aids
 Warning--there's a number but no volume in o1983malthus
 Warning--there's a number but no volume in solar1990irish
-You've used 76 entries,
+You've used 78 entries,
             2909 wiz_defined-function locations,
-            1075 strings with 15476 characters,
-and the built_in function-call counts, 199721 in all, are:
-= -- 31352
-> -- 2488
+            1085 strings with 15799 characters,
+and the built_in function-call counts, 208179 in all, are:
+= -- 32741
+> -- 2582
 < -- 0
-+ -- 14114
-- -- 742
-* -- 16263
-:= -- 42099
-add.period$ -- 78
-call.type$ -- 76
-change.case$ -- 1049
-chr.to.int$ -- 76
-cite$ -- 79
-duplicate$ -- 1248
-empty$ -- 2508
-format.name$ -- 932
-if$ -- 35464
++ -- 14777
+- -- 770
+* -- 16989
+:= -- 43795
+add.period$ -- 80
+call.type$ -- 78
+change.case$ -- 1076
+chr.to.int$ -- 78
+cite$ -- 81
+duplicate$ -- 1280
+empty$ -- 2573
+format.name$ -- 965
+if$ -- 36980
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 83
-newline$ -- 233
-num.names$ -- 764
-pop$ -- 379
+missing$ -- 86
+newline$ -- 239
+num.names$ -- 785
+pop$ -- 390
 preamble$ -- 1
-purify$ -- 1140
+purify$ -- 1170
 quote$ -- 0
-skip$ -- 1006
+skip$ -- 1029
 stack$ -- 0
-substring$ -- 43334
-swap$ -- 229
-text.length$ -- 1064
+substring$ -- 45313
+swap$ -- 233
+text.length$ -- 1092
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 278
+type$ -- 284
 warning$ -- 3
-while$ -- 1701
+while$ -- 1745
 width$ -- 0
-write$ -- 933
-(There were 4 warnings)
+write$ -- 959
+(There were 3 warnings)
