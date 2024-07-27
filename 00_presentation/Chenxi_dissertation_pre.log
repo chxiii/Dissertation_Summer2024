@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  8 JUL 2024 14:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  27 JUL 2024 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -765,23 +765,10 @@ Dictionary: translator-theorem-dictionary, Language: English
 \c@lstlisting=\count359
  (./Chenxi_dissertation_pre.nav) [1{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-
-Package natbib Warning: Citation `bourke1964emergence' on page 2 undefined on input line 80.
-
-
-Package natbib Warning: Citation `wegge2017immigrants' on page 2 undefined on input line 80.
-
-
-Package natbib Warning: Citation `donnelly2002great' on page 2 undefined on input line 80.
-
-
-Package natbib Warning: Citation `kelly2015ireland' on page 2 undefined on input line 80.
-
-[2
+] [2
 
 ]
-<sen.jpg, id=98, 198.7425pt x 210.48637pt>
+<sen.jpg, id=109, 198.7425pt x 210.48637pt>
 File: sen.jpg Graphic file (type jpg)
 <use sen.jpg>
 Package pdftex.def Info: sen.jpg  used on input line 94.
@@ -797,18 +784,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 94.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
-)
-
-Package natbib Warning: Citation `sen1982poverty' on page 3 undefined on input line 94.
-
-[3
+) [3
 
  <./sen.jpg>] [4
 
 ] [5
 
 ]
-<dataframe_look.png, id=158, 1880.02374pt x 1114.1625pt>
+<dataframe_look.png, id=171, 1880.02374pt x 1114.1625pt>
 File: dataframe_look.png Graphic file (type png)
 <use dataframe_look.png>
 Package pdftex.def Info: dataframe_look.png  used on input line 127.
@@ -821,7 +804,7 @@ Overfull \hbox (15.36542pt too wide) in paragraph at lines 127--127
 [6
 
  <./dataframe_look.png>]
-<population.pdf, id=180, 452.69125pt x 254.9525pt>
+<population.pdf, id=193, 452.69125pt x 254.9525pt>
 File: population.pdf Graphic file (type pdf)
 <use population.pdf>
 Package pdftex.def Info: population.pdf  used on input line 137.
@@ -829,7 +812,7 @@ Package pdftex.def Info: population.pdf  used on input line 137.
  [7
 
  <./population.pdf>]
-<wage.pdf, id=207, 452.69125pt x 254.9525pt>
+<wage.pdf, id=220, 452.69125pt x 254.9525pt>
 File: wage.pdf Graphic file (type pdf)
 <use wage.pdf>
 Package pdftex.def Info: wage.pdf  used on input line 146.
@@ -837,7 +820,7 @@ Package pdftex.def Info: wage.pdf  used on input line 146.
  [8
 
  <./wage.pdf>]
-<grainprice.pdf, id=233, 452.69125pt x 254.9525pt>
+<grainprice.pdf, id=246, 452.69125pt x 254.9525pt>
 File: grainprice.pdf Graphic file (type pdf)
 <use grainprice.pdf>
 Package pdftex.def Info: grainprice.pdf  used on input line 155.
@@ -845,7 +828,7 @@ Package pdftex.def Info: grainprice.pdf  used on input line 155.
  [9
 
  <./grainprice.pdf>]
-<pricecatter.pdf, id=259, 361.35pt x 361.35pt>
+<pricecatter.pdf, id=273, 361.35pt x 361.35pt>
 File: pricecatter.pdf Graphic file (type pdf)
 <use pricecatter.pdf>
 Package pdftex.def Info: pricecatter.pdf  used on input line 164.
@@ -856,9 +839,12 @@ Package pdftex.def Info: pricecatter.pdf  used on input line 164.
 
 ] [12
 
-]
-No file Chenxi_dissertation_pre.bbl.
-[13
+] (./Chenxi_dissertation_pre.bbl
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\translate ' on input line 1.
+
+) [13
 
 ]
 \tf@nav=\write6
@@ -870,27 +856,23 @@ No file Chenxi_dissertation_pre.bbl.
 \tf@snm=\write8
 \openout8 = `Chenxi_dissertation_pre.snm'.
 
-
-
-Package natbib Warning: There were undefined citations.
-
-(./Chenxi_dissertation_pre.aux)
+ (./Chenxi_dissertation_pre.aux)
 Package rerunfilecheck Info: File `Chenxi_dissertation_pre.out' has not changed.
-(rerunfilecheck)             Checksum: 75E12F81C9EFC7674013A2D552CC5E19;320.
+(rerunfilecheck)             Checksum: 2D35C3AC2A7A5025B5767892D3E7E3D3;413.
  ) 
 Here is how much of TeX's memory you used:
- 26544 strings out of 476025
- 524398 string characters out of 5790018
+ 26577 strings out of 476025
+ 525072 string characters out of 5790018
  1864388 words of memory out of 5000000
- 46450 multiletter control sequences out of 15000+600000
+ 46475 multiletter control sequences out of 15000+600000
  519687 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  127i,19n,122p,492b,763s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb>
-Output written on Chenxi_dissertation_pre.pdf (13 pages, 407892 bytes).
+Output written on Chenxi_dissertation_pre.pdf (13 pages, 412949 bytes).
 PDF statistics:
- 378 PDF objects out of 1000 (max. 8388607)
- 316 compressed objects within 4 object streams
- 30 named destinations out of 1000 (max. 500000)
- 103 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 393 PDF objects out of 1000 (max. 8388607)
+ 331 compressed objects within 4 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

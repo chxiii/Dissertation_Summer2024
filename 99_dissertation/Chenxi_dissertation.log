@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  27 JUL 2024 16:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  27 JUL 2024 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -735,7 +735,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 124.
 
 (./title/title.tex
-<title/Trinity_RGB_transparent_main.png, id=43, 412.6617pt x 142.3719pt>
+<title/Trinity_RGB_transparent_main.png, id=51, 412.6617pt x 142.3719pt>
 File: title/Trinity_RGB_transparent_main.png Graphic file (type png)
 <use title/Trinity_RGB_transparent_main.png>
 Package pdftex.def Info: title/Trinity_RGB_transparent_main.png  used on input line 13.
@@ -769,7 +769,7 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 1
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-<signature.png, id=56, 302.12875pt x 84.315pt>
+<signature.png, id=64, 302.12875pt x 84.315pt>
 File: signature.png Graphic file (type png)
 <use signature.png>
 Package pdftex.def Info: signature.png  used on input line 146.
@@ -809,28 +809,28 @@ Chapter 2.
 [5
 
 ] [6]
-<../03_outputs/map1841_1851.pdf, id=266, 505.89pt x 361.35pt>
+<../03_outputs/map1841_1851.pdf, id=276, 505.89pt x 361.35pt>
 File: ../03_outputs/map1841_1851.pdf Graphic file (type pdf)
 <use ../03_outputs/map1841_1851.pdf>
 Package pdftex.def Info: ../03_outputs/map1841_1851.pdf  used on input line 28.
 (pdftex.def)             Requested size: 451.82993pt x 322.74184pt.
  [7 <../03_outputs/map1841_1851.pdf>] [8]
-<../03_outputs/blight_path_death.pdf, id=324, 505.89pt x 361.35pt>
+<../03_outputs/blight_path_death.pdf, id=334, 505.89pt x 361.35pt>
 File: ../03_outputs/blight_path_death.pdf Graphic file (type pdf)
 <use ../03_outputs/blight_path_death.pdf>
 Package pdftex.def Info: ../03_outputs/blight_path_death.pdf  used on input line 51.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
  [9 <../03_outputs/blight_path_death.pdf>]
-<../03_outputs/food_structure.pdf, id=365, 505.89pt x 361.35pt>
+<../03_outputs/food_structure.pdf, id=375, 505.89pt x 361.35pt>
 File: ../03_outputs/food_structure.pdf Graphic file (type pdf)
 <use ../03_outputs/food_structure.pdf>
 Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 69.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
  [10]
-<../03_outputs/grain_price.pdf, id=384, 505.89pt x 361.35pt>
+<../03_outputs/grain_price.pdf, id=400, 505.89pt x 361.35pt>
 File: ../03_outputs/grain_price.pdf Graphic file (type pdf)
 <use ../03_outputs/grain_price.pdf>
-Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 80.
+Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 82.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
  [11 <../03_outputs/food_structure.pdf>] [12 <../03_outputs/grain_price.pdf>]) (./data/data.tex [13]
 Chapter 3.
@@ -869,22 +869,22 @@ Chapter 4.
 
 ] [18] [19] [20] [21] [22]) [23] (./Chenxi_dissertation.aux)
 Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 024DBD2BE591C999061F2359E114794C;1201.
+(rerunfilecheck)             Checksum: 64E4DC5280934FE921310DAC532EE546;1532.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 26144 strings out of 476025
- 487313 string characters out of 5790018
+ 26160 strings out of 476025
+ 487640 string characters out of 5790018
  1870388 words of memory out of 5000000
- 45953 multiletter control sequences out of 15000+600000
+ 45964 multiletter control sequences out of 15000+600000
  552487 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,117p,1752b,760s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,117p,1752b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (30 pages, 1425248 bytes).
+Output written on Chenxi_dissertation.pdf (30 pages, 1426749 bytes).
 PDF statistics:
- 570 PDF objects out of 1000 (max. 8388607)
- 510 compressed objects within 6 object streams
- 132 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 590 PDF objects out of 1000 (max. 8388607)
+ 530 compressed objects within 6 object streams
+ 137 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
