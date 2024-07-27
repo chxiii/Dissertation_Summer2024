@@ -35,10 +35,7 @@ shp <- shp %>%
   ))
 
 # colour
-custom_colors <- c("0-100k" = "#f7fcf5", "100k-200k" = "#e5f5e0", 
-                   "200k-300k" = "#c7e9c0",  "300k-400k" = "#a1d99b", 
-                   "400k-500k" = "#74c476", "500k-600k" = "#41ab5d", 
-                   "600k-700k" = "#238b45", "700k-800k" = "#005a32")
+custom_colors <- met.brewer("VanGogh3", 8)
 
 # 1841 heat map
 map_1841 <- ggplot(shp) +

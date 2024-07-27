@@ -36,6 +36,7 @@ long_df <- combined_df %>%
                values_to = "acre")
 
 food_structure <- ggplot() +
+  
   geom_bar(
     data = long_df, 
     aes(x = factor(year), y = acre, fill = Crop),
@@ -64,10 +65,15 @@ food_structure <- ggplot() +
   
   guides(fill = guide_legend(title = "Crop")) +
   
-  scale_fill_manual(values = c("wheat_acre" = "#D1BDC1", 
-                               "oat_acre" = "#DAAE8D", 
-                               "barley_acre" = "#CE7C56", 
-                               "potato_acre" = "#15564E"))
+  # scale_fill_simpsons()
+  
+  scale_fill_manual(values = met.brewer("VanGogh3")[c(1, 3, 5, 7)])
+  
+  #scale_fill_manual(values = c("wheat_acre" = "#0A371C", 
+  #                             "oat_acre" = "#C8D3F9", 
+  #                             "barley_acre" = "#A8AE5E", 
+  #                             "potato_acre" = "#F3EDCA"))
+
 
 # add a line plot
 food_structure <- food_structure +
@@ -75,12 +81,12 @@ food_structure <- food_structure +
   geom_line(data = combined_df, aes(x = factor(year), 
                                     y = total_acre / max(total_acre, na.rm = TRUE), 
                                     group = 1), 
-            color = "#4C6AA8", linewidth = 1, na.rm = TRUE) +
+            color = met.brewer("Monet", 1), linewidth = 1, na.rm = TRUE) +
   
   geom_point(data = combined_df, aes(x = factor(year), 
                                      y = total_acre / max(total_acre, na.rm = TRUE), 
                                      group = 1), 
-             color = "#4C6AA8", size = 1.5, na.rm = TRUE)
+             color = met.brewer("Monet", 1), size = 1.5, na.rm = TRUE)
 
 # print plot
 print(food_structure)

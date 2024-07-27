@@ -23,27 +23,27 @@ europe <- world[world$continent == "Europe", ]
 
 # Plotting the Blight Pathway
 blight_pathway <- ggplot(data = europe) +
-  geom_sf(fill = "#E0D7C1") +
-  geom_sf(data = sf_timedf, aes(geometry = geometry), color = "#86391E", size = 2) +
+  geom_sf(fill = met.brewer("VanGogh2")[6]) +
+  geom_sf(data = sf_timedf, aes(geometry = geometry), color = met.brewer("VanGogh2")[1], size = 2) +
   
   # Atlantic to Belgium
   annotate("curve", x = -15, y = 50.2, xend = 1.3, yend = 50.8,
-           arrow = arrow(length = unit(0.3, "cm")), size = 0.3, color = "#D9A615", curvature = 0.25) +
+           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = met.brewer("VanGogh2")[4], curvature = 0.25) +
   # Belgium to France
   annotate("curve", x = 3, y = 51, xend = 1.3, yend = 49.3,
-           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = "#6C8EB8", curvature = 0.3) +
+           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = met.brewer("VanGogh2")[8], curvature = 0.3) +
   # Belgium to United Kingdom
   annotate("curve", x = 3, y = 51, xend = -0.5, yend = 52,
-           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = "#6C8EB8", curvature = 0.3) +
+           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = met.brewer("VanGogh2")[8], curvature = 0.3) +
   # United Kingdom south to north
   annotate("curve", x = -1, y = 52.3, xend = -2.6, yend = 54.8,
-           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = "#6C8EB8", curvature = 0.3) +
+           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = met.brewer("VanGogh2")[8], curvature = 0.3) +
   # United Kingdom south to Ireland
   annotate("curve", x = -1.5, y = 52, xend = -7.7, yend = 53.5,
-           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = "#6C8EB8", curvature = 0.3) +
+           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = met.brewer("VanGogh2")[8], curvature = 0.3) +
   # United Kingdom north to Ireland
   annotate("curve", x = -3, y = 54.8, xend = -7.7, yend = 53.5,
-           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = "#6C8EB8", curvature = -0.3) +
+           arrow = arrow(length = unit(0.3, "cm")), size = 0.5, color = met.brewer("VanGogh2")[8], curvature = -0.3) +
   
   # Add text to point
   geom_text(data = timedf, aes(x = lon, y = lat, label = date), color = "black", hjust = 1.2, size = 3) +
@@ -64,7 +64,8 @@ blight_pathway <- ggplot(data = europe) +
 
 # death df
 death_rate_plot <- ggplot(death_rate_df, aes(x = reorder(country, death_rate), y = death_rate)) +
-  geom_point(size = 3) +
+  
+  geom_point(size = 3, color = met.brewer("VanGogh2")[8]) +
   
   geom_hline(yintercept = 0.005, linetype = "solid", color = "black") +
   geom_hline(yintercept = 0.1, linetype = "solid", color = "black") +
@@ -79,7 +80,7 @@ death_rate_plot <- ggplot(death_rate_df, aes(x = reorder(country, death_rate), y
         axis.text.y = element_text(),
         panel.grid.minor = element_blank(),
         panel.grid.major.y = element_blank(),
-        panel.grid.major = element_line(color = "grey", linetype = "dashed"))
+        panel.grid.major = element_line(color = met.brewer("VanGogh2")[7], linetype = "dashed"))
 
 death_rate_plot <- gg.gap(
   plot = death_rate_plot, 
