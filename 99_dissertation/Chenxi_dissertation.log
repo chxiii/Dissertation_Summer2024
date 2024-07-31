@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  31 JUL 2024 23:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  1 AUG 2024 00:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -826,17 +826,7 @@ File: ../03_outputs/food_structure.pdf Graphic file (type pdf)
 <use ../03_outputs/food_structure.pdf>
 Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 68.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
- [10] [11 <../03_outputs/food_structure.pdf>] [12] [13]
-Overfull \hbox (18.46886pt too wide) in paragraph at lines 105--106
-\T1/ppl/m/n/12 turn our at-ten-tion to a small num-ber of stud-ies that di-rectly adopt the rights method. 
- []
-
-<../03_outputs/grain_price.pdf, id=493, 505.89pt x 361.35pt>
-File: ../03_outputs/grain_price.pdf Graphic file (type pdf)
-<use ../03_outputs/grain_price.pdf>
-Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 110.
-(pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
-[14]) (./data/data.tex [15 <../03_outputs/grain_price.pdf>]
+ [10] [11 <../03_outputs/food_structure.pdf>] [12] [13]) (./data/data.tex [14]
 Chapter 3.
 
 Overfull \hbox (0.9387pt too wide) in alignment at lines 19--24
@@ -863,32 +853,38 @@ Overfull \hbox (0.9387pt too wide) in alignment at lines 39--73
  [] [] [] [] 
  []
 
-[16
+[15
 
-]) (./methods/methods.tex [17]
+]
+<../03_outputs/grain_price.pdf, id=554, 505.89pt x 361.35pt>
+File: ../03_outputs/grain_price.pdf Graphic file (type pdf)
+<use ../03_outputs/grain_price.pdf>
+Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 82.
+(pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
+) (./methods/methods.tex [16 <../03_outputs/grain_price.pdf>]
 Chapter 4.
-) (./Chenxi_dissertation.bbl [18
+) (./Chenxi_dissertation.bbl [17
 
-] [19
+] [18
 
-] [20] [21] [22] [23] [24] [25]) [26] (./Chenxi_dissertation.aux)
+] [19] [20] [21] [22] [23] [24]) [25] (./Chenxi_dissertation.aux)
 Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 64E4DC5280934FE921310DAC532EE546;1532.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 26219 strings out of 476025
- 489043 string characters out of 5790018
+ 26218 strings out of 476025
+ 489036 string characters out of 5790018
  1870388 words of memory out of 5000000
  46006 multiletter control sequences out of 15000+600000
  552487 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,117p,1752b,790s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (33 pages, 1437689 bytes).
+Output written on Chenxi_dissertation.pdf (32 pages, 1436617 bytes).
 PDF statistics:
- 676 PDF objects out of 1000 (max. 8388607)
- 612 compressed objects within 7 object streams
- 154 named destinations out of 1000 (max. 500000)
+ 670 PDF objects out of 1000 (max. 8388607)
+ 607 compressed objects within 7 object streams
+ 153 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
