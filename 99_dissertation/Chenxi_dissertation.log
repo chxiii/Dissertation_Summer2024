@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  30 JUL 2024 23:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  31 JUL 2024 01:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -769,11 +769,11 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 1
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-<signature.png, id=64, 302.12875pt x 84.315pt>
+<signature.png, id=64, 153.57375pt x 108.405pt>
 File: signature.png Graphic file (type png)
 <use signature.png>
 Package pdftex.def Info: signature.png  used on input line 146.
-(pdftex.def)             Requested size: 135.55035pt x 37.82817pt.
+(pdftex.def)             Requested size: 67.77173pt x 47.83894pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
@@ -826,13 +826,13 @@ File: ../03_outputs/food_structure.pdf Graphic file (type pdf)
 <use ../03_outputs/food_structure.pdf>
 Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 68.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
- [10] [11 <../03_outputs/food_structure.pdf>]
-<../03_outputs/grain_price.pdf, id=426, 505.89pt x 361.35pt>
+ [10] [11 <../03_outputs/food_structure.pdf>] [12]
+<../03_outputs/grain_price.pdf, id=451, 505.89pt x 361.35pt>
 File: ../03_outputs/grain_price.pdf Graphic file (type pdf)
 <use ../03_outputs/grain_price.pdf>
-Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 89.
+Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 95.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
- [12] [13 <../03_outputs/grain_price.pdf>]) (./data/data.tex [14]
+ [13 <../03_outputs/grain_price.pdf>]) (./data/data.tex [14]
 Chapter 3.
 
 Overfull \hbox (0.9387pt too wide) in alignment at lines 19--24
@@ -881,10 +881,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,17n,117p,1752b,762s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (31 pages, 1429985 bytes).
+Output written on Chenxi_dissertation.pdf (31 pages, 1430735 bytes).
 PDF statistics:
- 610 PDF objects out of 1000 (max. 8388607)
- 549 compressed objects within 6 object streams
+ 621 PDF objects out of 1000 (max. 8388607)
+ 560 compressed objects within 6 object streams
  142 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

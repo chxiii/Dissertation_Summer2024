@@ -27,7 +27,7 @@ pkgTest <- function(pkg) {
 # ex: stringr
 # lapply(c("stringr"), pkgTest)
 
-lapply(c("readxl", 
+lapply(c("readxl", "reshape2",
          "MetBrewer", "ggsci", # visualisation colour package
          "ggplot2", "ggforce", "ggthemes", "patchwork", "ggpubr", "gg.gap",
          "rnaturalearth", "rnaturalearthdata",
