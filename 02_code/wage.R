@@ -8,17 +8,17 @@ wage <- ggplot(df, aes(x = year)) +
   
   annotate("text", x = 1848, y = max(df$craftman_wage), label = "Great Famine", vjust = 20, fontface = "italic") +
   
-  geom_line(aes(y = craftman_wage, linetype = "Craftman Wage"), color = met.brewer("Monet")[6], linewidth = 0.8) +
+  geom_line(aes(y = ground_rent, linetype = "Ground Rent"), color = met.brewer("Monet")[6], linewidth = 0.8) +
   geom_line(aes(y = general_wage, linetype = "General Wage"), color = met.brewer("Monet")[7], linewidth = 0.8) +
   
   labs(x = "Year", y = "Wage", title = "Wage") +
   
-  scale_linetype_manual(name = "Type", values = c("Craftman Wage" = "solid", "General Wage" = "solid")) +
+  scale_linetype_manual(name = "Type", values = c("Ground Rent" = "solid", "General Wage" = "solid")) +
   
   theme_bw() +
   
   theme(panel.grid = element_blank(),
-        legend.position = c(0.998, 0.18), 
+        legend.position = c(0.001, 0.98), 
         legend.justification = "right",
         legend.box.just = "right")
 

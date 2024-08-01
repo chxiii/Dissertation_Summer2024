@@ -35,7 +35,11 @@ lapply(c("readxl", "reshape2",
          "dplyr", 
          "tidyr", 
          "ggbreak",
-         "sf", "digest", "osmdata", "ggrepel", "cowplot" # for shp
+         "sf", "digest", "osmdata", "ggrepel", "cowplot", # for shp
+         "car", # vif
+         "randomForest", # random forest
+         "mgcv", # GAM
+         "segmented" # RDD
          ), pkgTest)
 
 options(scipen = 200)
