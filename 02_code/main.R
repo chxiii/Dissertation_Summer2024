@@ -28,6 +28,7 @@ pkgTest <- function(pkg) {
 # lapply(c("stringr"), pkgTest)
 
 lapply(c("readxl", "reshape2",
+         "zoo", "mice", # to deal with missing value
          "MetBrewer", "ggsci", # visualisation colour package
          "ggplot2", "ggforce", "ggthemes", "patchwork", "ggpubr", "gg.gap",
          "rnaturalearth", "rnaturalearthdata",
@@ -80,6 +81,10 @@ palette <- c("#EEDAE5", "#FBDD82", "#C94E2F", "#6D90ED")
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 df <- read_excel("../01_data/Irish_19th_century_data.xlsx", sheet = 1)
+
+df <- mice(df, method = 'pmm', m = 5, seed = 500)
+df <- complete(df, 1)
+
 
 
 

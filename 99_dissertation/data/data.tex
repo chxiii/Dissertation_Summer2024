@@ -11,7 +11,7 @@ Malone: No, the starvation. When a country is full of food, and exporting it, th
 \vspace{0pt}
 The data come from several primary sources, including (1) census data, (2) economic history research papers, and (3) original archival material from the National Library Ireland. Many materials only covered a few years, so this paper filled in the data by combining various materials. For example, regarding the price of oats, the data from 1821 to 1828 were obtained from Daniel's 2021 research, the data from 1829 to 1859 were obtained from Vamplew's 1980 research, and the data from 1850 to 1900 were obtained from Tuner's 1987 research. Below are all the variables and their sources.
 
-\vspace{14pt}
+\vspace{7pt}
 
 \begin{spacing}{1}
 \begin{ThreePartTable}
@@ -22,7 +22,9 @@ The data come from several primary sources, including (1) census data, (2) econo
         \vspace{7pt}
         \item[b] \textit{Base on Documenting Ireland: Parliament, People and Migration. This article estimates the population in non-census years based on Irish immigration, mortality, and mid-year population data.}
         \vspace{7pt}
-
+        \item[c] \textit{O = Oat, P = Potato, W = Wheat, B = Barley, the following abbreviations are the same}
+        \vspace{7pt}
+        \item[d] \textit{The potato data in this section are estimated from the agricultural stock situation during this period. Unfortunately, due to the lack of specific yields and the fact that grain yields per hectare are changing, for example, in 1837, the barley yield could reach 24.9 cwt, but the yield from 1847 to 1851 was only 18cwt.}
         \end{spacing}
     \end{TableNotes}
 \begin{longtable}{cccc}
@@ -56,6 +58,7 @@ The data come from several primary sources, including (1) census data, (2) econo
     Ground Rent & Ground Rent & 1821 \textendash\ 1829 & \citep{m2013land} \\
      & & 1830 \textendash\ 1849 & \citep{geary2004trends} \\
      & & 1850 \textendash\ 1885 & \citep{guinnane1996bonds} \\
+     & & 1886 \textendash\ 1900 & NA \\
     & & \\
     Tax & Tithe & 1821 \textendash\ 1900 & \citep{brynn1970irish} \& \citep{shaw2015economic} \\
     & & \\
@@ -64,7 +67,7 @@ The data come from several primary sources, including (1) census data, (2) econo
      & Potato & 1821 \textendash\ 1845 & \citep{kennedy1997prices} \\
      & Wheat & 1824 \textendash\ 1837 & Southampton library\\
      & Barley & 1821 \textendash\ 1828 & \citep{clark2004price} \\
-     & O. P. W. B. & 1840 \textendash\ 1900 & \citep{barrington1926review} \\
+     & O. P. W. B. \tnote{c} & 1840 \textendash\ 1900 & \citep{barrington1926review} \\
      & O. P. & 1821 \textendash\ 1850 & \citep{kennedy1997prices} \\
      & Agriculture index & 1850 \textendash\ 1900 & \citep{turner1987towards}\\
     & & \\
@@ -73,7 +76,7 @@ The data come from several primary sources, including (1) census data, (2) econo
      & O. W. B. & 1821 \textendash\ 1846 & Estimated from Price Index\\
      & O. P. W. B. & 1847 \textendash\ 1900 & CSO agriculture report \\
     & & \\
-    Import & O. W. B. & 1821 \textendash\ 1838 & Linear Interpolation \\
+    Import & O. W. B. & 1821 \textendash\ 1838 & NA \\
      & O. W. B. & 1839 \textendash\ 1900 & \citep{brunt2004irish} \\
     & & \\
     Export & Wheat & 1821 \textendash\ 1828 & \citep{hansard1840flour} \\
@@ -84,10 +87,18 @@ The data come from several primary sources, including (1) census data, (2) econo
 \end{longtable}
 \end{ThreePartTable}
 \end{spacing}
+\vspace{-14pt}
+
+In addition, there are a number of missing values, including the ground rent from 1886 to 1900, the imports of oats, barley, and wheat from 1821 to 1838, and the exports of barley and oats from 1821 to 1828. Considering that these missing values may be related to other variables, the mice package in R language is used to fill these missing values with multiple imputation. Since the data in this article come directly from previous research and historical archives, there is no need to deal with outliers.
 
 \newpage
 
+\section{Research Assumptions}
+
 \section{Statistical Description}
+
+
+
 
 \begin{figure}[htbp]
     \centering
@@ -95,4 +106,3 @@ The data come from several primary sources, including (1) census data, (2) econo
     \includegraphics[width=.95\textwidth]{../03_outputs/grain_price.pdf}
 \end{figure}
 
-\section{Research Assumptions}
