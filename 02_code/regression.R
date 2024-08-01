@@ -1,8 +1,5 @@
 source("main.R")
 
-df1 <- df %>% filter(year >= 1821 & year <= 1851)
-df2 <- df %>% filter(year >= 1852 & year <= 1900)
-
 p1 <- ggplot(df, aes(x = potato_price, y = popgap)) +
   geom_point() + 
   theme_bw()
@@ -53,6 +50,11 @@ p2 <- ggplot(df, aes(x = exports_total, y = popgap)) +
   theme_bw()
 p2
 
+p2 <- ggplot(df, aes(x = total_acre, y = popgap)) +
+  geom_point() + 
+  theme_bw()
+p2
+
 
 
 reg <- gam(popgap ~ s(potato_price) + other_grain_price +
@@ -61,5 +63,8 @@ reg <- gam(popgap ~ s(potato_price) + other_grain_price +
 summary(reg)
 plot(reg)
 
-         
-                          
+cor(df$popgap, df$total_acre)
+
+reg1 <- gam(popgap ~ s(total_acre), data = df)
+summary(reg1)         
+plot(reg1)                          
