@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  1 AUG 2024 01:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  1 AUG 2024 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -829,39 +829,39 @@ Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 68
  [10] [11 <../03_outputs/food_structure.pdf>] [12] [13] [14]) (./data/data.tex [15]
 Chapter 3.
 
-Overfull \hbox (0.9387pt too wide) in alignment at lines 26--31
+Overfull \hbox (0.9387pt too wide) in alignment at lines 28--33
  [] [] [] [] 
  []
 
 
-Overfull \hbox (0.9387pt too wide) in alignment at lines 31--37
+Overfull \hbox (0.9387pt too wide) in alignment at lines 33--39
  [] [] [] [] 
  []
 
 
-Overfull \hbox (0.9387pt too wide) in alignment at lines 37--42
+Overfull \hbox (0.9387pt too wide) in alignment at lines 39--44
  [] [] [] [] 
  []
 
 
-Overfull \hbox (0.9387pt too wide) in alignment at lines 42--46
+Overfull \hbox (0.9387pt too wide) in alignment at lines 44--48
  [] [] [] [] 
  []
 
 
-Overfull \hbox (0.9387pt too wide) in alignment at lines 46--80
+Overfull \hbox (0.9387pt too wide) in alignment at lines 48--84
  [] [] [] [] 
  []
 
 [16
 
-]
-<../03_outputs/grain_price.pdf, id=573, 505.89pt x 361.35pt>
+] [17]
+<../03_outputs/grain_price.pdf, id=585, 505.89pt x 361.35pt>
 File: ../03_outputs/grain_price.pdf Graphic file (type pdf)
 <use ../03_outputs/grain_price.pdf>
-Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 89.
+Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 95.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
-) (./methods/methods.tex [17] [18 <../03_outputs/grain_price.pdf>]
+) (./methods/methods.tex [18 <../03_outputs/grain_price.pdf>]
 Chapter 4.
 ) (./Chenxi_dissertation.bbl [19
 
@@ -881,10 +881,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,17n,117p,1752b,790s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (34 pages, 1440420 bytes).
+Output written on Chenxi_dissertation.pdf (34 pages, 1441196 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
- 631 compressed objects within 7 object streams
+ 700 PDF objects out of 1000 (max. 8388607)
+ 635 compressed objects within 7 object streams
  160 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
