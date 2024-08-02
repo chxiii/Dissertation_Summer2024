@@ -52,9 +52,9 @@ blight_pathway <- ggplot(data = europe) +
   annotate("text", x = -9.8, y = 49, label = "1843 - 1845, North America", size = 3) +
   
   coord_sf(xlim = c(-15, 5), ylim = c(48, 60) , expand = FALSE) +
-  labs(title = "Potato Blight Pathway",
-       x = " ",
-       y = " ") +
+  labs(title = "",
+       x = "",
+       y = "") +
   
   theme_bw() +
   
@@ -67,12 +67,13 @@ death_rate_plot <- ggplot(death_rate_df, aes(x = reorder(country, death_rate), y
   
   geom_point(size = 3, color = met.brewer("VanGogh2")[8]) +
   
-  geom_hline(yintercept = 0.005, linetype = "solid", color = "black") +
-  geom_hline(yintercept = 0.1, linetype = "solid", color = "black") +
-  
-  labs(title = "Famine Death Rates",
+  labs(title = "",
        x = "",
        y = "") +
+  
+  scale_y_break(c(0.004, 0.1190), space = 0.1) +
+  
+  scale_y_continuous(breaks = seq(-0.2, 0.2, by = 0.001)) +
   
   theme_bw() +
   
@@ -80,22 +81,20 @@ death_rate_plot <- ggplot(death_rate_df, aes(x = reorder(country, death_rate), y
         axis.text.y = element_text(),
         panel.grid.minor = element_blank(),
         panel.grid.major.y = element_blank(),
-        panel.grid.major = element_line(color = met.brewer("VanGogh2")[7], linetype = "dashed"))
-
-death_rate_plot <- gg.gap(
-  plot = death_rate_plot, 
-  segments = c(0.005, 0.1), 
-  tick_width = c(0.001, 0.05), 
-  ylim = c(0, 0.15)
-) + 
+        panel.grid.major = element_line(color = met.brewer("VanGogh2")[7], linetype = "dashed")) +
   
-  theme_bw()
+  coord_fixed(ratio = 1)
+  
+death_rate_plot
+  
+
 
 # Combine the plots
-blight_path_death <- ggarrange(blight_pathway, death_rate_plot, ncol = 2, widths = c(2,1))
+blight_path_death <- blight_pathway + death_rate_plot + 
+  
+  plot_layout(ncol = 2, widths = c(1.3, 0.7))
 
 print(blight_path_death)
 
 ggsave("../03_outputs/blight_path_death.pdf", 
        plot = blight_path_death, dpi = 300, width = 7, height = 5)
-

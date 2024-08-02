@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  2 AUG 2024 16:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  2 AUG 2024 18:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -743,7 +743,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 110.
 
 (./title/title.tex
-<title/Trinity_RGB_transparent_main.png, id=63, 412.6617pt x 142.3719pt>
+<title/Trinity_RGB_transparent_main.png, id=67, 412.6617pt x 142.3719pt>
 File: title/Trinity_RGB_transparent_main.png Graphic file (type png)
 <use title/Trinity_RGB_transparent_main.png>
 Package pdftex.def Info: title/Trinity_RGB_transparent_main.png  used on input line 13.
@@ -777,7 +777,7 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 1
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-<signature.png, id=76, 153.57375pt x 108.405pt>
+<signature.png, id=80, 153.57375pt x 108.405pt>
 File: signature.png Graphic file (type png)
 <use signature.png>
 Package pdftex.def Info: signature.png  used on input line 132.
@@ -817,19 +817,19 @@ Chapter 2.
 [5
 
 ] [6]
-<../03_outputs/map1841_1851.pdf, id=297, 505.89pt x 361.35pt>
+<../03_outputs/map1841_1851.pdf, id=303, 505.89pt x 361.35pt>
 File: ../03_outputs/map1841_1851.pdf Graphic file (type pdf)
 <use ../03_outputs/map1841_1851.pdf>
 Package pdftex.def Info: ../03_outputs/map1841_1851.pdf  used on input line 28.
 (pdftex.def)             Requested size: 451.82993pt x 322.74184pt.
  [7 <../03_outputs/map1841_1851.pdf>] [8]
-<../03_outputs/blight_path_death.pdf, id=355, 505.89pt x 361.35pt>
+<../03_outputs/blight_path_death.pdf, id=360, 505.89pt x 361.35pt>
 File: ../03_outputs/blight_path_death.pdf Graphic file (type pdf)
 <use ../03_outputs/blight_path_death.pdf>
 Package pdftex.def Info: ../03_outputs/blight_path_death.pdf  used on input line 50.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
  [9 <../03_outputs/blight_path_death.pdf>]
-<../03_outputs/food_structure.pdf, id=396, 505.89pt x 361.35pt>
+<../03_outputs/food_structure.pdf, id=401, 505.89pt x 361.35pt>
 File: ../03_outputs/food_structure.pdf Graphic file (type pdf)
 <use ../03_outputs/food_structure.pdf>
 Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 68.
@@ -863,59 +863,59 @@ Overfull \hbox (0.9387pt too wide) in alignment at lines 61--96
  [] [] [] [] 
  []
 
-[17] [18] [19] [20]
-<../03_outputs/Framework.pdf, id=614, 963.6pt x 542.025pt>
-File: ../03_outputs/Framework.pdf Graphic file (type pdf)
-<use ../03_outputs/Framework.pdf>
-Package pdftex.def Info: ../03_outputs/Framework.pdf  used on input line 133.
-(pdftex.def)             Requested size: 677.74489pt x 381.2427pt.
- [21 <../03_outputs/Framework.pdf>]
-<../03_outputs/regression_scatter.pdf, id=658, 505.89pt x 505.89pt>
-File: ../03_outputs/regression_scatter.pdf Graphic file (type pdf)
-<use ../03_outputs/regression_scatter.pdf>
-Package pdftex.def Info: ../03_outputs/regression_scatter.pdf  used on input line 142.
-(pdftex.def)             Requested size: 429.23705pt x 429.24431pt.
-<../03_outputs/popline.pdf, id=659, 505.89pt x 361.35pt>
+[17] [18] [19]
+<../03_outputs/popline.pdf, id=615, 505.89pt x 361.35pt>
 File: ../03_outputs/popline.pdf Graphic file (type pdf)
 <use ../03_outputs/popline.pdf>
-Package pdftex.def Info: ../03_outputs/popline.pdf  used on input line 148.
-(pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
-<../03_outputs/grain_price.pdf, id=660, 505.89pt x 361.35pt>
+Package pdftex.def Info: ../03_outputs/popline.pdf  used on input line 135.
+(pdftex.def)             Requested size: 451.82993pt x 322.74184pt.
+<../03_outputs/grain_price.pdf, id=616, 505.89pt x 361.35pt>
 File: ../03_outputs/grain_price.pdf Graphic file (type pdf)
 <use ../03_outputs/grain_price.pdf>
-Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 156.
-(pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
-) (./methods/methods.tex [22
-
-
- <../03_outputs/regression_scatter.pdf>] [23 <../03_outputs/popline.pdf> <../03_outputs/grain_price.pdf>]
+Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 141.
+(pdftex.def)             Requested size: 451.82993pt x 322.74184pt.
+<../03_outputs/regression_scatter.pdf, id=617, 505.89pt x 505.89pt>
+File: ../03_outputs/regression_scatter.pdf Graphic file (type pdf)
+<use ../03_outputs/regression_scatter.pdf>
+Package pdftex.def Info: ../03_outputs/regression_scatter.pdf  used on input line 150.
+(pdftex.def)             Requested size: 429.23705pt x 429.24431pt.
+) (./methods/methods.tex [20 <../03_outputs/popline.pdf>] [21 <../03_outputs/grain_price.pdf>] [22 <../03_outputs/regression_scatter.pdf>]
 Chapter 4.
-) (./discussion/discussion.tex [24
+[23
+
+]
+<../03_outputs/Framework.pdf, id=654, 963.6pt x 542.025pt>
+File: ../03_outputs/Framework.pdf Graphic file (type pdf)
+<use ../03_outputs/Framework.pdf>
+Package pdftex.def Info: ../03_outputs/Framework.pdf  used on input line 10.
+(pdftex.def)             Requested size: 677.74489pt x 381.2427pt.
+ [24 <../03_outputs/Framework.pdf>]) (./discussion/discussion.tex [25
+
 
 ]
 Chapter 5.
-) (./Chenxi_dissertation.bbl [25
+) (./Chenxi_dissertation.bbl [26
 
-] [26
+] [27
 
-] [27] [28] [29] [30] [31] [32]) [33] (./Chenxi_dissertation.aux)
+] [28] [29] [30] [31] [32] [33]) [34] (./Chenxi_dissertation.aux)
 Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: 594CE1C4AA1B7ED13DA721D8916DE62F;1922.
+(rerunfilecheck)             Checksum: 4A376562FAC44A3588F7CC0065A5BC58;2070.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 26369 strings out of 476025
- 493112 string characters out of 5790018
+ 26372 strings out of 476025
+ 493143 string characters out of 5790018
  1870388 words of memory out of 5000000
- 46114 multiletter control sequences out of 15000+600000
+ 46115 multiletter control sequences out of 15000+600000
  554942 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,17n,117p,1752b,790s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (40 pages, 1545106 bytes).
+Output written on Chenxi_dissertation.pdf (41 pages, 1545273 bytes).
 PDF statistics:
- 799 PDF objects out of 1000 (max. 8388607)
- 692 compressed objects within 7 object streams
- 172 named destinations out of 1000 (max. 500000)
- 170 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 808 PDF objects out of 1000 (max. 8388607)
+ 700 compressed objects within 7 object streams
+ 174 named destinations out of 1000 (max. 500000)
+ 178 words of extra memory for PDF output out of 10000 (max. 10000000)
 

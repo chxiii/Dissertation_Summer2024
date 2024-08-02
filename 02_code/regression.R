@@ -21,16 +21,22 @@ reg_scatter
 ggsave("../03_outputs/regression_scatter.pdf", 
        plot = reg_scatter, dpi = 300, width = 7, height = 7)
 
+corr_matrix <- cor(df %>% select(-popgap), use = "complete.obs")
+
+ggcorrplot(corr_matrix, lab = TRUE)
 
 reg <- gam(popgap ~ s(potato_price) + grain_price_other +
-                    if_tithe + ground_rent + general_wage +
+                    if_tithe + poorlaw + ground_rent + general_wage +
                     inventories, data = df)
+
+gam.check(reg)
+
 summary(reg)
 plot(reg)
 
-reg <- VAR(df[, c("potato_price", "grain_price_other", "ground_rent", 
-                  "general_wage", "inventories", "grain_acre_total")],  p = 2, type = "both")
-summary(reg)
+
+
+
 
 cor(df$popgap, df$total_acre)
 

@@ -29,7 +29,7 @@ pkgTest <- function(pkg) {
 
 lapply(c("readxl", "reshape2",
          "zoo", "mice", # to deal with missing value
-         "MetBrewer", "ggsci", # visualisation colour package
+         "MetBrewer", # visualisation colour package
          "ggplot2", "ggforce", "ggthemes", "patchwork", "ggpubr", "gg.gap",
          "rnaturalearth", "rnaturalearthdata",
          "dplyr", 
@@ -38,8 +38,7 @@ lapply(c("readxl", "reshape2",
          "sf", "digest", "osmdata", "ggrepel", "cowplot", # for shp
          "car", # vif
          "vars", # var
-         "randomForest", # random forest
-         "mgcv", # GAM
+         "mgcv", "ggcorrplot", # GAM
          "segmented" # RDD
          ), pkgTest)
 
