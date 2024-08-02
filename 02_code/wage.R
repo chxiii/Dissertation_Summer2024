@@ -18,7 +18,7 @@ wage <- ggplot(df, aes(x = year)) +
   theme_bw() +
   
   theme(panel.grid = element_blank(),
-        legend.position = c(0.001, 0.98), 
+        legend.position = c(0.23, 0.85), 
         legend.justification = "right",
         legend.box.just = "right")
 

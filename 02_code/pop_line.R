@@ -1,50 +1,7 @@
 source("main.R")
 
-price_line <- ggplot() +
-  
-  geom_line(data = df, aes(x = year, y = oat_price, color = "Oat", linetype = "Oat"), size = .5) +
-  geom_line(data = df, aes(x = year, y = potato_price, color = "Potato", linetype = "Potato"), size = .55) +
-  geom_line(data = df, aes(x = year, y = wheat_price, color = "Wheat", linetype = "Wheat"), size = .5) +
-  geom_line(data = df, aes(x = year, y = barley_price, color = "Barley", linetype = "Barley"), size = .5) +
-  
-  annotate("text", x = 1849, y = 24, label = "Great Famine: 1845 - 1851", fontface = "italic", size = 3) +
-  
-  labs(title = "Grain Price with Potato and Oat Price cross Famine", x = NULL, y = "Grain Price") +
-  
-  scale_color_manual(
-    name = "Crops",
-    values = met.brewer("Monet")[c(1, 6, 7, 9)]
-  ) +
-  
-  scale_linetype_manual(
-    name = "Crops",
-    values = c("twodash", "dotdash", "longdash", "solid")
-  ) +
-  
-  scale_x_continuous(breaks = seq(1820, 1900, by = 5)) +
-  
-  theme_bw() +
-  
-  theme(axis.text.x = element_text(angle = 45, hjust = 1), 
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        legend.position = "bottom")
-
-price_line <- price_line + facet_zoom(xlim = c(1844, 1852), 
-                                      ylim = c(5, 22), zoom.size = 0.25, 
-                                      split = FALSE, horizontal = TRUE) +
-  
-  theme(zoom.y = element_rect(fill = NA, color = "grey", linewidth = 0.3),
-        zoom.x = element_rect(fill = "grey", color = "grey", linewidth = 0.3))
-
-print(price_line)
-
-ggsave("../03_outputs/grain_price.pdf", 
-       plot = price_line, dpi = 300, width=7, height=5)
-
-
 pop_line <- ggplot(df, aes(x = year, y = popindex)) +
-
+  
   geom_rect(aes(xmin = 1821, xmax = 1900, ymin = 60, ymax = 63),
             fill = NA, 
             color = met.brewer("VanGogh1")[1], linetype = "dotdash") +
@@ -66,6 +23,8 @@ pop_line <- ggplot(df, aes(x = year, y = popindex)) +
             color = met.brewer("VanGogh1")[1], linetype = "dotdash") +
   
   geom_line(color = met.brewer("VanGogh3")[8], size = 0.8) +
+  
+  geom_bar(aes(y = popgap), stat = "identity", fill = met.brewer("VanGogh3")[2], alpha = 0.6, position = "dodge") +
   
   annotate("text", x = 1830, y = 58, label = "Tithe Stage 1: 1823 - 1838", fontface = "italic", size = 2.5) +
   
@@ -103,7 +62,6 @@ pop_line <- ggplot(df, aes(x = year, y = popindex)) +
             fill = NA, 
             color = "grey", linetype = "dotdash") +
   
-  
   geom_rect(aes(xmin = 1823, xmax = 1882, ymin = 125, ymax = 125),
             fill = NA, 
             color = "grey", linetype = "dotdash") +
@@ -112,18 +70,20 @@ pop_line <- ggplot(df, aes(x = year, y = popindex)) +
   
   labs(title = "Population Index and Events, 1840 = 100") +
   
-  scale_x_continuous(breaks = seq(1820, 1900, by = 5)) +
+  scale_x_continuous(breaks = seq(1820, 1900, by = 10)) +
   
-  scale_y_continuous(breaks = seq(60, 125, by = 5)) +
+  scale_y_continuous(breaks = seq(55, 125, by = 5)) +
   
   theme(axis.text.x = element_text(angle = 45, hjust = 1),
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank())
 
-price_pop_line <- price_line + pop_line + plot_layout(nrow = 2)
+pop_line
 
-price_pop_line
+pop_line <- pop_line + scale_y_break(c(3, 55), space = 0.2) +
 
-ggsave("../03_outputs/price_pop_line.pdf", 
-       plot = price_pop_line, dpi = 300, width = 7, height = 10)
+print(pop_line)
+
+ggsave("../03_outputs/popline.pdf", 
+       plot = pop_line, dpi = 300, width = 7, height = 5)
 

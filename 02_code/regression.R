@@ -1,70 +1,39 @@
 source("main.R")
 
-p1 <- ggplot(df, aes(x = potato_price, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p1
+plot.scatter <- function(data, x, y){
+  ggplot(data, aes_string(x = x, y = y)) +
+    
+    geom_point(color = met.brewer("VanGogh1")[2], size = 1.5, shape = 1) + 
+    
+    theme_bw() +
+    
+    theme(panel.grid = element_blank())
+}
 
-p1 <- ggplot(df, aes(x = wheat_price, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p1
+reg_x <- c("potato_price", "grain_price_other", "ground_rent", 
+           "general_wage", "inventories", "grain_acre_total")
 
-p1 <- ggplot(df, aes(x = oat_price, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p1
+p <- lapply(reg_x, function(i) plot.scatter(df, i, "popgap"))
 
-p1 <- ggplot(df, aes(x = barley_price, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p1
+reg_scatter <- wrap_plots(p, ncol=2)
+reg_scatter
 
-p1 <- ggplot(df, aes(x = other_grain_price, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p1
-
-p1 <- ggplot(df, aes(x = ground_rent, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p1
-
-p2 <- ggplot(df, aes(x = total_acre, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p2
-
-p2 <- ggplot(df, aes(x = general_wage, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p2
-
-p2 <- ggplot(df, aes(x = imports_total, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p2
-
-p2 <- ggplot(df, aes(x = exports_total, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p2
-
-p2 <- ggplot(df, aes(x = total_acre, y = popgap)) +
-  geom_point() + 
-  theme_bw()
-p2
+ggsave("../03_outputs/regression_scatter.pdf", 
+       plot = reg_scatter, dpi = 300, width = 7, height = 7)
 
 
-
-reg <- gam(popgap ~ s(potato_price) + other_grain_price +
+reg <- gam(popgap ~ s(potato_price) + grain_price_other +
                     if_tithe + ground_rent + general_wage +
-                    s(imports_total) + s(exports_total), data = df)
+                    inventories, data = df)
 summary(reg)
 plot(reg)
 
+reg <- VAR(df[, c("potato_price", "grain_price_other", "ground_rent", 
+                  "general_wage", "inventories", "grain_acre_total")],  p = 2, type = "both")
+summary(reg)
+
 cor(df$popgap, df$total_acre)
 
-reg1 <- gam(popgap ~ s(total_acre), data = df)
+reg1 <- gam(popgap ~ s(grain_acre_total), data = df)
 summary(reg1)         
 plot(reg1)                          

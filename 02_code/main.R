@@ -37,6 +37,7 @@ lapply(c("readxl", "reshape2",
          "ggbreak",
          "sf", "digest", "osmdata", "ggrepel", "cowplot", # for shp
          "car", # vif
+         "vars", # var
          "randomForest", # random forest
          "mgcv", # GAM
          "segmented" # RDD
@@ -90,5 +91,14 @@ df <- mice(df, method = 'pmm', m = 5, seed = 500)
 df <- complete(df, 1)
 
 
+df$grain_price_other <- df$wheat_price + df$oat_price + df$barley_price
+
+df$grain_acre_total <- df$potato_acre + df$wheat_acre + df$oat_acre + df$barley_acre
+
+df$inventories <- df$wheat_imports + df$barley_imports + df$oat_imports 
+                  - 
+                  df$wheat_exports + df$barley_exports + df$oats_exports
+
+summary(df)
 
 

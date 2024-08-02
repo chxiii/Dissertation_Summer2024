@@ -21,7 +21,7 @@
 %   It will be used for the title page and for the embedded PDF information
 %----------------------------------------------------------------------------------------
 
-\newcommand{\thesistitle}{Entitlement Methods \textendash\ \\An Example of the Great Famine in Ireland, 1845 \textendash\ 1851} % Your thesis title, this is used in the title and abstract
+\newcommand{\thesistitle}{Entitlement Approach \textendash\ \\An Example of the Irish Famine, 1845 \textendash\ 1851} % Your thesis title, this is used in the title and abstract
 \newcommand{\degree}{M.Sc. Applied Social Data Sciences} % Your degree name, this is used in the title page and abstract
 \newcommand{\typeofthesis}{Dissertation} % dissertation, Final Year Project, report, etc.
 \newcommand{\authorname}{Chenxi Li} % Your name, this is used in the title page and PDF stuff
@@ -61,6 +61,8 @@
 \usepackage[pdftex]{graphicx}
 \usepackage[colorinlistoftodos]{todonotes}
 
+\usepackage{pdflscape}
+
 \usepackage{xcolor}
 \usepackage{caption} % if no caption, no colon
 %\usepackage{sfmath} %use sans-serif in the maths sections too
@@ -78,28 +80,12 @@
 % hyper to the reference
 \usepackage[colorlinks=true, allcolors=black]{hyperref}
 
-%\pagestyle{plain} % Embrace simplicity!
-
-%% The Mechanical engineers require your name and ID on the top of every page.
-%% Uncomment the following block if you want your name and ID at the top of
-%% (almost) every page.
-
 \pagestyle{fancy}
 \fancyhf{} % sets both header and footer to nothing
 \renewcommand{\headrulewidth}{0pt}
 \cfoot{\thepage}
-%\ifdefined\authorid
-%\chead{\it \authorname\ (\authorid)}
-%\else
-%\chead{\it \authorname}
-%\fi
-%% End of block
 
-%% It is not a requirement of the university that the font should be sans-serif, but
-%% the Mechanical engineers require it. Comment out the following line to disable it
-%%\renewcommand{\familydefault}{\sfdefault} %use the sans-serif font as default
 
-%% If you're not using sans-serif, consider using Palatino instead of the LaTeX standard
 \usepackage{mathpazo} % Use the Palatino font by default if you prefer it to Computer Modern
 
 \renewcommand{\theequation}{\arabic{equation}} %% use continuous equation numbers
@@ -152,7 +138,7 @@ I have also completed the Online Tutorial on avoiding plagiarism `Ready Steady W
 \newpage
 
 \section*{Acknowledgements}
-% I would like to thank my supervisor, \textbf{Prof. Martina Kirhberger}, for her guidance through each stage of this dissertation.
+I would like to thank my supervisor, \textbf{Prof. Martina Kirhberger}, for her guidance through each stage of this dissertation.
 
 \chapter{Abstract}
 
@@ -173,6 +159,7 @@ I have also completed the Online Tutorial on avoiding plagiarism `Ready Steady W
 \input{literature/literature.tex}
 \input{data/data.tex}
 \input{methods/methods.tex}
+\input{discussion/discussion.tex}
 
 \bibliographystyle{agsm}
 \bibliography{reference}
