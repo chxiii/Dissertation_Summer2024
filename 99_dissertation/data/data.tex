@@ -12,7 +12,7 @@ The Irish famine should be examined in the context of the entire 19th century hi
 
 In addition, this paper used population change \textendash\ more specifically, the difference between current year's population and previous year's population \textendash\ as the dependent variable to measure the impact of the entitlement approach on population gap, whether it be pre-famine or post-famine sustained growth or decline, thus  realizing out the causal inference between entitlement approach and population change.
 
-The dataset consists of 26 variables, including 23 dataset variables, with the continuous variable population, various cereal prices, various cereal acreage, various cereal imports and exports, land tax, wages and the categorical variable of if government taxed tithe, also 3 constructed variables, including cereal prices summed up except potatoes, cereal acreage summed up, and the difference in cereal imports and exports. Each year is an observation, totaling 80 observations from 1821 to 1900.
+The dataset consists of 25 variables, including continuous variable population, various cereal prices, various cereal acreage, various cereal imports and exports, land tax, wages and categorical variables of if government taxed tithe and poor law status, also constructed variables, including cereal prices summed up except potatoes, cereal acreage summed up, and the difference in cereal imports and exports. Each year is an observation, totaling 80 observations from 1821 to 1900.
 
 \section{Data Sources}
 \vspace{0pt}
@@ -63,14 +63,16 @@ Below are all the variables and their sources:
     Population & Population & 1821, 1831, \ldots & Irish Census \tnote{a}\\
      & & Remain years & Estimated population \tnote{b}\\
     & & \\
-    Wage & General wage & 1821 \textendash\ 1900 & \citep{d1989wages} \& \citep{bishop1915history}\\
+    Wage & General Wage & 1821 \textendash\ 1900 & \citep{d1989wages} \& \citep{bishop1915history}\\
     & & \\
     Ground Rent & Ground Rent & 1821 \textendash\ 1829 & \citep{m2013land} \\
      & & 1830 \textendash\ 1849 & \citep{geary2004trends} \\
      & & 1850 \textendash\ 1885 & \citep{guinnane1996bonds} \\
      & & 1886 \textendash\ 1900 & NA \\
     & & \\
-    Tax & Tithe & 1821 \textendash\ 1900 & \citep{brynn1970irish} \& \citep{shaw2015economic} \\
+    Tax & Tithe Status & 1821 \textendash\ 1900 & \citep{brynn1970irish} \& \citep{shaw2015economic} \\
+    & & \\
+    Poor Law & Poor Law Status & 1821 \textendash\ 1900 & Historical Record \\
     & & \\
     Grain Price & Oat & 1821 \textendash\ 1828 & \citep{daniel2021irish} \\
      & & 1829 \textendash\ 1859 & \citep{vamplew1980grain}\\ 
