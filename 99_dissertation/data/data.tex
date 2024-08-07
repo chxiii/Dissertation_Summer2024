@@ -1,7 +1,6 @@
 \chapter{Data}
 
-\textit{
-``Malone: Me father died of starvation in Ireland in the Black 47. Maybe you've heard of it.\\
+\textit{``Malone: Me father died of starvation in Ireland in the Black 47. Maybe you've heard of it.\\
 Violet: The Famine?\\
 Malone: No, the starvation. When a country is full of food, and exporting it, there can be no famine. Me father was starved dead; and I was starved out to America in me mother's arms''.\\
 \textemdash\ ``Man and Superman'' by George Bernard Shaw
@@ -154,17 +153,21 @@ Also we must pay attention to theory of substitution. Potatoes and oats, as the 
 
 The arrows describe the price trends of the two grains during the famine, and the suddenly rise in the prices of both grains in 1846 may be directly related to the severe disaster of 1847, i.e., as stated earlier, an impairment of trade-based entitlement. While at the same time the sustained increase in the price of potatoes but the decrease in the price of the substitute oats from 1847 to 1848, as well as subsequent fluctuations in the prices of both, seem to foreshadow the famine and it was fading.
 
+For Figure 3.3, there are two other noteworthy points in time, 1832 and 1855, where the coordinates for 1832 show that both potato and oat prices were at extremely low levels, corresponding to well-established farmers' trade-based entitlements, and historically, a period of rapid population growth in Ireland. But in 1855, when the famine had already passed, it can be noted that the price of oats in 1855 was abnormal, however, the fact that famine did not continue in 1855 was largely due to prices of other grains, including potatoes, wheat, barley, etc., did not rise in the same year, and the existence of substitutes compensated for the farmers' impaired trade-based entitlement.
+
+Before proceeding with the regression, it is necessary to review the relationship between the variables. Figure 3.4 depicts the relationship between the independent variables and between the independent and dependent variables, where the gaps indicate insignificant correlation coefficients. The correlations between the independent variables are not repeated here because they are largely consistent with empirical inferences, e.g., the moderate correlation between potato prices and the prices of other cereals, the weak negative correlation between volume of imports and exports, etc.
+
 \begin{figure}[htbp]
     \centering
     \caption{Regression Correlation Matrix}
     \includegraphics[width=.95\textwidth]{../03_outputs/corrmatrix.pdf}
 \end{figure}
 
-\begin{figure}[htbp]
-    \centering
-    \caption{Regression Scatter}
-    \includegraphics[width=.95\textwidth]{../03_outputs/regression_scatter.pdf}
-\end{figure}
+More noteworthy is the relationship between the independent and dependent variables in Figure 3.4. The dependent variable \texttt{popgap} is significantly related only to \texttt{potato\_price}, \texttt{ground\_rent}, \texttt{grain\_acre\_total} and \texttt{imports\_total}. Also there is no high correlation between the independent variables. However, non-significant correlation coefficients do not directly lead to the conclusion that they should be excluded from the regression model \textemdash\ this tends to lead us to ignore relationships that are not linear in nature. This paper will further explore these potential nonlinear relationships in the next chapter, along with a discussion of the regression methods used.
+
+
+
+
 
 
 

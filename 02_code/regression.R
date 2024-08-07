@@ -1,28 +1,4 @@
-source("main.R")
-
-# 选择相关变量
-selected_vars <- df %>% select(potato_price, 
-                               grain_price_other, 
-                               ground_rent, general_wage, imports_total, exports_total)
-
-# 计算相关系数矩阵
-cor_matrix <- cor(selected_vars, use = "complete.obs")
-
-# 将相关系数矩阵转换为长格式数据框
-melted_cor_matrix <- melt(cor_matrix)
-
-# 绘制相关系数矩阵热力图
-ggplot(data = melted_cor_matrix, aes(x = Var1, y = Var2, fill = value)) +
-  geom_tile(color = "white") +
-  scale_fill_gradient2(low = "blue", high = "red", mid = "white", 
-                       midpoint = 0, limit = c(-1, 1), space = "Lab", 
-                       name="Pearson\nCorrelation") +
-  theme_minimal() + 
-  theme(axis.text.x = element_text(angle = 45, vjust = 1, 
-                                   size = 12, hjust = 1)) +
-  coord_fixed()
-
-
+##### function for scatter matrix #####
 
 plot.scatter <- function(data, x, y){
   ggplot(data, aes_string(x = x, y = y)) +
@@ -46,17 +22,18 @@ ggsave("../03_outputs/regression_scatter.pdf",
        plot = reg_scatter, dpi = 300, width = 7, height = 7)
 
 
-reg.ori.gam <- gam(popgap ~ s(potato_price) + grain_price_other + # H1
-             
-             s(ground_rent) + factor(if_tithe) +  #H2
-             
-             general_wage + #H3 
-             
-             s(imports_total) + exports_total + factor(poorlaw) # H4
-            
-             ,
 
-             data = df)
+reg.ori.gam <- gam(popgap ~ potato_price + s(grain_price_other) + # H1
+                     
+                     ground_rent + factor(if_tithe) +  #H2
+                     
+                     s(general_wage) + #H3 
+                     
+                     imports_total + factor(poorlaw)  # H4
+                   
+                   ,
+                   
+                   data = df)
 
 AIC(reg.ori.gam)
 
@@ -67,7 +44,7 @@ df %>% ggplot(aes(ground_rent, popgap))+
   geom_point()+
   geom_smooth(method = "gam")
 
-reg.fad.gam <- gam(popgap ~ s(grain_acre_total) + year, data = df)
+reg.fad.gam <- gam(popgap ~ grain_acre_total, data = df)
 summary(reg.fad.gam)
 
 reg.lin <- lm(popgap ~ potato_price + grain_price_other + 
@@ -84,6 +61,7 @@ AIC(reg.lin)
 
 summary(reg.lin)
 
+vif(reg.lin)
 
 
 
@@ -127,26 +105,22 @@ shapiro.test(residuals(reg.upd.gam))
 
 # AIC check
 reg.lm <- lm(popgap ~ potato_price + grain_price_other + # H1
-                
-                ground_rent + if_tithe + #H2
-                
-                general_wage + #H3 
-                
-                poorlaw +  #H4
-                
-                year,
+               
+               ground_rent + if_tithe + #H2
+               
+               general_wage + #H3 
+               
+               poorlaw +  #H4
+               
+               year,
              
-              data = df)
+             data = df)
 
 summary(reg.lm)
 
 AIC(reg.lm)
 
 dwtest(reg.lm)
-
-
-
-
 
 
 

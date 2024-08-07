@@ -36,8 +36,7 @@ lapply(c("readxl", "reshape2", # import data
          "ggbreak",
          "sf", "digest", "osmdata", "ggrepel", "cowplot", # for shp
          "car", # vif
-         "corrplot", # corr
-         "mgcv", "ggcorrplot", # GAM
+         "mgcv", "ggcorrplot", "Hmisc", # GAM
          "forestplot", "broom" # forest plot
          ), pkgTest)
 
