@@ -6,7 +6,7 @@ wage <- ggplot(df, aes(x = year)) +
   geom_rect(aes(xmin = 1845, xmax = 1851, ymin = -Inf, ymax = Inf), 
             fill = met.brewer("Monet")[3], color = "black", linetype = "dotdash") +
   
-  annotate("text", x = 1848, y = max(df$craftman_wage), label = "Great Famine", vjust = 20, fontface = "italic") +
+  annotate("text", x = 1848, y = max(df$general_wage), label = "Great Famine", vjust = 20, fontface = "italic") +
   
   geom_line(aes(y = ground_rent, linetype = "Ground Rent"), color = met.brewer("Monet")[6], linewidth = 0.8) +
   geom_line(aes(y = general_wage, linetype = "General Wage"), color = met.brewer("Monet")[7], linewidth = 0.8) +

@@ -27,19 +27,18 @@ pkgTest <- function(pkg) {
 # ex: stringr
 # lapply(c("stringr"), pkgTest)
 
-lapply(c("readxl", "reshape2",
+lapply(c("readxl", "reshape2", # import data
          "zoo", "mice", # to deal with missing value
          "MetBrewer", # visualisation colour package
          "ggplot2", "ggforce", "ggthemes", "patchwork", "ggpubr", "gg.gap",
          "rnaturalearth", "rnaturalearthdata",
-         "dplyr", 
-         "tidyr", 
+         "dplyr", "tidyr", 
          "ggbreak",
          "sf", "digest", "osmdata", "ggrepel", "cowplot", # for shp
          "car", # vif
-         "vars", # var
+         "corrplot", # corr
          "mgcv", "ggcorrplot", # GAM
-         "segmented" # RDD
+         "forestplot", "broom" # forest plot
          ), pkgTest)
 
 options(scipen = 200)
@@ -86,17 +85,20 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 df <- read_excel("../01_data/Irish_19th_century_data.xlsx", sheet = 1)
 
-df <- mice(df, method = 'pmm', m = 5, seed = 500)
+df <- mice(df, method = 'pmm', m = 5, seed = 42)
 df <- complete(df, 1)
-
 
 df$grain_price_other <- df$wheat_price + df$oat_price + df$barley_price
 
+df$grain_price_total <- df$potato_price + df$wheat_price + df$oat_price + df$barley_price
+
 df$grain_acre_total <- df$potato_acre + df$wheat_acre + df$oat_acre + df$barley_acre
 
-df$inventories <- df$wheat_imports + df$barley_imports + df$oat_imports 
-                  - 
-                  df$wheat_exports + df$barley_exports + df$oats_exports
+df$imports_total <- df$wheat_imports + df$barley_imports + df$oat_imports 
+                   
+df$exports_total <- df$wheat_exports + df$barley_exports + df$oat_exports
+
+df$inventories <- df$exports_total - df$imports_total
 
 summary(df)
 
