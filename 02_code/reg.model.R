@@ -92,9 +92,13 @@ shapiro.test(residuals(reg.upd.gam))
 
 
 
-reg.fad.gam <- gam(popgap ~ grain_acre_total + year, data = df)
+reg.fad.lm <- lm(popgap ~ grain_acre_total, data = df)
 
-summary(reg.fad.gam)
+AIC(reg.fad.lm)
+
+summary(reg.fad.lm)
+
+stargazer(reg.fad.lm)
 
 
 

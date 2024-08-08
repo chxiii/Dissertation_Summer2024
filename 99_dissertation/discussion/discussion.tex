@@ -1,48 +1,51 @@
 \chapter{Discussion}
 
-% \begin{table}[h] 
-%     \centering 
-%     \caption{Regression Results: GAM and Linear} 
-%   \begin{tabular}{@{\extracolsep{5pt}}lcc} 
-%   \\[-1.8ex]\hline 
-%   \hline \\[-1.8ex] 
-%    & \multicolumn{2}{c}{\textit{Dependent variable:}} \\ 
-%   \cline{2-3} 
-%   \\[-1.8ex] & \multicolumn{2}{c}{popgap} \\ 
-%   \hline \\[-1.8ex] 
-%    & GAM & LM \\ 
-%   \hline \\[-1.8ex] 
-%    potato\_price & $-$0.079$^{***}$ & $-$0.107$^{***}$ \\ 
-%     & (0.028) & (0.033) \\ 
-%    grain\_price\_other &  & 0.179$^{**}$ \\ 
-%     &  & (0.069) \\ 
-%    ground\_rent & 0.342$^{***}$ & 0.082 \\ 
-%     & (0.118) & (0.119) \\ 
-%    factor(if\_tithe)1 & 0.450 & 1.159$^{**}$ \\ 
-%     & (0.559) & (0.535) \\ 
-%    general\_wage &  & 0.050 \\ 
-%     &  & (0.037) \\ 
-%    imports\_total & 0.044$^{***}$ & 0.042$^{***}$ \\ 
-%     & (0.008) & (0.010) \\ 
-%    exports\_total &  & 0.001 \\ 
-%     &  & (0.001) \\ 
-%    factor(poorlaw)1 & 3.616$^{***}$ & 3.103$^{***}$ \\ 
-%     & (0.617) & (0.752) \\ 
-%    Constant & $-$7.420$^{***}$ & $-$7.751$^{***}$ \\ 
-%     & (1.391) & (1.964) \\ 
-%   \hline \\[-1.8ex] 
-%   s(grain\_price\_other) & 0.003$^{**}$ & \\ 
-%   s(general\_wage) & 0.000$^{***}$ & \\ 
-%   s(exports\_total) & 0.302 & \\ 
-%   \hline \\[-1.8ex] 
-%   Observations & 80 & 80 \\ 
-%   Adjusted R$^{2}$ & 0.741 & 0.570 \\ 
-%   AIC & 201.470 & 235.916\\
-%   Residual Std. Error &  & 0.990 (df = 71) \\ 
-%   F Statistic &  & 14.115$^{***}$ (df = 8; 71) \\ 
-%   \hline 
-%   \hline \\[-1.8ex] 
-%   \textit{Note:}  & \multicolumn{2}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
-%   \end{tabular} 
-% \end{table} 
+
+\section{Regression Results Summary}
+\begin{table}[!htbp]
+    \centering
+    \caption{GAM, FAD LM, and General LM}
+    \label{tab:combined_regression}
+    \begin{tabular}{@{\extracolsep{5pt}}lccc}
+    \\[-1.8ex]\hline
+    \hline \\[-1.8ex]
+    & \multicolumn{3}{c}{\textit{Dependent variable: popgap}} \\
+    \cline{2-4}
+    \\[-1.8ex] & GAM & FAD LM & General LM \\
+    \hline \\[-1.8ex]
+    potato\_price & $-$0.079$^{***}$ & & $-$0.107$^{***}$ \\
+     & (0.028) & & (0.033) \\
+    grain\_price\_other & &  & 0.179$^{**}$ \\
+     & &  & (0.069) \\
+    grain\_acre\_total & & $-$0.003$^{***}$ & \\
+     & & (0.001) & \\
+    ground\_rent & 0.342$^{***}$ & & 0.082 \\
+     & (0.118) & & (0.119) \\
+    factor(if\_tithe)1 & 0.450 & & 1.159$^{**}$ \\
+     & (0.559) & & (0.535) \\
+    general\_wage & & & 0.050 \\
+     & & & (0.037) \\
+    imports\_total & 0.044$^{***}$ & & 0.042$^{***}$ \\
+     & (0.008) & & (0.010) \\
+    exports\_total & & & 0.001 \\
+     & & & (0.001) \\
+    factor(poorlaw)1 & 3.616$^{***}$ & & 3.103$^{***}$ \\
+     & (0.617) & & (0.752) \\
+    Constant & $-$7.420$^{***}$ & 1.987$^{**}$ & $-$7.751$^{***}$ \\
+     & (1.391) & (0.796) & (1.964) \\
+    \hline \\[-1.8ex]
+    s(grain\_price\_other) & 0.003$^{**}$ & & \\
+    s(general\_wage) & 0.000$^{***}$ & & \\
+    s(exports\_total) & 0.302 & & \\
+    \hline \\[-1.8ex]
+    Observations & 80 & 80 & 80 \\
+    Adjusted R$^{2}$ & 0.741 & 0.097 & 0.570 \\
+    AIC & 201.470 & & 235.916 \\
+    Residual Std. Error & & 1.436 (df = 78) & 0.990 (df = 71) \\
+    F Statistic & & 9.457$^{***}$ (df = 1; 78) & 14.115$^{***}$ (df = 8; 71) \\
+    \hline
+    \hline \\[-1.8ex]
+    \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+    \end{tabular}
+\end{table}
 
