@@ -25,6 +25,8 @@ reg.ori.gam <- gam(popgap ~ potato_price + s(grain_price_other) + # H1
                    
                    data = df)
 
+summary(reg.ori.gam)
+
 gam.check(reg.ori.gam)
 
 # Assuming reg.ori.gam is your fitted model
@@ -85,28 +87,10 @@ ggsave("../03_outputs/regcheck.pdf",
        plot = regcheck, dpi = 300, width = 7, height = 5)
 
 
-
-acf(residuals(reg.upd.gam))
-
-shapiro.test(residuals(reg.upd.gam))
-
-
-
 reg.fad.lm <- lm(popgap ~ grain_acre_total, data = df)
-
 AIC(reg.fad.lm)
-
 summary(reg.fad.lm)
-
 stargazer(reg.fad.lm)
-
-
-
-
-
-
-
-
 
 
 

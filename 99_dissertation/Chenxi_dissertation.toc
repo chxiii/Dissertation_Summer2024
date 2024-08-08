@@ -12,5 +12,7 @@
 \contentsline {chapter}{\numberline {4}Methods}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Generalized Additive Model}{25}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Brief Summary}{29}{section.4.2}%
-\contentsline {chapter}{\numberline {5}Discussion}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Regression Results Summary}{31}{section.5.1}%
+\contentsline {section}{\numberline {4.3}Replication}{31}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Empirical Analysis}{32}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Regression Results Summary}{32}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Regression Results Summary}{32}{section.5.2}%

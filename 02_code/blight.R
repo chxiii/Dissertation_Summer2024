@@ -87,8 +87,6 @@ death_rate_plot <- ggplot(death_rate_df, aes(x = reorder(country, death_rate), y
   
 death_rate_plot
   
-
-
 # Combine the plots
 blight_path_death <- blight_pathway + death_rate_plot + 
   
