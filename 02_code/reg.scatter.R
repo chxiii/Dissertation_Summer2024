@@ -21,6 +21,23 @@ reg_scatter
 ggsave("../03_outputs/regression_scatter.pdf", 
        plot = reg_scatter, dpi = 300, width = 7, height = 7)
 
+reg.lin <- lm(popgap ~ potato_price + grain_price_other + 
+                
+                ground_rent + factor(if_tithe) + 
+                
+                general_wage + 
+                
+                imports_total + exports_total + factor(poorlaw), 
+              
+              data = df)
+
+AIC(reg.lin)
+
+summary(reg.lin)
+
+stargazer(reg.lin)
+
+vif(reg.lin)
 
 
 reg.ori.gam <- gam(popgap ~ potato_price + s(grain_price_other) + # H1
@@ -29,22 +46,25 @@ reg.ori.gam <- gam(popgap ~ potato_price + s(grain_price_other) + # H1
                      
                      s(general_wage) + #H3 
                      
-                     imports_total + factor(poorlaw)  # H4
-                   
-                   ,
+                     imports_total + s(exports_total) + factor(poorlaw), #H4,
                    
                    data = df)
 
 AIC(reg.ori.gam)
 
 summary(reg.ori.gam)
+
+stargazer(reg.ori.gam)
+
+
 plot(reg.ori.gam, page = 1)
 
-df %>% ggplot(aes(ground_rent, popgap))+
-  geom_point()+
-  geom_smooth(method = "gam")
+gam.check(reg.ori.gam)
 
-reg.fad.gam <- gam(popgap ~ grain_acre_total, data = df)
+
+
+reg.fad.gam <- gam(popgap ~ grain_acre_total + year, data = df)
+
 summary(reg.fad.gam)
 
 reg.lin <- lm(popgap ~ potato_price + grain_price_other + 

@@ -11,6 +11,6 @@
 \contentsline {section}{\numberline {3.3}Statistical Description}{21}{section.3.3}%
 \contentsline {chapter}{\numberline {4}Methods}{25}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Generalized Additive Model}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Research Framework}{25}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Replication}{28}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Discussion}{29}{chapter.5}%
+\contentsline {section}{\numberline {4.2}Research Framework}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Replication}{31}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Discussion}{32}{chapter.5}%

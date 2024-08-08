@@ -28,6 +28,7 @@ pkgTest <- function(pkg) {
 # lapply(c("stringr"), pkgTest)
 
 lapply(c("readxl", "reshape2", # import data
+         "stargazer", # export regression results to LaTeX
          "zoo", "mice", # to deal with missing value
          "MetBrewer", # visualisation colour package
          "ggplot2", "ggforce", "ggthemes", "patchwork", "ggpubr", "gg.gap",
@@ -89,15 +90,15 @@ df <- complete(df, 1)
 
 df$grain_price_other <- df$wheat_price + df$oat_price + df$barley_price
 
-df$grain_price_total <- df$potato_price + df$wheat_price + df$oat_price + df$barley_price
-
 df$grain_acre_total <- df$potato_acre + df$wheat_acre + df$oat_acre + df$barley_acre
 
 df$imports_total <- df$wheat_imports + df$barley_imports + df$oat_imports 
-                   
-df$exports_total <- df$wheat_exports + df$barley_exports + df$oat_exports
 
-df$inventories <- df$exports_total - df$imports_total
+index <- df$imports_total[1]
+scale.f <- 100 / index
+df$imports_total <- df$imports_total * scale.f
+
+df$exports_total <- df$wheat_exports + df$barley_exports + df$oat_exports
 
 summary(df)
 
