@@ -94,3 +94,83 @@ stargazer(reg.fad.lm)
 
 
 
+smooth_pred <- predict(reg.ori.gam, type = "terms", se.fit = TRUE)
+smooth_df <- data.frame(
+  grain_price_other = df$grain_price_other,
+  general_wage = df$general_wage,
+  exports_total = df$exports_total,
+  fit_grain_price_other = smooth_pred$fit[, "s(grain_price_other)"],
+  fit_general_wage = smooth_pred$fit[, "s(general_wage)"],
+  fit_exports_total = smooth_pred$fit[, "s(exports_total)"],
+  se_grain_price_other = smooth_pred$se.fit[, "s(grain_price_other)"],
+  se_general_wage = smooth_pred$se.fit[, "s(general_wage)"],
+  se_exports_total = smooth_pred$se.fit[, "s(exports_total)"]
+)
+
+# grain price
+s.grainprice <- ggplot(smooth_df, aes(x = grain_price_other, y = fit_grain_price_other)) +
+  
+  # fit line
+  geom_line(color = met.brewer("Kandinsky")[4], size = 0.5) +
+  
+  # upper line
+  geom_line(aes(y = fit_grain_price_other + 1.96 * se_grain_price_other), 
+            color = met.brewer("Kandinsky")[2], 
+            linetype = "dashed", 
+            size = 0.5) +
+  
+  # lower line
+  geom_line(aes(y = fit_grain_price_other - 1.96 * se_grain_price_other), 
+            color = met.brewer("Kandinsky")[2], 
+            linetype = "dashed", 
+            size = 0.5) +
+  
+  geom_rug(sides = "b", color = met.brewer("Kandinsky")[1]) +  
+  
+  labs(title = "Smooth Term: s(grain_price_other)", x = "grain_price_other", y = "Effect") +
+  
+  theme_bw() + 
+  
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title = element_blank())
+
+print(s.grainprice)
+
+s.generalw <- ggplot(smooth_df, aes(x = general_wage, y = fit_general_wage)) +
+  
+  # fit line
+  geom_line(color = met.brewer("Kandinsky")[4], size = 0.5) +
+  
+  # upper line
+  geom_line(aes(y = fit_general_wage + 1.96 * se_general_wage), 
+            color = met.brewer("Kandinsky")[2], 
+            linetype = "dashed", 
+            size = 0.5) +
+  
+  # lower line
+  geom_line(aes(y = fit_general_wage - 1.96 * se_general_wage), 
+            color = met.brewer("Kandinsky")[2], 
+            linetype = "dashed", 
+            size = 0.5) +
+  
+  geom_rug(sides = "b", color = met.brewer("Kandinsky")[1]) +  
+  
+  labs(title = "Smooth Term: s(general_wage)", x = "grain_price_other", y = "Effect") +
+  
+  theme_bw() + 
+  
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title = element_blank())
+
+print(s.generalw)
+
+smooth.visual <- s.grainprice + s.generalw + 
+  
+  plot_layout(ncol = 2, widths = c(1, 1))
+
+print(smooth.visual)
+
+ggsave("../03_outputs/smoothterm.pdf", 
+       plot = smooth.visual, dpi = 300, width = 7, height = 3)
