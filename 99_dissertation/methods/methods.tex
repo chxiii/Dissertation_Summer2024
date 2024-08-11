@@ -41,11 +41,81 @@ The formulation of the regression model, including the assumptions, is as follow
 & + \epsilon
 \end{align*}
 
+Wood demonstrates the usability of the GAM method in  non-linear data and reduces the risk of over-fitting by introducing penalty coefficients in the corresponding calculations \citep{wood2001mgcv}. Recent studies in the demographic have shown that the GAM approach possesses a more significant performance than the GLM approach in fitting regressions to population projections \citep{potts2018evaluation}. In addition, there are also scholars who GAM for entitlement analysis \citep{ardyanto2006granting}, and the regression results also show that GAM can fit the non-linear relationship between entitlements implementation and entitlements consequences well.
+
+\section{Regression Results Summary}
+
+Firstly is the formula of GAM and FAD LM:
+\vspace{-14pt}
+\begin{align*}
+\texttt{E(popgap)} = & - 7.420 - 0.079 \times \texttt{potato\_price} + f_1(\texttt{grain\_price\_other}) \\
+                & + 0.342 \times \texttt{ground\_rent} + \textcolor{red}{0.45 \times \texttt{factor(if\_tithe)}} \\
+                & + f_2(\texttt{general\_wage})  \\
+                & + 0.044 \times \texttt{imports\_total} + \textcolor{red}{f_3(\texttt{exports\_total})}\\
+                & + 3.616 \times \texttt{factor(poorlaw)} \\
+                & + \epsilon \\
+\texttt{popgap} = & \ 1.987 - 0.003 \times \texttt{grain\_acre\_total} + \epsilon
+\end{align*}
+
+The non-significant items have been highlighted in red. All hypotheses are significant for at least one variable, thus allowing for further coefficient interpretation. Table 5.1 lists the values and significance of the coefficients to facilitate comparisons between the model and the hypotheses.
+
+In terms of the trade-based entitlement, an 1 unit increase in the price of potatoes, the population change within a year is associated with an average increase of -7\%; In terms of the production-based entitlement, an 1 unit increase in the ground rent, the population change within a year is associated with an average increase of 34\%; In terms of the inheritance and transfer entitlement, an 1 unit increase in the grain imports, the population change within a year is associated with an average increase of 4\% also the year with poor law will have an average 36\% increase in population change compared with year without poor law; In terms of the rebuttal of the FAD theory, an 1 unit increase in the grain plant acreage, the population change within a year is associated with an average increase of -0.3\%.
+
+\begin{table}[h]
+    \centering
+    \caption{GAM, FAD LM, and General LM}
+    \begin{tabular}{@{\extracolsep{5pt}}lccc}
+    \\[-1.8ex]\hline
+    \hline \\[-1.8ex]
+    & \multicolumn{3}{c}{\textit{Dependent variable: popgap}} \\
+    \cline{2-4}
+    \\[-1.8ex] & GAM & FAD LM & General LM \\
+    \hline \\[-1.8ex]
+    potato\_price & $-$0.079$^{***}$ & & $-$0.107$^{***}$ \\
+     & (0.028) & & (0.033) \\
+    grain\_price\_other & &  & 0.179$^{**}$ \\
+     & &  & (0.069) \\
+    grain\_acre\_total & & $-$0.003$^{***}$ & \\
+     & & (0.001) & \\
+    ground\_rent & 0.342$^{***}$ & & 0.082 \\
+     & (0.118) & & (0.119) \\
+    factor(if\_tithe)1 & 0.450 & & 1.159$^{**}$ \\
+     & (0.559) & & (0.535) \\
+    general\_wage & & & 0.050 \\
+     & & & (0.037) \\
+    imports\_total & 0.044$^{***}$ & & 0.042$^{***}$ \\
+     & (0.008) & & (0.010) \\
+    exports\_total & & & 0.001 \\
+     & & & (0.001) \\
+    factor(poorlaw)1 & 3.616$^{***}$ & & 3.103$^{***}$ \\
+     & (0.617) & & (0.752) \\
+    Constant & $-$7.420$^{***}$ & 1.987$^{**}$ & $-$7.751$^{***}$ \\
+     & (1.391) & (0.796) & (1.964) \\
+    \hline \\[-1.8ex]
+    s(grain\_price\_other) & $^{**}$ & & \\
+    s(general\_wage) & $^{***}$ & & \\
+    s(exports\_total) &  & & \\
+    \hline \\[-1.8ex]
+    Observations & 80 & 80 & 80 \\
+    Adjusted R$^{2}$ & 0.741 & 0.097 & 0.570 \\
+    AIC & 201.470 & & 235.916 \\
+    Residual Std. Error & & 1.436 (df = 78) & 0.990 (df = 71) \\
+    F Statistic & & 9.457$^{***}$ (df = 1; 78) & 14.115$^{***}$ (df = 8; 71) \\
+    \hline
+    \hline \\[-1.8ex]
+    \textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+    \end{tabular}
+\end{table}
+
+Further data-based rebuttals to the FAD theory can be made here. While the linear model coefficients in the FAD theory are significant, i.e., it can be demonstrated that there is a relationship between food supply and demographic change, however, we must pay attention to the magnitude and direction of the coefficients, on the one hand, 0.3\% is a very small coefficient, and its impact on the macro-demographic data needs to be examined; on the other hand, the negative sign in front of the coefficient reveals that in fact there is a negative correlation between food supply and population change, i.e., for 19th Century Ireland, the prevailing trend was that the population was actually decreasing as the supply of food became more plentiful. This negative correlation provides a direct test of \textit{H5}: \textbf{There is not enough evidence to suggest that larger planting acreage lead to an increase in population compared with last year}.
+
+\section{Assumptions and Robustness}
+
 This paper fits two regression model. The first regression model is a GAM model, which is used to prove H1, H2, H3 and H4; the second regression model, due to the linear relationship between variables \texttt{grain\_acre\_total} and \texttt{popgap}, is a linear regression, which is used to prove H5. In fact, for the second regression model, the linear regression and the GAM model have the same AIC, and to follow the modeling principle of simplicity, linear regression is used for fitting.
 
 The necessity and feasibility for the use of the GAM model must be justified before proceeding with the regression analysis. Firstly, the VIF test between the variables shows that there is no multicollinearity between the variables (Table 4.1):
 
-\begin{table}[!htbp] \centering 
+\begin{table}[h] \centering 
     \caption{Model Variance Inflation Factors (VIF)} 
     \label{vif_table} 
     \begin{tabular}{lcccc} 
@@ -99,6 +169,50 @@ The model was tested with \texttt{gam.check()} in \texttt{R}, returning results 
 
 From $P1$, it appears that the distribution of the residuals revolves around the $Y=0$ line with a mean approximately equal to 0 and no pattern can be found; whereas the Q-Q plot of $P2$ indicates a normal distribution structure of the data; $P3$ also shows a uniform and random distribution between the response value and fitting value; and finally, the residuals indicated by $P4$ show a normal distribution.
 
+
+\section{Robustness Test}
+
+Robustness tests are performed on the most dominant model of the paper, i.e., the GAM that incorporates the four hypotheses.
+
+\begin{table}[h]
+    \centering
+    \caption{Robustness Test}
+    \begin{tabular}{@{\extracolsep{5pt}}lccccc}
+    \\[-1.8ex]\hline
+    \hline \\[-1.8ex]
+    & \multicolumn{5}{c}{\textit{Dependent variable: popgap}} \\
+    \cline{2-6}
+    \\[-1.8ex] & GAM 1 & LM & GAM 2 & GAM 3 & GAM 4 \\
+    & \textit{standard} & \textit{linear} & \textit{year} & \textit{half year} & \textit{norm.} \\
+    \hline \\[-1.8ex]
+    potato\_price & $-$0.079$^{***}$ & $-$0.107$^{***}$ & $-$0.096$^{**}$ & $-$0.133$^{**}$ & $-$0.063$^{*}$ \\
+     & (0.028) & (0.033) & (0.028) & (0.050) & (0.025) \\
+    grain\_price\_other & & 0.178$^{*}$ &  & & \\
+     & & (0.069) &  & & \\
+    ground\_rent & 0.342$^{***}$ & 0.082 & 0.306$^{*}$ & 0.266$^{.}$ & 0.323$^{**}$ \\
+     & (0.118) & (0.119) & (0.123) & (0.155) & (0.111) \\
+    factor(if\_tithe)1 & 0.450 & 1.159$^{*}$ & 0.905 & 1.999$^{.}$ & 0.924$^{.}$ \\
+     & (0.559) & (0.535) & (0.610) & (1.086) & (0.509) \\
+    general\_wage & & 0.050 & & 1.021$^{***}$ & 1.021$^{***}$ \\
+     & & (0.037) & & (0.261) & (0.261) \\
+    imports\_total & 0.044$^{***}$ & 0.042$^{***}$ & 0.032$^{***}$ & 0.049$^{***}$ & 0.056$^{***}$ \\
+     & (0.008) & (0.010) & (0.009) & (0.012) & (0.008) \\
+    exports\_total & & 0.001 & & & \\
+     & & (0.001) & & & \\
+    factor(poorlaw)1 & 3.616$^{***}$ & 3.103$^{***}$ & 2.867$^{***}$ & 3.832$^{***}$ & 3.812$^{***}$ \\
+     & (0.617) & (0.752) & (0.664) & (0.901) & (0.523) \\
+    \hline \\[-1.8ex]
+    s(grain\_price\_other) & $^{**}$ & & $^{**}$ & $^{*}$ & $^{***}$  \\
+    s(general\_wage) & $^{***}$ & & $^{***}$ & & $^{***}$ \\
+    s(exports\_total) & & & \\
+    \hline \\[-1.8ex]
+    Observations & 80 & 80 & 80 & 40 & 80 \\
+    \hline
+    \hline \\[-1.8ex]
+    \textit{Note:} & \multicolumn{5}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\
+    \end{tabular}
+\end{table}
+
 \section{Brief Summary}
 
 An overview of the research logic used throughout the article is given.
@@ -118,6 +232,9 @@ Figure 4.3 visualizes the framework of the entire research.
         \includegraphics[width=1.5\textheight]{../03_outputs/Framework.pdf}
     \end{figure}
 \end{landscape}
+
+
+
 
 \section{Replication}
 All the replication file can be found in this website:

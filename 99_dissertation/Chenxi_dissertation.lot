@@ -6,8 +6,8 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Data and Sources\relax }}{18}{table.3.1}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Model Variance Inflation Factors (VIF)\relax }}{27}{table.caption.15}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Regression Results: GAM and Linear\relax }}{28}{table.caption.16}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces GAM, FAD LM, and General LM\relax }}{32}{table.caption.15}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Model Variance Inflation Factors (VIF)\relax }}{32}{table.caption.16}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Regression Results: GAM and Linear\relax }}{33}{table.caption.17}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Robustness Test\relax }}{33}{table.caption.19}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces GAM, FAD LM, and General LM\relax }}{33}{table.caption.19}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Regression Model Comparisons\relax }}{35}{table.caption.21}%

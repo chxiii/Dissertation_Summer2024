@@ -27,6 +27,7 @@ reg.ori.gam <- gam(popgap ~ potato_price + s(grain_price_other) + # H1
 
 summary(reg.ori.gam)
 
+
 gam.check(reg.ori.gam)
 
 # Assuming reg.ori.gam is your fitted model
@@ -45,6 +46,7 @@ p1.res <- ggplot(data = data.frame(Fitted = fit, Residuals = res), aes(x = Fitte
         axis.title = element_blank())
 print(p1.res)
 
+# QQ plot
 p2.qq <- ggplot(data = data.frame(sample = res), aes(sample = sample)) +
   stat_qq(color = met.brewer("Monet")[7], shape = 1) +
   stat_qq_line(color = met.brewer("Monet")[6]) +
