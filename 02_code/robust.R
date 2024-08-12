@@ -27,9 +27,13 @@ df.pre1847 <- subset(df, year <= 1860)
 
 # 
 reg.pre.gam <- gam(popgap ~ potato_price + s(grain_price_other) +
+                     
                       ground_rent + factor(if_tithe) + 
+                     
                       general_wage + 
+                     
                       imports_total + s(exports_total) + factor(poorlaw),
+                   
                     data = df.pre1847)
 summary(reg.pre.gam)
 stargazer(reg.pre.gam)

@@ -18,5 +18,5 @@
 \contentsline {section}{\numberline {4.5}Research Design}{36}{section.4.5}%
 \contentsline {chapter}{\numberline {5}Discussion}{38}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Entitlements and Population}{38}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Limitation}{41}{section.5.2}%
+\contentsline {section}{\numberline {5.2}Further Research}{41}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Conclusion}{42}{chapter.6}%

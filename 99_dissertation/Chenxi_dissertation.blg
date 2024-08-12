@@ -5,45 +5,45 @@ The style file: agsm.bst
 Database file #1: reference.bib
 Warning--there's a number but no volume in madden2016aids
 Warning--there's a number but no volume in o1983malthus
-You've used 109 entries,
+You've used 110 entries,
             2909 wiz_defined-function locations,
-            1248 strings with 20865 characters,
-and the built_in function-call counts, 302385 in all, are:
-= -- 47714
-> -- 3791
+            1253 strings with 20954 characters,
+and the built_in function-call counts, 304680 in all, are:
+= -- 48065
+> -- 3815
 < -- 1
-+ -- 21645
-- -- 1134
-* -- 24826
-:= -- 63288
-add.period$ -- 111
-call.type$ -- 109
-change.case$ -- 1505
-chr.to.int$ -- 109
-cite$ -- 111
-duplicate$ -- 1812
-empty$ -- 3611
-format.name$ -- 1423
-if$ -- 53801
++ -- 21788
+- -- 1141
+* -- 24996
+:= -- 63768
+add.period$ -- 112
+call.type$ -- 110
+change.case$ -- 1519
+chr.to.int$ -- 110
+cite$ -- 112
+duplicate$ -- 1838
+empty$ -- 3659
+format.name$ -- 1432
+if$ -- 54224
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 122
-newline$ -- 333
-num.names$ -- 1097
-pop$ -- 538
+missing$ -- 123
+newline$ -- 336
+num.names$ -- 1107
+pop$ -- 546
 preamble$ -- 1
-purify$ -- 1635
+purify$ -- 1650
 quote$ -- 0
-skip$ -- 1471
+skip$ -- 1494
 stack$ -- 0
-substring$ -- 66145
-swap$ -- 344
-text.length$ -- 1527
+substring$ -- 66616
+swap$ -- 353
+text.length$ -- 1541
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 398
+type$ -- 402
 warning$ -- 2
-while$ -- 2437
+while$ -- 2461
 width$ -- 0
-write$ -- 1339
+write$ -- 1353
 (There were 2 warnings)
