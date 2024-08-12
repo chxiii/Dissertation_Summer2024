@@ -21,20 +21,22 @@
 %   It will be used for the title page and for the embedded PDF information
 %----------------------------------------------------------------------------------------
 
-\newcommand{\thesistitle}{Entitlement Approach \textendash\ \\An Example of the Irish Famine, 1845 \textendash\ 1851} % Your thesis title, this is used in the title and abstract
+\newcommand{\thesistitle}{Entitlement Approach \textendash\ \\An Example of the Irish Famine and Population Change, 
+1821 \textendash\ 1900} % Your thesis title, this is used in the title and abstract
 \newcommand{\degree}{M.Sc. Applied Social Data Sciences} % Your degree name, this is used in the title page and abstract
 \newcommand{\typeofthesis}{Dissertation} % dissertation, Final Year Project, report, etc.
 \newcommand{\authorname}{Chenxi Li} % Your name, this is used in the title page and PDF stuff
 %% Do not put your Student ID in the document, as TCD will not publish
 %% documents that contain both your name and your Student ID.
 \newcommand{\authorid}{23330541}
-\newcommand{\keywords}{this, that, more} % Keywords for your thesis
+\newcommand{\keywords}{Entitlement Approach, } % Keywords for your thesis
 \newcommand{\school}{\href{https://www.tcd.ie/Political_Science/}{School of Political}} % Your school's name and URL, this is used in the title page
 
 %% Comment out the next line if you don't want a department to appear
 %\newcommand{\department}{\href{http://researchgroup.university.com}{Prof. Peter Dunne}} % Your research group's name and URL, this is used in the title page
 
 \AtBeginDocument{
+
 \hypersetup{pdftitle=\thesistitle} % Set the PDF's title to your title
 \hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
 \hypersetup{pdfkeywords=\keywords} % Set the PDF's keywords to your keywords
@@ -50,8 +52,6 @@
 %% Bibliographical stuff
 \usepackage[round,sort,comma]{natbib}
 \usepackage[hang, bottom]{footmisc} % no space in footnote
-
-
 
 %furmula
 \usepackage{amsmath}
@@ -101,7 +101,7 @@
 \newcommand{\hsp}{\hspace{5pt}}
 
 \titleformat{\chapter}[hang]
-	{\LARGE\bfseries\itshape}
+	{\centering\LARGE\bfseries\itshape}
 	{Chapter \thechapter\hsp\textcolor{tcdblue}{|}\hsp}
 	{0pt}{\LARGE\bfseries\itshape}
 
@@ -109,6 +109,7 @@
 
 
 \title{\thesistitle}
+
 \author{\authorname}
 
 \frontmatter
@@ -149,6 +150,13 @@ I would like to thank my supervisor, \textbf{Prof. Martina Kirhberger}, for her 
 
 \chapter{Abstract}
 
+Using Amartya's entitlement approach, this paper research on 19th century's Ireland population change trend and its mechanism. FAD theory predicts a casual relationship between food shortage and death, while a large number of empirical studies refute this argument and point out another fact identical with the entitlement approach, which is the casual relationship between the entitlements failure and the death. From Foucault's bio-politics to population and political economics, all point to an endogenous mechanism of demographic change related to entitlements and increase.
+
+This paper seeks to answer these two research questions: (1) Could 19th century Ireland, based on the well known potato late blight famine, still be a refutation of FAD theory? (2) When using entitlement approach, what kind of entitlement failures led to sustained negative population growth in 19th century Ireland?
+
+With historical data and GAM regression, (1) when controlling for the amount of grain imported and exported, the acreage of food and the population change do not show significance. (2) Potato price, wage and the Poor Law are significant in predicting population change, where there is a negative relationship between potato price and population growth, and positive relationship between wage and Poor Law.
+
+The results of the study suggest that despite Ireland's reputation for late potato blight in the 19th century, however, it was still not food shortages that led to negative population growth, but rather entitlement failures; furthermore, the failure of trade-based entitlements was the most significant cause of negative population growth, i.e., the price of potatoes was too high; and own-labour entitlements  The retention of own-labour entitlements and transfer and inheritance entitlements has slowed down the process of negative population growth.
 
 \newpage
 %\raggedright %\raggedright turns off justification and hypenation
