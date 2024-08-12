@@ -42,3 +42,4 @@ print(price_line)
 ggsave("../03_outputs/grain_price.pdf", 
        plot = price_line, dpi = 300, width=7, height=5)
 
+rm(list = ls())
