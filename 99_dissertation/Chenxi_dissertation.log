@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  12 AUG 2024 12:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  12 AUG 2024 12:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -925,7 +925,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <../03_outputs/Framework.pdf, id=832, 963.6pt x 542.025pt>
 File: ../03_outputs/Framework.pdf Graphic file (type pdf)
 <use ../03_outputs/Framework.pdf>
-Package pdftex.def Info: ../03_outputs/Framework.pdf  used on input line 261.
+Package pdftex.def Info: ../03_outputs/Framework.pdf  used on input line 263.
 (pdftex.def)             Requested size: 677.74489pt x 381.2427pt.
 
 
@@ -962,7 +962,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,17n,117p,1752b,834s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (59 pages, 1669560 bytes).
+Output written on Chenxi_dissertation.pdf (59 pages, 1669678 bytes).
 PDF statistics:
  1051 PDF objects out of 1200 (max. 8388607)
  901 compressed objects within 10 object streams
