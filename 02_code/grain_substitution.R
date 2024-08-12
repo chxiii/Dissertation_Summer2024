@@ -48,6 +48,8 @@ grain_substituion <- ggplot(df, aes(x = oat_price, y = potato_price)) +
 
 print(grain_substituion)
 
-  ggsave("../03_outputs/grain_substituion.pdf", 
+ggsave("../03_outputs/grain_substituion.pdf", 
        plot = grain_substituion, dpi = 300, width = 7, height = 5)
 
+  rm(list = ls())
+  
