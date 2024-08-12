@@ -1,5 +1,5 @@
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Abstract}{iii}{chapter*.1}%
+\contentsline {chapter}{Abstract}{ii}{chapter*.1}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {chapter}{\numberline {2}Literature Review}{5}{chapter.2}%
 \contentsline {section}{\numberline {2.1}A Brief Famine Outline}{5}{section.2.1}%
@@ -20,3 +20,4 @@
 \contentsline {section}{\numberline {5.1}Entitlements and Population}{38}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Further Research}{41}{section.5.2}%
 \contentsline {chapter}{\numberline {6}Conclusion}{42}{chapter.6}%
+\contentsline {chapter}{References}{43}{chapter.6}%

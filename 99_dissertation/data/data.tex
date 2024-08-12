@@ -4,14 +4,14 @@
 Violet: The Famine?\\
 Malone: No, the starvation. When a country is full of food, and exporting it, there can be no famine. Me father was starved dead; and I was starved out to America in me mother's arms''.\\
 \textemdash\ ``Man and Superman'' by George Bernard Shaw
-}
+} \citep{shaw1947man}
 \vspace{.2cm}
 
 The Irish famine should be examined in the context of the entire 19th century history, rather than discussing the years of the famine alone, which on the one hand would lead to an excessively small sample size and thus ineffective statistics modeling, and on the other hand would lead to a entitlement approach that cannot be analyzed in the context of both positive and negative scenarios of population growth and population decline. Therefore, in collecting data, this paper adopts the strategy of collecting data from 1821 to 1900, where 1821 is the year of the first Irish census with complete documentation, and 1900 marks the end of Ireland's troubled 19th century.
 
 In addition, this paper used population change \textendash\ more specifically, the difference between current year's population and previous year's population \textendash\ as the dependent variable to measure the impact of the entitlement approach on population gap, whether it be pre-famine or post-famine sustained growth or decline, thus  realizing out the causal inference between entitlement approach and population change.
 
-The dataset consists of 25 variables, including continuous variable population, various cereal prices, various cereal acreage, various cereal imports and exports, land tax, wages and categorical variables of if government taxed tithe and poor law status, also constructed variables, including cereal prices summed up except potatoes, cereal acreage summed up, and the difference in cereal imports and exports. Each year is an observation, totaling 80 observations from 1821 to 1900.
+The dataset consists of 27 variables, including continuous variable population, various cereal prices, various cereal acreage, various cereal imports and exports, land tax, wages and categorical variables of if government taxed tithe and poor law status, also constructed variables, including cereal prices summed up except potatoes, cereal acreage summed up, and the difference in cereal imports and exports. Each year is an observation, totaling 80 observations from 1821 to 1900.
 
 \section{Data Sources}
 \vspace{0pt}
@@ -39,9 +39,9 @@ Below are all the variables and their sources:
     \end{TableNotes}
 \begin{longtable}{cccc}
     \caption{Data and Sources} \\
-    \toprule % 表格顶部线
+    \toprule 
     \textbf{Data} & \textbf{Details} & \textbf{Time} & \textbf{Sources} \\
-    \midrule % 表格标题下方线
+    \midrule 
     \endfirsthead
 
     \caption[]{(Continued)} \\
@@ -55,7 +55,7 @@ Below are all the variables and their sources:
     \midrule
     \endfoot
 
-    \bottomrule % 表格底部线
+    \bottomrule
     \insertTableNotes
     \endlastfoot
 
@@ -99,7 +99,7 @@ Below are all the variables and their sources:
 \end{spacing}
 \vspace{-14pt}
 
-In addition, there are a number of missing values, including the ground rent from 1886 to 1900, the imports of oats, barley, and wheat from 1821 to 1838, and the exports of barley and oats from 1821 to 1828. Considering that these missing values may be related to other variables, the \texttt{mice} package in \texttt{R} is used to fill these missing values with multiple imputation. Since the data in this article come directly from previous research and historical archives, there is no need to deal with outliers.
+In addition, there are a number of missing values, including the ground rent from 1886 to 1900, the imports of oats, barley, and wheat from 1821 to 1838, and the exports of barley and oats from 1821 to 1828. Considering that these missing values may be related to other variables, the \texttt{mice} package in \texttt{R} is used to fill these missing values with multiple imputation, where the method is \texttt{pmn} and \texttt{m=5}. Since the data in this article come directly from previous research and historical archives and have been checked when is imported, there is no need to deal with outliers.
 
 \section{Research Hypothesis}
 
@@ -129,9 +129,9 @@ And a final hypothesis test to refute the FAD theory that population decline sho
 
 The first step was to perform descriptive statistics on the dependent variable. The dependent variable is represented in the data as \texttt{popgap}, which is calculated using the current year's population minus the last year's population and describes the trend of the population compared to the last year, i.e., it includes both natural and mechanical growth, as well as the number of deaths due to starvation in the case of the famine. The curve in Figure 3.1 represents the change in population over time, with the lower-middle timeline marking the major historical events of the nineteenth century that had an impact on population, while the bar chart at the bottom records the change in population within the year.
 
-\begin{figure}[htbp]
+\begin{figure}[h]
     \centering
-    \caption{Population Index, Decrease and Evens, 1821 \textendash\ 1900}
+    \caption{Population Index, Decrease and Events, 1821 \textendash\ 1900}
     \includegraphics[width=.95\textwidth]{../03_outputs/popline.pdf}
 \end{figure}
 
@@ -139,7 +139,7 @@ The first point in time when population growth slowed down was in 1838, when the
 
 Figure 3.2 depicts the movement of cereal prices throughout the 19th century, especially during the famine, which helps us to visualize the subsequent regression model. When we correspond to the price curves and the population change curves in Figure 3.1, it appears we can see a link between peaks in price and peaks in population decline, for example, the peak in the price of potatoes and oats in 1879, coupled with the effects of the Land War, and the correspondingly rapid decline in population. While at 1882, the decline in population slowed down after the Land Wars, and also related to the relatively smoother society and prices.
 
-\begin{figure}[htbp]
+\begin{figure}[h]
     \centering
     \caption{Grain Price, 1821 \textendash\ 1900}
     \includegraphics[width=.95\textwidth]{../03_outputs/grain_price.pdf}
@@ -147,7 +147,7 @@ Figure 3.2 depicts the movement of cereal prices throughout the 19th century, es
 
 Also we must pay attention to theory of substitution. Potatoes and oats, as the dominant Irish crops of the 19th century and in the Irish diet, should have been substitutes for each other. The relationship between their prices can be seen in Figure 3.3.
 
-\begin{figure}[htbp]
+\begin{figure}[h]
     \centering
     \caption{Potato Price \& Oat Price, 1821 \textendash\ 1900}
     \includegraphics[width=.95\textwidth]{../03_outputs/grain_substituion.pdf}
@@ -173,6 +173,8 @@ All the replication files can be found in this website:
 
 \url{https://github.com/chxiii/Dissertation_Summer2024}
 
+\vspace{14pt}
+
 The following is a description of the structure and function of the paper:
 
 \begin{itemize}
@@ -182,5 +184,14 @@ The following is a description of the structure and function of the paper:
     Contains all the data to be used in this paper, as well as the \texttt{shp} file used in the Chapter 2.1 visualization.
     \item[-] \texttt{02\_code}:
     Contains all the \texttt{R} code including from data tidy to visualization. Except file \texttt{main.R} and \texttt{reg.model.R}, all files start from an import of main \texttt{R} file, and are ended with a remove environment command.
-    \item[-] \texttt{93\_outputs}: Contains all the visualisation plot.
+    \item[-] \texttt{03\_outputs}: Contains all the visualisation plot.
+    \item[-] \texttt{99\_dissertation}: Contains all the tex  and pdf of dissertation, including:
+    \begin{itemize}
+        \item [$\alpha$.] \texttt{Chenxi\_dissertation}: The global settings of \texttt{tex} file and the thesis \texttt{pdf}.
+        \item [$\beta$.] \texttt{title}: The global settings of the cover.
+        \item [$\gamma$.] \texttt{introduction, literature, data, methods, discussion, conclusion}: \\ Each chapter of the thesis, contains all the \texttt{tex} and \texttt{pdf} files.
+        \item [$\delta$.] \texttt{reference.bib}: The reference file of the thesis.
+    \end{itemize} 
 \end{itemize}
+
+For any questions about the code or data, please contact the authors at \texttt{Lic8@tcd.ie}.

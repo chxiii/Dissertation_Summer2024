@@ -50,3 +50,5 @@ print(coef.visual)
 
 ggsave("../03_outputs/coef.visual.pdf", 
        plot = coef.visual, dpi = 300, width = 7, height = 5)
+
+rm(list = ls())

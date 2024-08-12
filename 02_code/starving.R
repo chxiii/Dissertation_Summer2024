@@ -69,3 +69,5 @@ print(popmap1841_1851)
 
 ggsave("../03_outputs/map1841_1851.pdf", 
        plot = popmap1841_1851, dpi = 300, width=7, height=5)
+
+rm(list = ls())

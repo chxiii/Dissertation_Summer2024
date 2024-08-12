@@ -64,3 +64,5 @@ reg.nor.gam <- gam(popgap ~ potato_price + s(grain_price_other) +
                    data = df.rob)
 summary(reg.nor.gam)
 stargazer(reg.nor.gam)
+
+rm(list = ls())

@@ -23,9 +23,9 @@ In the scatter plot of Figure 4.1, a non-linear trend can be observed for all th
 
 Therefore, generalized additive model was used as the main approach in this paper since it is efficient in solving non-linearly relationship from variables by using smooth functions. Wood demonstrates the usability of the GAM method in non-linear data and reduces the risk of over-fitting by introducing penalty coefficients in corresponding calculations \citep{wood2001mgcv}. Recent studies in the demographic have shown the GAM approach possesses a more significant performance than the GLM approach in fitting regressions \citep{potts2018evaluation}. In addition, there are scholars who used GAM for entitlement analysis \citep{ardyanto2006granting}, and also performed a good fit between GAM and entitlement research.
 
-Variables in regression included: \texttt{potato\_price}, \texttt{grain\_price\_other}, \texttt{ground\_rent}, \texttt{if\_tithe}, \texttt{general\_wage}, \texttt{poorlaw}, \texttt{imports\_total}, \texttt{exports\_total}. The second regression model includes the variables \texttt{grain\_acre\_total}. Based on the observation of scatter and correlation matrix, a smoothing function was added to the variables \texttt{grain\_price\_other}, \texttt{general\_wage}, and \texttt{exports\_total}. 
+Variables in regression included: \texttt{potato\_price}, \texttt{grain\_price\_other}, \texttt{ground\_rent}, \texttt{if\_tithe}, \texttt{general\_wage}, \texttt{poorlaw}, \texttt{imports\_total}, \texttt{exports\_total}. The second model includes variables \texttt{grain\_acre\_total}, \texttt{imports\_total} and \texttt{exports\_total}. Based on the observation of scatter and correlation matrix, a smoothing function was added to the variables \texttt{grain\_price\_other}, \texttt{general\_wage}, and \texttt{exports\_total}. 
 
-Imports and exports data was used as control variable due to literatures that can be examined. This data during famines have always been a focus of debate among different schools, because differences in views will directly lead to the division between nationalism and revisionism \textemdash\ to put it more bluntly, it determines whether scholars will target 19th century's British government. 
+Variables \texttt{imports\_total} and \texttt{exports\_total} are used as control variable due to literatures that can be examined. This data during famines have always been a focus of debate among different schools, because differences in views will directly lead to the division between nationalism and revisionism \textemdash\ to put it more bluntly, it determines whether scholars will target 19th century's British government. 
 
 \begin{itemize}
     \item [] \textit{``During all the famine year, Ireland actually producing sufficient food, and wool and flax to feed and clothe not nine, but eighteen millions of people''.} \citep{mitchel1905apology}
@@ -117,7 +117,7 @@ It is also important to state the advantages of using GAM over using LM for the 
 
 Based on regression results (Table 4.3, row GAM), we can interpret the coefficients: in terms of the trade-based entitlement, an 1 unit increase in the price of potatoes, the population change within a year is associated with an average increase of -7\%; In terms of the production-based entitlement, an 1 unit increase in the ground rent, the population change within a year is associated with an average increase of 34\%, but maybe due to \texttt{if\_tithe} use a binary form to describe the effect between tithe and population change and the year of compulsory tithe is not many during century, so the coefficient is not significant ($p=0.424$); In terms of the own-labour entitlement, there is a significant relationship between wage and population change can be observed, and it will be more clear explained in the smooth term interpret part; In terms of the inheritance and transfer entitlement, years with Poor Law will have an average 36\% increase in population change compared with years without Poor Law. 
 
-A description of the control variables reveals that an 1 unit increase in the imports amount, the population change within a year is associated with an average increase of 4\%, which is fit to the empirical knowledge and as well as part of the transfer and inheritance entitlement. But there is no significant relationship be observed between the exports grain amount and population change,
+A description of the control variables reveals that an 1 unit increase in the imports amount, the population change within a year is associated with an average increase of 4\%, which is fit to the empirical knowledge and as well as part of the transfer and inheritance entitlement. But there is no significant relationship be observed between the exports grain amount and population change.
 
 Further data-based rebuttals to the FAD theory can be made here. The only significant coefficient under 10\% confidence level in the model is grain import amount ($p=0.055$), and regarding grain planting acreage and export amount, they are all non-significant, i.e., there is no relationship between planting acreage and population change, as well as export food amount, which prove \textit{H5}: \textbf{There is not enough evidence to suggest that larger planting acreage lead to an increase in population compared with last year}. 
 
@@ -194,7 +194,7 @@ Secondly, variable \texttt{year} is put into the model (Model 3) to exclude the 
 
 Thirdly, due to the mechanism of population change maybe different during time, which is suggested by typical Modernization theory \citep{tipps1973modernization} in development field, and Ireland may be considered as a pre-modern society before famine and development rapidly at the end of 19th century, so it is necessary to cut half observations to clear the influence if it exist (Model 4). The results also shows a similar coefficient, except the coefficient of potato price appears a stronger negative trend than standard GAM due to the effect of famine is enlarged in the first half of 19th century.
 
-Lastly, as mentioned before, this paper use multiple imputation to deal with missing value in ground rent, import and export data, and to valid the robustness of GAM, regression imputation will be conducted to create a new model to compare. Also, similar coefficients are appeared after changing imputation method. 
+Lastly, this paper use multiple imputation to deal with missing value in ground rent, import and export data. To valid the robustness of GAM, regression imputation will be conducted to create a new model to compare. Also, similar coefficients are appeared after changing imputation method. 
 
 In a word, the robustness of the GAM receives support from multiple models, which means the conclusion of GAM has a good credibility.
 
@@ -240,7 +240,7 @@ In a word, the robustness of the GAM receives support from multiple models, whic
     \end{tabular}
 \end{table}
 
-During the creating of different models, the influence of potato price, as well as the smooth term, is significant in every models, which gives a strong evidence of the relationship between the trade-based entitlement and population change. The secondly common significance appears in the Poor Law, and this also makes a comprehensive conclusion that Poor Law increase peoples' entitlement in transfer and inheritance. General wage shows the similar situation and can be found significance in either regular term or smooth term either. As for ground rent, after adding variable \texttt{year}, in Model 3 and Model 4 it is losing significance, which is caused by the history events caused by history like land war or related laws.
+During the creating of different models, the influence of potato price, as well as the smooth term, is significant in every models, which gives a strong evidence of the relationship between the trade-based entitlement and population change. The secondly common significance appears in the Poor Law, and this also makes a comprehensive conclusion that Poor Law increase peoples' entitlement in transfer and inheritance. General wage shows the similar situation and can be found significance in either regular term or smooth term either. As for ground rent, after adding variable \texttt{year}, in Model 3 and Model 4 it is losing significance, which is possibly caused by the history events caused by history like land war or related laws.
 
 \newpage
 
@@ -254,7 +254,7 @@ Further, hypotheses are made base on these indicators, with each indicator corre
 
 The GAM was used in this study for a number of reasons, including (1) there is no significant linear relationship between some independent variables and the dependent variable, but there is an observable nonlinear relationship and theory supports the existence of such a nonlinear relationship, and (2) the introduction of a smoothing function in the GAM can predict this nonlinear relationship in a good way. Relative examines have been performed before formally discussing the regression, including the VIF test for multicollinearity, AIC and R-square comparisons for linear regression, the residual randomness and normality test, and robustness test. All of the results identify the GAM as a reasonable regression model under this data.
 
-Figure 4.4 visualizes the framework of the entire research.
+Figure 4.4 visualizes the design of the entire research.
 
 \begin{landscape}
     \begin{figure}[h]
