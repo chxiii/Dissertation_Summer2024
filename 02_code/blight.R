@@ -96,3 +96,5 @@ print(blight_path_death)
 
 ggsave("../03_outputs/blight_path_death.pdf", 
        plot = blight_path_death, dpi = 300, width = 7, height = 5)
+
+rm(list = ls())

@@ -179,3 +179,5 @@ print(smooth.visual)
 
 ggsave("../03_outputs/smoothterm.pdf", 
        plot = smooth.visual, dpi = 300, width = 9, height = 4)
+
+
