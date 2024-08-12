@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  11 AUG 2024 08:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.2.2)  12 AUG 2024 01:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -743,7 +743,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\\' on input line 113.
 
 (./title/title.tex
-<title/Trinity_RGB_transparent_main.png, id=79, 412.6617pt x 142.3719pt>
+<title/Trinity_RGB_transparent_main.png, id=91, 412.6617pt x 142.3719pt>
 File: title/Trinity_RGB_transparent_main.png Graphic file (type png)
 <use title/Trinity_RGB_transparent_main.png>
 Package pdftex.def Info: title/Trinity_RGB_transparent_main.png  used on input line 13.
@@ -777,7 +777,7 @@ LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 1
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-<signature.png, id=92, 153.57375pt x 108.405pt>
+<signature.png, id=104, 153.57375pt x 108.405pt>
 File: signature.png Graphic file (type png)
 <use signature.png>
 Package pdftex.def Info: signature.png  used on input line 135.
@@ -817,19 +817,19 @@ Chapter 2.
 [5
 
 ] [6]
-<../03_outputs/map1841_1851.pdf, id=334, 505.89pt x 361.35pt>
+<../03_outputs/map1841_1851.pdf, id=351, 505.89pt x 361.35pt>
 File: ../03_outputs/map1841_1851.pdf Graphic file (type pdf)
 <use ../03_outputs/map1841_1851.pdf>
 Package pdftex.def Info: ../03_outputs/map1841_1851.pdf  used on input line 29.
 (pdftex.def)             Requested size: 451.82993pt x 322.74184pt.
  [7 <../03_outputs/map1841_1851.pdf>] [8]
-<../03_outputs/blight_path_death.pdf, id=391, 505.89pt x 361.35pt>
+<../03_outputs/blight_path_death.pdf, id=408, 505.89pt x 361.35pt>
 File: ../03_outputs/blight_path_death.pdf Graphic file (type pdf)
 <use ../03_outputs/blight_path_death.pdf>
 Package pdftex.def Info: ../03_outputs/blight_path_death.pdf  used on input line 53.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
  [9 <../03_outputs/blight_path_death.pdf>]
-<../03_outputs/food_structure.pdf, id=432, 505.89pt x 361.35pt>
+<../03_outputs/food_structure.pdf, id=449, 505.89pt x 361.35pt>
 File: ../03_outputs/food_structure.pdf Graphic file (type pdf)
 <use ../03_outputs/food_structure.pdf>
 Package pdftex.def Info: ../03_outputs/food_structure.pdf  used on input line 71.
@@ -864,31 +864,31 @@ Overfull \hbox (0.9387pt too wide) in alignment at lines 60--97
  []
 
 [18] [19] [20]
-<../03_outputs/popline.pdf, id=669, 505.89pt x 361.35pt>
+<../03_outputs/popline.pdf, id=688, 505.89pt x 361.35pt>
 File: ../03_outputs/popline.pdf Graphic file (type pdf)
 <use ../03_outputs/popline.pdf>
-Package pdftex.def Info: ../03_outputs/popline.pdf  used on input line 133.
+Package pdftex.def Info: ../03_outputs/popline.pdf  used on input line 135.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
  [21 <../03_outputs/popline.pdf>]
-<../03_outputs/grain_price.pdf, id=680, 505.89pt x 361.35pt>
+<../03_outputs/grain_price.pdf, id=699, 505.89pt x 361.35pt>
 File: ../03_outputs/grain_price.pdf Graphic file (type pdf)
 <use ../03_outputs/grain_price.pdf>
-Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 143.
+Package pdftex.def Info: ../03_outputs/grain_price.pdf  used on input line 145.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
-<../03_outputs/grain_substituion.pdf, id=681, 505.89pt x 361.35pt>
+<../03_outputs/grain_substituion.pdf, id=700, 505.89pt x 361.35pt>
 File: ../03_outputs/grain_substituion.pdf Graphic file (type pdf)
 <use ../03_outputs/grain_substituion.pdf>
-Package pdftex.def Info: ../03_outputs/grain_substituion.pdf  used on input line 151.
+Package pdftex.def Info: ../03_outputs/grain_substituion.pdf  used on input line 153.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
  [22 <../03_outputs/grain_price.pdf>] [23 <../03_outputs/grain_substituion.pdf>]
-<../03_outputs/corrmatrix.pdf, id=705, 505.89pt x 361.35pt>
+<../03_outputs/corrmatrix.pdf, id=724, 505.89pt x 361.35pt>
 File: ../03_outputs/corrmatrix.pdf Graphic file (type pdf)
 <use ../03_outputs/corrmatrix.pdf>
-Package pdftex.def Info: ../03_outputs/corrmatrix.pdf  used on input line 163.
+Package pdftex.def Info: ../03_outputs/corrmatrix.pdf  used on input line 165.
 (pdftex.def)             Requested size: 429.23705pt x 306.60309pt.
-) (./methods/methods.tex [24 <../03_outputs/corrmatrix.pdf>]
+ [24 <../03_outputs/corrmatrix.pdf>]) (./methods/methods.tex [25]
 Chapter 4.
-<../03_outputs/regression_scatter.pdf, id=717, 505.89pt x 505.89pt>
+<../03_outputs/regression_scatter.pdf, id=741, 505.89pt x 505.89pt>
 File: ../03_outputs/regression_scatter.pdf Graphic file (type pdf)
 <use ../03_outputs/regression_scatter.pdf>
 Package pdftex.def Info: ../03_outputs/regression_scatter.pdf  used on input line 21.
@@ -896,76 +896,76 @@ Package pdftex.def Info: ../03_outputs/regression_scatter.pdf  used on input lin
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25
+[26
 
-] [26 <../03_outputs/regression_scatter.pdf>] [27]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[28]
+] [27 <../03_outputs/regression_scatter.pdf>] [28]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<../03_outputs/regcheck.pdf, id=757, 505.89pt x 361.35pt>
+<../03_outputs/regcheck.pdf, id=778, 505.89pt x 361.35pt>
 File: ../03_outputs/regcheck.pdf Graphic file (type pdf)
 <use ../03_outputs/regcheck.pdf>
-Package pdftex.def Info: ../03_outputs/regcheck.pdf  used on input line 175.
+Package pdftex.def Info: ../03_outputs/regcheck.pdf  used on input line 83.
 (pdftex.def)             Requested size: 406.64417pt x 290.46434pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [29]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[30 <../03_outputs/regcheck.pdf>] [31] [32] [33]
-<../03_outputs/Framework.pdf, id=785, 963.6pt x 542.025pt>
+[30 <../03_outputs/regcheck.pdf>] [31] [32]
+<../03_outputs/smoothterm.pdf, id=805, 650.43pt x 289.08pt>
+File: ../03_outputs/smoothterm.pdf Graphic file (type pdf)
+<use ../03_outputs/smoothterm.pdf>
+Package pdftex.def Info: ../03_outputs/smoothterm.pdf  used on input line 176.
+(pdftex.def)             Requested size: 429.23705pt x 190.77574pt.
+ [33 <../03_outputs/smoothterm.pdf>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34] [35] [36]
+<../03_outputs/Framework.pdf, id=832, 963.6pt x 542.025pt>
 File: ../03_outputs/Framework.pdf Graphic file (type pdf)
 <use ../03_outputs/Framework.pdf>
-Package pdftex.def Info: ../03_outputs/Framework.pdf  used on input line 241.
+Package pdftex.def Info: ../03_outputs/Framework.pdf  used on input line 261.
 (pdftex.def)             Requested size: 677.74489pt x 381.2427pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34 <../03_outputs/Framework.pdf>]) (./discussion/discussion.tex [35
-
-
-]
+[37 <../03_outputs/Framework.pdf>]) (./discussion/discussion.tex
 Chapter 5.
-<../03_outputs/smoothterm.pdf, id=836, 505.89pt x 216.81pt>
-File: ../03_outputs/smoothterm.pdf Graphic file (type pdf)
-<use ../03_outputs/smoothterm.pdf>
-Package pdftex.def Info: ../03_outputs/smoothterm.pdf  used on input line 15.
-(pdftex.def)             Requested size: 429.23705pt x 183.96184pt.
-) (./Chenxi_dissertation.bbl [36
+<../03_outputs/coef.visual.pdf, id=878, 505.89pt x 361.35pt>
+File: ../03_outputs/coef.visual.pdf Graphic file (type pdf)
+<use ../03_outputs/coef.visual.pdf>
+Package pdftex.def Info: ../03_outputs/coef.visual.pdf  used on input line 16.
+(pdftex.def)             Requested size: 406.64417pt x 290.46434pt.
+) (./conclusion/conclusion.tex [38
 
- <../03_outputs/smoothterm.pdf>] [37
 
-] [38] [39] [40] [41] [42] [43] [44] [45]) [46] (./Chenxi_dissertation.aux)
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+ <../03_outputs/coef.visual.pdf>]
+Chapter 6.
+) (./Chenxi_dissertation.bbl [39
 
+] [40
+
+] [41] [42] [43] [44] [45] [46] [47] [48]) [49] (./Chenxi_dissertation.aux)
 Package rerunfilecheck Info: File `Chenxi_dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: D2D9AAE0B18E524389118B2789567349;2641.
+(rerunfilecheck)             Checksum: 90461333AB85755FE313EDEB67DE3556;2897.
  )
 (\end occurred when \ifdefined on line 15 was incomplete) 
 Here is how much of TeX's memory you used:
- 26478 strings out of 476025
- 495537 string characters out of 5790018
- 1879388 words of memory out of 5000000
- 46178 multiletter control sequences out of 15000+600000
+ 26505 strings out of 476025
+ 496139 string characters out of 5790018
+ 1871388 words of memory out of 5000000
+ 46192 multiletter control sequences out of 15000+600000
  559348 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,17n,117p,1752b,834s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,117p,1752b,836s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on Chenxi_dissertation.pdf (53 pages, 1646900 bytes).
+Output written on Chenxi_dissertation.pdf (56 pages, 1663957 bytes).
 PDF statistics:
- 979 PDF objects out of 1000 (max. 8388607)
- 838 compressed objects within 9 object streams
- 207 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1025 PDF objects out of 1200 (max. 8388607)
+ 879 compressed objects within 9 object streams
+ 215 named destinations out of 1000 (max. 500000)
+ 251 words of extra memory for PDF output out of 10000 (max. 10000000)
 

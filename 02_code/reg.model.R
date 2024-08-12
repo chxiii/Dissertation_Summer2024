@@ -17,16 +17,18 @@ vif(reg.lin)
 
 reg.ori.gam <- gam(popgap ~ potato_price + s(grain_price_other) + # H1
                      
-                     ground_rent + factor(if_tithe) +  #H2
+                     ground_rent + factor(if_tithe) +  # H2
                      
-                     s(general_wage) + #H3 
+                     s(general_wage) + # H3 
                      
-                     imports_total + s(exports_total) + factor(poorlaw), #H4,
+                     factor(poorlaw) + # H4
+                     
+                     imports_total + s(exports_total), # Control variables
                    
                    data = df)
 
 summary(reg.ori.gam)
-
+plot(reg.ori.gam)
 
 gam.check(reg.ori.gam)
 
@@ -88,16 +90,19 @@ print(regcheck)
 ggsave("../03_outputs/regcheck.pdf", 
        plot = regcheck, dpi = 300, width = 7, height = 5)
 
-
-reg.fad.lm <- lm(popgap ~ grain_acre_total, data = df)
+# Rebute FAD Theory
+reg.fad.lm <- lm(popgap ~ grain_acre_total + exports_total + imports_total, data = df)
 AIC(reg.fad.lm)
 summary(reg.fad.lm)
 stargazer(reg.fad.lm)
 
 
+# visualisation smooth term
+
 
 smooth_pred <- predict(reg.ori.gam, type = "terms", se.fit = TRUE)
 smooth_df <- data.frame(
+  potato_price = df$potato_price,
   grain_price_other = df$grain_price_other,
   general_wage = df$general_wage,
   exports_total = df$exports_total,
@@ -141,20 +146,18 @@ print(s.grainprice)
 
 s.generalw <- ggplot(smooth_df, aes(x = general_wage, y = fit_general_wage)) +
   
-  # fit line
-  geom_line(color = met.brewer("Kandinsky")[4], size = 0.5) +
   
-  # upper line
-  geom_line(aes(y = fit_general_wage + 1.96 * se_general_wage), 
-            color = met.brewer("Kandinsky")[2], 
-            linetype = "dashed", 
-            size = 0.5) +
+  stat_smooth(aes(y = fit_general_wage), method = "loess", 
+              span = 0.75, se = FALSE, size = 0.5,
+              color = met.brewer("Kandinsky")[4]) +
   
-  # lower line
-  geom_line(aes(y = fit_general_wage - 1.96 * se_general_wage), 
-            color = met.brewer("Kandinsky")[2], 
-            linetype = "dashed", 
-            size = 0.5) +
+  stat_smooth(aes(y = fit_general_wage + 1.96 * se_general_wage), method = "loess",
+              span = 0.75, se = FALSE, linetype = "dashed", size = 0.5,
+              color = met.brewer("Kandinsky")[2]) +
+  
+  stat_smooth(aes(y = fit_general_wage - 1.96 * se_general_wage), method = "loess", 
+              span = 0.75, se = FALSE, linetype = "dashed", size = 0.5,
+              color = met.brewer("Kandinsky")[2]) +
   
   geom_rug(sides = "b", color = met.brewer("Kandinsky")[1]) +  
   
@@ -175,4 +178,4 @@ smooth.visual <- s.grainprice + s.generalw +
 print(smooth.visual)
 
 ggsave("../03_outputs/smoothterm.pdf", 
-       plot = smooth.visual, dpi = 300, width = 7, height = 3)
+       plot = smooth.visual, dpi = 300, width = 9, height = 4)

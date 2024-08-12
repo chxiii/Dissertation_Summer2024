@@ -9,11 +9,14 @@
 \contentsline {section}{\numberline {3.1}Data Sources}{18}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Research Hypothesis}{20}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Statistical Description}{21}{section.3.3}%
-\contentsline {chapter}{\numberline {4}Methods}{25}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Generalized Additive Model}{25}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Regression Results Summary}{28}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Assumptions and Robustness}{29}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Robustness Test}{30}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Brief Summary}{30}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Replication}{35}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Empirical Analysis}{36}{chapter.5}%
+\contentsline {section}{\numberline {3.4}Replication}{25}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Methods}{26}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Generalized Additive Model}{26}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Assumptions Test}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Regression Results}{31}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Robustness Test}{34}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Brief Summary}{36}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Discussion}{38}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Entitlements and Population}{38}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Limitation}{38}{section.5.2}%
+\contentsline {chapter}{\numberline {6}Conclusion}{39}{chapter.6}%
