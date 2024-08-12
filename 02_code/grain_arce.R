@@ -69,12 +69,6 @@ food_structure <- ggplot() +
   
   scale_fill_manual(values = met.brewer("VanGogh3")[c(1, 3, 5, 7)])
   
-  #scale_fill_manual(values = c("wheat_acre" = "#0A371C", 
-  #                             "oat_acre" = "#C8D3F9", 
-  #                             "barley_acre" = "#A8AE5E", 
-  #                             "potato_acre" = "#F3EDCA"))
-
-
 # add a line plot
 food_structure <- food_structure +
   
