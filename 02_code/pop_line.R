@@ -111,3 +111,5 @@ ggsave("../03_outputs/popline.pdf",
        onefile = FALSE, # cancel the bug of ggbreak
        dpi = 300, width = 7, height = 5)
 
+rm(list = ls())
+
